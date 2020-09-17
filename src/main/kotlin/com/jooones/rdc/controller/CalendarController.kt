@@ -8,6 +8,6 @@ class CalendarController {
 
     @GetMapping("/api/calendar")
     fun calendar(): String {
-        return "jan 1, jan 2, jan 3.... yawn";
+        return "{\"value\":\"jan 1, jan 2, jan 3.... yawn\"}"
     }
 }
