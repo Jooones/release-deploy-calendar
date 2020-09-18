@@ -89,11 +89,10 @@ export class CalenderService{
   mapDaysToWeeks(days: Array<DayTo>): Array<Week>{
     const weeks: Array<Week> = [];
     let weekOfTheMonth: number = -1;
-    let daysOfWeek: Array<Day> = [];
+    let daysOfWeek: Array<Day> = new Array<Day>(7);
 
     days.forEach(dayTo => {
       if (dayTo.dayOfWeek-1 % 7 === 0){
-
         daysOfWeek = [];
         weekOfTheMonth++;
       }
