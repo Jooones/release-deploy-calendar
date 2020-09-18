@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     this.calendar = {content: ''};
   }
 
-  private getCalendar(): void {
+  getCalendar(): void {
     this.calendar.content = 'gimme a min..';
     this.httpClient.get<Calendar>(`api/calendar`).subscribe(response => this.calendar.content = response.content);
   }
