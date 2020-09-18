@@ -15,6 +15,8 @@ import {adapterFactory} from "angular-calendar/date-adapters/moment";
 // @ts-ignore
 import moment from 'moment';
 import {CommonModule} from "@angular/common";
+import {DayCellComponent} from "./components/DayCell/day-cell.component";
+import {CalenderService} from "./services/CalenderService";
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -22,7 +24,8 @@ export function momentAdapterFactory() {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DayCellComponent
   ],
   imports: [
     CommonModule,
@@ -46,6 +49,7 @@ export function momentAdapterFactory() {
       provide: MOMENT,
       useValue: moment,
     },
+    CalenderService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Calendar} from "./calendar";
+import {CalendarTo} from "./services/calendarTo";
+import {CalenderService} from "./services/CalenderService";
+import {Observable} from "rxjs";
+import {Calendar} from "./domain/Calendar";
 
 @Component({
   selector: 'app-root',
@@ -8,17 +11,18 @@ import {Calendar} from "./calendar";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  calendar: Calendar;
+  calendar$: Observable<Calendar>;
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private calendarService: CalenderService) {
   }
 
   ngOnInit(): void {
-    this.calendar = {content: ''};
+    // this.calendar = {content: ''};
   }
 
-  getCalendar(): void {
-    this.calendar.content = 'gimme a min..';
-    this.httpClient.get<Calendar>(`api/calendar`).subscribe(response => this.calendar.content = response.content);
+  getCalendar(): void{
+    this.calendar$ = this.calendarService.getCalendar();
   }
+
+
 }
