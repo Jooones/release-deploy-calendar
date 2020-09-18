@@ -1,5 +1,4 @@
 <div>
-  <button type="button" class="btn btn-primary" (click)="getCalendar()">push me and then ...</button>
 
   <h1>{{(calendar$ | async)?.months[0].year}}</h1>
   <h2>{{(calendar$ | async)?.months[0].monthOfYear}}</h2>

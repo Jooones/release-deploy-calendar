@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {CalendarTo} from "./services/calendarTo";
 import {CalenderService} from "./services/CalenderService";
 import {Observable} from "rxjs";
 import {Calendar} from "./domain/Calendar";
@@ -17,12 +15,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.calendar = {content: ''};
-  }
-
-  getCalendar(): void{
     this.calendar$ = this.calendarService.getCalendar();
   }
-
-
 }
