@@ -2,11 +2,12 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.4.10'
     id 'org.springframework.boot' version '2.3.3.RELEASE'
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
-    id "com.moowork.node" version "1.3.1"
+    id 'com.moowork.node' version '1.3.1'
+    id 'com.palantir.docker' version '0.25.0'
 }
 
 group 'com.jooones'
-version '1.0-SNAPSHOT'
+version 'latest'
 
 repositories {
     mavenCentral()
@@ -35,14 +36,27 @@ task buildAngular(type: NpmTask, dependsOn: 'npmInstall') {
 }
 processResources.dependsOn(buildAngular)
 
-task runApp(dependsOn: build) {
-    group = 'application'
-    description = 'start jar'
-    doLast {
-        javaexec {
-            main = "-jar";
-            args = ["build/libs/release-deploy-calendar-1.0-SNAPSHOT.jar"]
-        }
-    }
+bootJar {
+    baseName = "${rootProject.name}"
 }
 
+docker {
+    name "${project.group}/${projectName}:${version}"
+    dockerfile file('src/main/docker/Dockerfile')
+    files "${project.buildDir}/libs"
+    buildArgs([SPRING_BOOT_JAR_NAME: "${projectName}-${version}.jar"])
+}
+
+task stopAndRemoveDocker(type: Exec) {
+    group = 'application'
+    description= 'stop the docker app'
+    commandLine 'docker', 'rm', '-f', 'release-deploy-calendar'
+}
+
+task runDocker(type: Exec) {
+    group = 'application'
+    description= 'run the app via docker'
+    commandLine 'docker', 'run', '--publish', '8080:8080', '--name', 'release-deploy-calendar', '-itd', 'com.jooones/release-deploy-calendar:latest'
+}
+runDocker.dependsOn stopAndRemoveDocker
+runDocker.dependsOn build
