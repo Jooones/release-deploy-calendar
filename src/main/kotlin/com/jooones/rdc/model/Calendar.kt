@@ -1,7 +1,7 @@
 package com.jooones.rdc.model
 
-class Calendar(var months: Array<Day>) {
+class Calendar(var days: Array<Day>) {
     override fun toString(): String {
-        return "Calendar(months=${months.contentToString()})"
+        return "Calendar(months=${days.contentToString()})"
     }
 }

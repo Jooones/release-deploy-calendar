@@ -10,8 +10,8 @@ import java.time.LocalDate
 @Service
 open class CalendarService() {
 
-    fun createCalendar(): CalendarOld {
-        return CalendarOld("jan 1, jan 2, jan 3.... yawn")
+    fun createCalendar(): Calendar {
+        return getSurroundingMonths()
     }
 
     // 10.75 woensdag 10/04/2019 start, einde: 23/04/2019

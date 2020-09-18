@@ -1,5 +1,6 @@
 package com.jooones.rdc.controller
 
+import com.jooones.rdc.model.Calendar
 import com.jooones.rdc.model.CalendarOld
 import com.jooones.rdc.service.CalendarService
 import org.springframework.beans.factory.annotation.Autowired
@@ -15,7 +16,7 @@ class CalendarController {
     lateinit var calendarService: CalendarService
 
     @GetMapping("/api/calendar")
-    fun calendar(): ResponseEntity<CalendarOld> {
+    fun calendar(): ResponseEntity<Calendar> {
         return ResponseEntity(calendarService.createCalendar(), HttpStatus.OK)
     }
 }

@@ -16,13 +16,55 @@
     <tbody>
     <tr class="week-row"
         *ngFor="let week of (calendar$ | async)?.months[0].weeks">
-      <td>{{week.days[0].dayOfMonth}}</td>
-      <td>{{week.days[1].dayOfMonth}}</td>
-      <td>{{week.days[2].dayOfMonth}}</td>
-      <td>{{week.days[3].dayOfMonth}}</td>
-      <td>{{week.days[4].dayOfMonth}}</td>
-      <td>{{week.days[5].dayOfMonth}}</td>
-      <td>{{week.days[6].dayOfMonth}}</td>
+      <td>
+        {{week.days[0].dayOfMonth}}<br/>
+        dev: {{week.days[0].developVersion}}<br/>
+        rc: {{week.days[0].rcVersion}}<br/>
+        stg: {{week.days[0].stgVersion}}<br/>
+        prd: {{week.days[0].prdVersion}}<br/>
+      </td>
+      <td>
+        {{week.days[1].dayOfMonth}}<br/>
+        dev: {{week.days[1].developVersion}}<br/>
+        rc: {{week.days[1].rcVersion}}<br/>
+        stg: {{week.days[1].stgVersion}}<br/>
+        prd: {{week.days[1].prdVersion}}
+      </td>
+      <td>
+        {{week.days[2].dayOfMonth}}<br/>
+        dev: {{week.days[2].developVersion}}<br/>
+        rc: {{week.days[2].rcVersion}}<br/>
+        stg: {{week.days[2].stgVersion}}<br/>
+        prd: {{week.days[2].prdVersion}}
+      </td>
+      <td>
+        {{week.days[3].dayOfMonth}}<br/>
+        dev: {{week.days[3].developVersion}}<br/>
+        rc: {{week.days[3].rcVersion}}<br/>
+        stg: {{week.days[3].stgVersion}}<br/>
+        prd: {{week.days[3].prdVersion}}
+      </td>
+      <td>
+        {{week.days[4].dayOfMonth}}<br/>
+        dev: {{week.days[4].developVersion}}<br/>
+        rc: {{week.days[4].rcVersion}}<br/>
+        stg: {{week.days[4].stgVersion}}<br/>
+        prd: {{week.days[4].prdVersion}}
+      </td>
+      <td>
+        {{week.days[5].dayOfMonth}}<br/>
+        dev: {{week.days[5].developVersion}}<br/>
+        rc: {{week.days[5].rcVersion}}<br/>
+        stg: {{week.days[5].stgVersion}}<br/>
+        prd: {{week.days[5].prdVersion}}
+      </td>
+      <td>
+        {{week.days[6].dayOfMonth}}<br/>
+        dev: {{week.days[6].developVersion}}<br/>
+        rc: {{week.days[6].rcVersion}}<br/>
+        stg: {{week.days[6].stgVersion}}<br/>
+        prd: {{week.days[6].prdVersion}}
+      </td>
     </tr>
     </tbody>
   </table>

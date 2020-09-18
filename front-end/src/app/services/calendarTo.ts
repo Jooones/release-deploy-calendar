@@ -7,6 +7,10 @@ export interface DayTo {
   dayOfMonth: number;
   monthOfYear: number;
   year: string;
+  developVersion: string;
+  rcVersion: string;
+  stgVersion: string;
+  prdVersion: string;
 }
 
 export function testCalendar():CalendarTo {
@@ -30,10 +34,11 @@ export function generateDays(): Array<DayTo> {
 }
 
 export function testDay(dayOfWeek: number = 1, dayOfMonth: number = 1, monthOfYear: number = 1, year: string = "2020"): DayTo {
-  return {
-    dayOfWeek: dayOfWeek,
-    dayOfMonth: dayOfMonth,
-    monthOfYear: monthOfYear,
-    year: year
-  }
+  // return {
+  //   dayOfWeek: dayOfWeek,
+  //   dayOfMonth: dayOfMonth,
+  //   monthOfYear: monthOfYear,
+  //   year: year
+  // }
+  return null;
 }

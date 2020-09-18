@@ -1,3 +1,5 @@
+import {TrustedUrlString} from "@angular/core/src/sanitization/bypass";
+
 export interface Calendar {
   months: Array<Month>;
 }
@@ -15,4 +17,8 @@ export interface Week {
 export interface Day {
   dayOfMonth: number;
   dayOfWeek: number;
+  developVersion: String;
+  rcVersion: String;
+  stgVersion:String;
+  prdVersion: String;
 }
