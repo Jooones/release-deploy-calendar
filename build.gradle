@@ -33,4 +33,16 @@ task buildAngular(type: NpmTask, dependsOn: 'npmInstall') {
     description = 'Compile angular'
     args = ['run', 'build']
 }
-build.dependsOn(buildAngular)
+processResources.dependsOn(buildAngular)
+
+task runApp(dependsOn: build) {
+    group = 'application'
+    description = 'start jar'
+    doLast {
+        javaexec {
+            main = "-jar";
+            args = ["build/libs/release-deploy-calendar-1.0-SNAPSHOT.jar"]
+        }
+    }
+}
+
