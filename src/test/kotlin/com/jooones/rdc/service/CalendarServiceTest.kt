@@ -9,6 +9,9 @@ internal class CalendarServiceTest {
 
     @Test
     fun getSurroundingMonths() {
-        assertThat(calendarService.getSurroundingMonths()).isNotNull
+        //Calendar(arrayOf(Day(1, 1, 2, "2019", "10.3", "10.2", "10.2", "10.1")));
+
+//        assertThat(calendarService.getSurroundingMonths()).isNotNull
+        print(calendarService.getSurroundingMonths().toString())
     }
 }

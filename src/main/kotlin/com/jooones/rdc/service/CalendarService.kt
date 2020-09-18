@@ -3,7 +3,7 @@ package com.jooones.rdc.service
 import com.jooones.rdc.model.Calendar
 import com.jooones.rdc.model.CalendarOld
 import com.jooones.rdc.model.Day
-import com.jooones.rdc.model.Month
+import com.jooones.rdc.model.SprintStart
 import org.springframework.stereotype.Service
 import java.time.LocalDate
 
@@ -20,19 +20,177 @@ open class CalendarService() {
         val now = LocalDate.now()
         val sixMonthsAgo = now.minusMonths(6)
         val sixMonthsFromNow = now.plusMonths(6)
+        val firstDayOfFirstRequestedMonth = LocalDate.of(sixMonthsAgo.year, sixMonthsAgo.month, 1)
+        val lastDayOfLastRequestedMonth = LocalDate.of(sixMonthsFromNow.year, sixMonthsFromNow.month, sixMonthsFromNow.lengthOfMonth())
 
-        val firstDayOfFirstMonth = LocalDate.of(sixMonthsAgo.year, sixMonthsAgo.month, 1);
+        val sprintStartBeforeRequestedMonths = getSprintStartBeforeRequestedMonths(startOfSprint75, firstDayOfFirstRequestedMonth)
 
-        var firstSprintStart = startOfSprint75
+        val days = ArrayList<Day>()
+        var sprint = sprintStartBeforeRequestedMonths
+        while (sprint.date.isBefore(lastDayOfLastRequestedMonth) || sprint.date.isEqual(lastDayOfLastRequestedMonth)) {
+            days.addAll(getDaysOfSprint(sprint))
+            sprint = SprintStart(sprint.number.plus(1), sprint.date.plusDays(14))
+        }
+        return Calendar(days.toTypedArray())
+    }
+
+    private fun getDaysOfSprint(sprintStartBeforeRequestedMonths: SprintStart): Array<Day> {
+        val firstDayOfSprint = sprintStartBeforeRequestedMonths.date
+        val sprintNumber = sprintStartBeforeRequestedMonths.number
+        val day1 = Day(
+            firstDayOfSprint.dayOfWeek.ordinal + 1,
+            firstDayOfSprint.dayOfMonth,
+            firstDayOfSprint.monthValue,
+            firstDayOfSprint.year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}",
+            "10.${sprintNumber - 3}"
+        )
+        // add prd install evening?
+        val day2 = Day(
+            firstDayOfSprint.plusDays(1).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(1).dayOfMonth,
+            firstDayOfSprint.plusDays(1).monthValue,
+            firstDayOfSprint.plusDays(1).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}",
+            "10.${sprintNumber - 3}"
+        )
+        val day3 = Day(
+            firstDayOfSprint.plusDays(2).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(2).dayOfMonth,
+            firstDayOfSprint.plusDays(2).monthValue,
+            firstDayOfSprint.plusDays(2).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}",
+            "10.${sprintNumber - 2}"
+        )
+        val day4 = Day(
+            firstDayOfSprint.plusDays(3).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(3).dayOfMonth,
+            firstDayOfSprint.plusDays(3).monthValue,
+            firstDayOfSprint.plusDays(3).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}",
+            "10.${sprintNumber - 2}"
+        )
+        val day5 = Day(
+            firstDayOfSprint.plusDays(4).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(4).dayOfMonth,
+            firstDayOfSprint.plusDays(4).monthValue,
+            firstDayOfSprint.plusDays(4).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}",
+            "10.${sprintNumber - 2}"
+        )
+        val day6 = Day(
+            firstDayOfSprint.plusDays(5).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(5).dayOfMonth,
+            firstDayOfSprint.plusDays(5).monthValue,
+            firstDayOfSprint.plusDays(5).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}",
+            "10.${sprintNumber - 2}"
+        )
+        val day7 = Day(
+            firstDayOfSprint.plusDays(6).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(6).dayOfMonth,
+            firstDayOfSprint.plusDays(6).monthValue,
+            firstDayOfSprint.plusDays(6).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}",
+            "10.${sprintNumber - 2}"
+        )
+        val day8 = Day(
+            firstDayOfSprint.plusDays(7).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(7).dayOfMonth,
+            firstDayOfSprint.plusDays(7).monthValue,
+            firstDayOfSprint.plusDays(7).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}",
+            "10.${sprintNumber - 2}"
+        )
+        val day9 = Day(
+            firstDayOfSprint.plusDays(8).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(8).dayOfMonth,
+            firstDayOfSprint.plusDays(8).monthValue,
+            firstDayOfSprint.plusDays(8).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}",
+            "10.${sprintNumber - 2}"
+        )
+        // add stg install day?
+        val day10 = Day(
+            firstDayOfSprint.plusDays(9).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(9).dayOfMonth,
+            firstDayOfSprint.plusDays(9).monthValue,
+            firstDayOfSprint.plusDays(9).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}"
+        )
+        val day11 = Day(
+            firstDayOfSprint.plusDays(10).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(10).dayOfMonth,
+            firstDayOfSprint.plusDays(10).monthValue,
+            firstDayOfSprint.plusDays(10).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}"
+        )
+        val day12 = Day(
+            firstDayOfSprint.plusDays(11).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(11).dayOfMonth,
+            firstDayOfSprint.plusDays(11).monthValue,
+            firstDayOfSprint.plusDays(11).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}"
+        )
+        val day13 = Day(
+            firstDayOfSprint.plusDays(12).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(12).dayOfMonth,
+            firstDayOfSprint.plusDays(12).monthValue,
+            firstDayOfSprint.plusDays(12).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}"
+        )
+        val day14 = Day(
+            firstDayOfSprint.plusDays(13).dayOfWeek.ordinal + 1,
+            firstDayOfSprint.plusDays(13).dayOfMonth,
+            firstDayOfSprint.plusDays(13).monthValue,
+            firstDayOfSprint.plusDays(13).year.toString(),
+            "10.$sprintNumber",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 1}",
+            "10.${sprintNumber - 2}"
+        )
+        return arrayOf(day1, day2, day3, day4, day5, day6, day7, day8, day9, day10, day11, day12, day13, day14)
+    }
+
+    private fun getSprintStartBeforeRequestedMonths(startOfSprint75: LocalDate, firstDayOfFirstRequestedMonth: LocalDate): SprintStart {
+        var firstDayOfSprintBeforeRequestedMonths = startOfSprint75
         var sprintsToAdd = 0
-        while (firstSprintStart.isBefore(firstDayOfFirstMonth.minusDays(12))) {
-            println(firstSprintStart)
-            firstSprintStart = firstSprintStart.plusDays(14)
+        while (firstDayOfSprintBeforeRequestedMonths.isBefore(firstDayOfFirstRequestedMonth.minusDays(12))) {
+            firstDayOfSprintBeforeRequestedMonths = firstDayOfSprintBeforeRequestedMonths.plusDays(14)
             sprintsToAdd = sprintsToAdd.inc()
         }
-        println(firstSprintStart.toString() + "" + sprintsToAdd.toString())
-
-        return Calendar(arrayOf(Month("1", "2019", arrayOf(Day("1", "1")))))
+        val sprintNumber = 75 + sprintsToAdd
+        return SprintStart(sprintNumber, firstDayOfSprintBeforeRequestedMonths)
     }
 
 }
