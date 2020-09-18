@@ -1,5 +1,3 @@
-import {TrustedUrlString} from "@angular/core/src/sanitization/bypass";
-
 export interface Calendar {
   months: Array<Month>;
 }

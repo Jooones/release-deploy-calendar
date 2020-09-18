@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {CalenderService} from "./services/CalenderService";
+import {CalendarService} from "./services/calendar.service";
 import {Observable} from "rxjs";
-import {Calendar} from "./domain/Calendar";
+import {Calendar} from "./domain/calendar.model";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import {Calendar} from "./domain/Calendar";
 export class AppComponent implements OnInit {
   calendar$: Observable<Calendar>;
 
-  constructor(private calendarService: CalenderService) {
+  constructor(private calendarService: CalendarService) {
   }
 
   ngOnInit(): void {

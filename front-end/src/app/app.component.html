@@ -1,4 +1,4 @@
-<div *ngIf="(calendar$|async).months[9]; let month">
+<div *ngIf="(calendar$|async)?.months[9]; let month">
   <h1>{{month.year}} - {{month.monthOfYear}}</h1>
 
   <table class="table table-responsive-xl table-bordered">
@@ -17,13 +17,9 @@
     <tr class="week-row"
         *ngFor="let week of month.weeks">
       <td *ngFor="let day of week.days">
-        <span *ngIf="day">
-        {{day.dayOfMonth}}<br/>
-        dev: {{day.developVersion}}<br/>
-        rc: {{day.rcVersion}}<br/>
-        stg: {{day.stgVersion}}<br/>
-        prd: {{day.prdVersion}}<br/>
-        </span>
+        <rdc-day-cell-component *ngIf="day"
+                                [day]="day">
+        </rdc-day-cell-component>
       </td>
     </tr>
     </tbody>

@@ -1,13 +1,13 @@
 import {Injectable} from "@angular/core";
-import {CalendarTo, DayTo} from "./calendarTo";
+import {CalendarTo, DayTo} from "./calendar-to.model";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {Calendar, Day, Month, Week} from "../domain/Calendar";
+import {Calendar, Day, Month, Week} from "../domain/calendar.model";
 import {map} from "rxjs/operators";
 import {isNullOrUndefined} from "util";
 
 @Injectable()
-export class CalenderService {
+export class CalendarService {
 
   constructor(private httpClient: HttpClient) {
   }
