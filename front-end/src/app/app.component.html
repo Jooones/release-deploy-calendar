@@ -1,7 +1,5 @@
-<div>
-
-  <h1>{{(calendar$ | async)?.months[0].year}}</h1>
-  <h2>{{(calendar$ | async)?.months[0].monthOfYear}}</h2>
+<div *ngIf="(calendar$|async).months[9]; let month">
+  <h1>{{month.year}} - {{month.monthOfYear}}</h1>
 
   <table class="table table-responsive-xl table-bordered">
     <thead>
@@ -17,68 +15,14 @@
     </thead>
     <tbody>
     <tr class="week-row"
-        *ngFor="let week of (calendar$ | async)?.months[0].weeks">
-      <td>
-        <span *ngIf="week.days[0]">
-        {{week.days[0].dayOfMonth}}<br/>
-        dev: {{week.days[0].developVersion}}<br/>
-        rc: {{week.days[0].rcVersion}}<br/>
-        stg: {{week.days[0].stgVersion}}<br/>
-        prd: {{week.days[0].prdVersion}}<br/>
-        </span>
-      </td>
-      <td>
-        <span *ngIf="week.days[1]">
-        {{week.days[1].dayOfMonth}}<br/>
-        dev: {{week.days[1].developVersion}}<br/>
-        rc: {{week.days[1].rcVersion}}<br/>
-        stg: {{week.days[1].stgVersion}}<br/>
-        prd: {{week.days[1].prdVersion}}
-        </span>
-      </td>
-      <td>
-        <span *ngIf="week.days[2]">
-        {{week.days[2].dayOfMonth}}<br/>
-        dev: {{week.days[2].developVersion}}<br/>
-        rc: {{week.days[2].rcVersion}}<br/>
-        stg: {{week.days[2].stgVersion}}<br/>
-        prd: {{week.days[2].prdVersion}}
-        </span>
-      </td>
-      <td>
-        <span *ngIf="week.days[3]">
-        {{week.days[3].dayOfMonth}}<br/>
-        dev: {{week.days[3].developVersion}}<br/>
-        rc: {{week.days[3].rcVersion}}<br/>
-        stg: {{week.days[3].stgVersion}}<br/>
-        prd: {{week.days[3].prdVersion}}
-        </span>
-      </td>
-      <td>
-        <span *ngIf="week.days[4]">
-        {{week.days[4].dayOfMonth}}<br/>
-        dev: {{week.days[4].developVersion}}<br/>
-        rc: {{week.days[4].rcVersion}}<br/>
-        stg: {{week.days[4].stgVersion}}<br/>
-        prd: {{week.days[4].prdVersion}}
-        </span>
-      </td>
-      <td>
-        <span *ngIf="week.days[5]">
-        {{week.days[5].dayOfMonth}}<br/>
-        dev: {{week.days[5].developVersion}}<br/>
-        rc: {{week.days[5].rcVersion}}<br/>
-        stg: {{week.days[5].stgVersion}}<br/>
-        prd: {{week.days[5].prdVersion}}
-        </span>
-      </td>
-      <td>
-        <span *ngIf="week.days[6]">
-        {{week.days[6].dayOfMonth}}<br/>
-        dev: {{week.days[6].developVersion}}<br/>
-        rc: {{week.days[6].rcVersion}}<br/>
-        stg: {{week.days[6].stgVersion}}<br/>
-        prd: {{week.days[6].prdVersion}}
+        *ngFor="let week of month.weeks">
+      <td *ngFor="let day of week.days">
+        <span *ngIf="day">
+        {{day.dayOfMonth}}<br/>
+        dev: {{day.developVersion}}<br/>
+        rc: {{day.rcVersion}}<br/>
+        stg: {{day.stgVersion}}<br/>
+        prd: {{day.prdVersion}}<br/>
         </span>
       </td>
     </tr>
