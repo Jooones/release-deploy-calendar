@@ -1,5 +1,5 @@
 import {Injectable} from "@angular/core";
-import {CalendarTo, testCalendar} from "./calendarTo";
+import {CalendarTo, DayTo, testCalendar} from "./calendarTo";
 import {HttpClient} from "@angular/common/http";
 import {Observable, of} from "rxjs";
 import {Calendar, Month, Day, Week} from "../domain/Calendar";
@@ -18,25 +18,42 @@ export class CalenderService{
     );
   }
 
-  mapTo(calendarTo: CalendarTo): Calendar {
-    const months: Array<Month> = [];
+  mapTo(calendarTo: CalendarTo): Calendar{
+    const months:Array<Month> = []
 
-    calendarTo.months.forEach(monthTo => {
-      months[monthTo.monthOfYear - 1] =  {
-        year: monthTo.year,
-        monthOfYear: monthTo.monthOfYear,
-        weeks: this.mapDaysToWeeks(monthTo.days)
-      }
+    this.extractYearsFromCalendarTo(calendarTo).sort().forEach((yearValue: String) => {
+      const daysOfYear: Array<DayTo> = calendarTo.days.filter((day:DayTo) => day.year === yearValue);
+      this.extractMonthsFromDaysInYear(daysOfYear).sort().forEach((monthValue: number) => {
+        const weeksOfMonth: Array<Week> = this.mapDaysToWeeks(daysOfYear.filter((day: DayTo) => day.monthOfYear === monthValue));
+        const month: Month = {
+          year: yearValue,
+          monthOfYear: monthValue,
+          weeks: weeksOfMonth
+        };
+        months.push(month);
+      })
     });
-
 
     const calendar: Calendar = {
       months: months
-    };
+    }
 
     console.log(calendar);
 
     return calendar;
+
+  }
+
+  extractYearsFromCalendarTo(calendarTo: CalendarTo): Array<String> {
+   const test = Array.from(new Set(calendarTo.days.map((dayTo: DayTo) => dayTo.year)).values());
+   console.log(test);
+   return test;
+  }
+
+  extractMonthsFromDaysInYear(days: Array<Day>){
+    const test = Array.from(new Set(days.map((dayTo: DayTo) => dayTo.monthOfYear)).values());
+    console.log(test);
+    return test;
   }
 
   mapDaysToWeeks(days: Array<Day>): Array<Week>{

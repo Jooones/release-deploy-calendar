@@ -1,21 +1,17 @@
 export interface CalendarTo {
-  months: Array<MonthTo>;
-}
-
-export interface MonthTo {
-  year: string;
-  monthOfYear: number;
   days: Array<DayTo>;
 }
 
 export interface DayTo {
-  dayOfMonth: number;
   dayOfWeek: number;
+  dayOfMonth: number;
+  monthOfYear: number;
+  year: string;
 }
 
 export function testCalendar():CalendarTo {
   const newVar = {
-    months: [testMonth()]
+    days: generateDays()
   };
 
   console.log(newVar)
@@ -23,27 +19,21 @@ export function testCalendar():CalendarTo {
   return newVar
 }
 
-export function testMonth(): MonthTo {
-  return{
-    year: "2020",
-    monthOfYear: 1,
-      days: generateDays()
-  }
-}
-
 export function generateDays(): Array<DayTo> {
   let result: Array<DayTo> = [];
 
   Array.from(Array(31).keys()).forEach((day:number) => {
-    result[day] = testDay((day + 1), ((day)%7 + 1))
+    result[day] = testDay(((day) % 7 + 1), (day + 1))
   });
 
   return result;
 }
 
-export function testDay(dayOfMonth: number = 1, dayOfWeek: number = 1): DayTo {
+export function testDay(dayOfWeek: number = 1, dayOfMonth: number = 1, monthOfYear: number = 1, year: string = "2020"): DayTo {
   return {
+    dayOfWeek: dayOfWeek,
     dayOfMonth: dayOfMonth,
-    dayOfWeek: dayOfWeek
+    monthOfYear: monthOfYear,
+    year: year
   }
 }
