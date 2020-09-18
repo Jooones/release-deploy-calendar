@@ -7,8 +7,17 @@ A visual calendar that shows the important release and deploy moments along with
 ## prerequisites
 - install java
 - install node
+- install docker
 
-## build and run
-Note: This will be improved but for now..
+## build and run the app
+Use this when:
+- you want to run the app for the first time
+- you want to run the app with changed code
 
-`./gradlew runApp`
+`./gradlew buildAndRunDocker`
+
+## run the app
+`./gradlew runDocker`
+
+## stop the app
+`./gradlew removeDocker`

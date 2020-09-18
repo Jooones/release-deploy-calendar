@@ -46,17 +46,25 @@ docker {
     files "${project.buildDir}/libs"
     buildArgs([SPRING_BOOT_JAR_NAME: "${projectName}-${version}.jar"])
 }
+tasks.docker.dependsOn build
 
-task stopAndRemoveDocker(type: Exec) {
+task removeDocker(type: Exec) {
     group = 'application'
-    description= 'stop the docker app'
+    description = 'stop the docker app'
+    ignoreExitValue true // continues after error but still shows task as failed
+    errorOutput = new ByteArrayOutputStream() // catch error output so task is not shown as failed
     commandLine 'docker', 'rm', '-f', 'release-deploy-calendar'
 }
 
 task runDocker(type: Exec) {
     group = 'application'
-    description= 'run the app via docker'
+    description = 'run the app via docker'
     commandLine 'docker', 'run', '--publish', '8080:8080', '--name', 'release-deploy-calendar', '-itd', 'com.jooones/release-deploy-calendar:latest'
 }
-runDocker.dependsOn stopAndRemoveDocker
-runDocker.dependsOn build
+runDocker.dependsOn removeDocker
+runDocker.mustRunAfter tasks.docker
+
+task buildAndRunDocker {
+    group = 'application'
+}
+buildAndRunDocker.dependsOn tasks.docker, runDocker
