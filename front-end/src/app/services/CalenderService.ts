@@ -4,6 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Calendar, Day, Month, Week} from "../domain/Calendar";
 import {map} from "rxjs/operators";
+import {isNullOrUndefined} from "util";
 
 @Injectable()
 export class CalenderService {
@@ -20,42 +21,44 @@ export class CalenderService {
   mapTo(calendarTo: CalendarTo): Calendar {
     const months: Array<Month> = []
 
-    this.extractYearsFromCalendarTo(calendarTo).sort().forEach((yearValue: String) => {
-      const daysOfYear: Array<DayTo> = calendarTo.days.filter((day: DayTo) => day.year === yearValue);
-      this.extractMonthsFromDaysInYear(daysOfYear).sort().forEach((monthValue: number) => {
-        const weeksOfMonth: Array<Week> = this.mapDaysToWeeks(daysOfYear.filter((day: DayTo) => day.monthOfYear === monthValue));
+    this.extractDaysForYears(this.sortDays(calendarTo.days)).forEach((daysOfYear, yearValue) => {
+      this.extractDaysForMonths(daysOfYear).forEach((daysOfMonth, monthValue) => {
         const month: Month = {
           year: yearValue,
           monthOfYear: monthValue,
-          weeks: weeksOfMonth
+          weeks: this.mapDaysToWeeks(daysOfMonth)
         };
         months.push(month);
       })
     });
 
-    return {months: months}
+    return {months: months};
   }
 
-  extractYearsFromCalendarTo(calendarTo: CalendarTo): Array<String> {
-    // const test = Array.from(new Set(calendarTo.days.map((dayTo: DayTo) => dayTo.year)).values());
+  extractDaysForYears(days: Array<DayTo>): Map<string,Array<DayTo>> {
+    const daysByYear:Map<string, Array<DayTo>> = new Map<string, Array<DayTo>>();
 
-    return Array.from(new Set(
-      calendarTo.days.reduce(function (accumulator, dayTo: DayTo) {
-        accumulator.push(dayTo.year)
-        return accumulator;
-      }, [])
-    ));
+    days.forEach((day:DayTo) => {
+      if(isNullOrUndefined(daysByYear.get(day.year))){
+        daysByYear.set(day.year,[]);
+      }
+      daysByYear.get(day.year).push(day);
+    });
+
+    return daysByYear;
   }
 
-  extractMonthsFromDaysInYear(days: Array<DayTo>) {
-    // const test = Array.from(new Set(days.map((dayTo: DayTo) => dayTo.monthOfYear)).values());
+  extractDaysForMonths(days: Array<DayTo>): Map<number, Array<DayTo>> {
+    const daysByMonth:Map<number, Array<DayTo>> = new Map<number, Array<DayTo>>();
 
-    return Array.from(new Set(
-      days.reduce(function (accumulator: Array<number>, dayTo: DayTo) {
-        accumulator.push(dayTo.monthOfYear);
-        return accumulator
-      }, [])
-    ));
+    days.forEach((day:DayTo) => {
+      if(isNullOrUndefined(daysByMonth.get(day.monthOfYear))){
+        daysByMonth.set(day.monthOfYear,[]);
+      }
+      daysByMonth.get(day.monthOfYear).push(day);
+    });
+
+    return daysByMonth;
   }
 
   mapDaysToWeeks(days: Array<DayTo>): Array<Week> {
@@ -84,6 +87,21 @@ export class CalenderService {
     })
 
     return weeks;
+  }
+
+  sortDays(days: Array<DayTo>): Array<DayTo> {
+    return days.sort((d1,d2) => {
+
+      const yearComparison = d1.year.localeCompare(d2.year);
+      if(yearComparison !== 0){
+        return yearComparison;
+      }
+      const monthComparison = d1.monthOfYear - d2.monthOfYear;
+      if(monthComparison !== 0){
+        return monthComparison
+      }
+      return d1.dayOfMonth - d2.dayOfMonth;
+    })
   }
 
 }
