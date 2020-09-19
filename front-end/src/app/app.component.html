@@ -1,5 +1,11 @@
-<div *ngIf="(calendar$|async)?.months[9]; let month">
-  <h1>{{month.year}} - {{month.monthOfYear}}</h1>
+<div *ngIf="(calendar$|async)">
+  <h1>{{currentMonth.year}} - {{currentMonth.monthOfYear}}</h1>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary" (click)="showPreviousMonth()">Previous month</button>
+    <button type="button" class="btn btn-secondary" (click)="showCurrentMonth()">Current month</button>
+    <button type="button" class="btn btn-primary" (click)="showNextMonth()">Next month</button>
+  </div>
 
   <table class="table table-responsive-xl table-bordered">
     <thead>
@@ -15,7 +21,7 @@
     </thead>
     <tbody>
     <tr class="week-row"
-        *ngFor="let week of month.weeks">
+        *ngFor="let week of currentMonth.weeks">
       <td *ngFor="let day of week.days">
         <rdc-day-cell-component *ngIf="day"
                                 [day]="day">
