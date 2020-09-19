@@ -35,12 +35,12 @@ export class CalendarService {
     return {months: months};
   }
 
-  extractDaysForYears(days: Array<DayTo>): Map<string,Array<DayTo>> {
-    const daysByYear:Map<string, Array<DayTo>> = new Map<string, Array<DayTo>>();
+  extractDaysForYears(days: Array<DayTo>): Map<string, Array<DayTo>> {
+    const daysByYear: Map<string, Array<DayTo>> = new Map<string, Array<DayTo>>();
 
-    days.forEach((day:DayTo) => {
-      if(isNullOrUndefined(daysByYear.get(day.year))){
-        daysByYear.set(day.year,[]);
+    days.forEach((day: DayTo) => {
+      if (isNullOrUndefined(daysByYear.get(day.year))) {
+        daysByYear.set(day.year, []);
       }
       daysByYear.get(day.year).push(day);
     });
@@ -49,11 +49,11 @@ export class CalendarService {
   }
 
   extractDaysForMonths(days: Array<DayTo>): Map<number, Array<DayTo>> {
-    const daysByMonth:Map<number, Array<DayTo>> = new Map<number, Array<DayTo>>();
+    const daysByMonth: Map<number, Array<DayTo>> = new Map<number, Array<DayTo>>();
 
-    days.forEach((day:DayTo) => {
-      if(isNullOrUndefined(daysByMonth.get(day.monthOfYear))){
-        daysByMonth.set(day.monthOfYear,[]);
+    days.forEach((day: DayTo) => {
+      if (isNullOrUndefined(daysByMonth.get(day.monthOfYear))) {
+        daysByMonth.set(day.monthOfYear, []);
       }
       daysByMonth.get(day.monthOfYear).push(day);
     });
@@ -62,15 +62,17 @@ export class CalendarService {
   }
 
   mapDaysToWeeks(days: Array<DayTo>): Array<Week> {
+    let firstDay = true;
     const weeks: Array<Week> = [];
     let weekOfTheMonth: number = 0;
     let daysOfWeek: Array<Day> = new Array<Day>(7);
 
     days.forEach(dayTo => {
-      if (dayTo.dayOfWeek - 1 % 7 === 0) {
+      if (dayTo.dayOfWeek === 1 && !firstDay) {
         daysOfWeek = new Array<Day>(7);
         weekOfTheMonth++;
       }
+      firstDay = false;
 
       daysOfWeek[dayTo.dayOfWeek - 1] = {
         dayOfMonth: dayTo.dayOfMonth,
@@ -90,14 +92,14 @@ export class CalendarService {
   }
 
   sortDays(days: Array<DayTo>): Array<DayTo> {
-    return days.sort((d1,d2) => {
+    return days.sort((d1, d2) => {
 
       const yearComparison = d1.year.localeCompare(d2.year);
-      if(yearComparison !== 0){
+      if (yearComparison !== 0) {
         return yearComparison;
       }
       const monthComparison = d1.monthOfYear - d2.monthOfYear;
-      if(monthComparison !== 0){
+      if (monthComparison !== 0) {
         return monthComparison
       }
       return d1.dayOfMonth - d2.dayOfMonth;
