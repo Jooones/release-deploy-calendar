@@ -8,12 +8,12 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CommonModule} from "@angular/common";
 import {DayCellComponent} from "./components/DayCell/day-cell.component";
 import {CalendarService} from "./services/calendar.service";
-import {CalendarComponent} from "./components/calendar.component";
+import {CalendarMonthComponent} from "./components/calendar-month.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalendarComponent,
+    CalendarMonthComponent,
     DayCellComponent
   ],
   imports: [

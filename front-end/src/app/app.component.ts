@@ -16,38 +16,9 @@ import {tap} from "rxjs/operators";
         <button type="button" class="btn btn-primary" (click)="showNextMonth()">Next month</button>
       </div>
 
-      <table class="table table-responsive-xl table-bordered">
-        <thead>
-        <tr>
-          <th scope="col" style="width: 14.28%">Monday</th>
-          <th scope="col" style="width: 14.28%">Tuesday</th>
-          <th scope="col" style="width: 14.28%">Wednesday</th>
-          <th scope="col" style="width: 14.28%">Thursday</th>
-          <th scope="col" style="width: 14.28%">Friday</th>
-          <th scope="col" style="width: 14.28%">Saturday</th>
-          <th scope="col" style="width: 14.28%">Sunday</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="week-row"
-            *ngFor="let week of currentMonth.weeks">
-          <td *ngFor="let day of week.days">
-            <rdc-day-cell-component *ngIf="day"
-                                    [day]="day">
-            </rdc-day-cell-component>
-          </td>
-        </tr>
-        </tbody>
-      </table>
+      <rdc-calendar-month [currentMonth]="currentMonth"></rdc-calendar-month>
     </div>
-  `,
-  styles: [
-    `
-      .week-row {
-        height: 8em;
-      }
-    `
-  ]
+  `
 })
 export class AppComponent implements OnInit {
   calendar$: Observable<Calendar>;
