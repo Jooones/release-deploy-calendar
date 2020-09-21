@@ -27,7 +27,13 @@ import {Month} from "../domain/calendar.model";
       </tr>
       </tbody>
     </table>
+  `,
+  styles: [`
+    .week-row {
+      height: 8em;
+    }
   `
+  ]
 })
 export class CalendarMonthComponent {
 
