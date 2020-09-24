@@ -16,12 +16,7 @@ import { Month } from "../domain/calendar.model";
       </div>
       <div *ngFor="let week of currentMonth.weeks" class="calendar-week">
         <div *ngFor="let day of week.days" class="day cell">
-          <div
-            *ngIf="day"
-            [ngClass]="{ 'weekend-day': isWeekendDay(day.dayOfWeek) }"
-          >
             <rdc-day-cell-component [day]="day"> </rdc-day-cell-component>
-          </div>
         </div>
       </div>
     </div>
@@ -61,13 +56,9 @@ import { Month } from "../domain/calendar.model";
         margin: 0;
       }
     `,
-  ],
+  ]
 })
 export class CalendarMonthComponent {
   @Input()
   currentMonth: Month;
-
-  isWeekendDay(day: number) {
-    return day === 6 || day === 7;
-  }
 }
