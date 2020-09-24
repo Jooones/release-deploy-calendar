@@ -16,7 +16,7 @@ import { Month } from "../domain/calendar.model";
       </div>
       <div *ngFor="let week of currentMonth.weeks" class="calendar-week">
         <div *ngFor="let day of week.days" class="day cell">
-            <rdc-day-cell-component [day]="day"> </rdc-day-cell-component>
+            <rdc-day-cell-component *ngIf="day" [day]="day" [month]="currentMonth"> </rdc-day-cell-component>
         </div>
       </div>
     </div>
