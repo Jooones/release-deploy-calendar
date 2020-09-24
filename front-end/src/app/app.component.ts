@@ -8,7 +8,7 @@ import {tap} from "rxjs/operators";
   selector: 'app-root',
   template: `
     <div *ngIf="(calendar$|async)" class="calendar-container">
-      <h1>{{currentMonth.year}} - {{currentMonth.monthOfYear}}</h1>
+      <h1 class="text-center">{{currentMonth.year}} - {{currentMonthName}}</h1>
 
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-primary" (click)="showPreviousMonth()">Previous month</button>
@@ -35,6 +35,7 @@ export class AppComponent implements OnInit {
   calendar$: Observable<Calendar>;
 
   currentMonth: Month;
+  currentMonthName: string;
 
   private calendar: Calendar;
   private currentMonthIndex: number;
@@ -75,7 +76,11 @@ export class AppComponent implements OnInit {
   }
 
   showMonthWithIndex(monthIndex: number) {
+    const monthNames = ["NOPE NOPE NOPE", "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
     this.currentMonth = this.calendar.months[monthIndex];
+    this.currentMonthName = monthNames[this.currentMonth.monthOfYear];
   }
 
   private calculateCurrentMonthIndex(): number {
