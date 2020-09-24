@@ -5,21 +5,22 @@ import {Day, DayType} from "../../domain/calendar.model";
   selector: 'rdc-day-cell-component',
   template: `
     <div *ngIf="day" [ngClass]="{'weekend-day': isWeekendDay(day.dayOfWeek), 'stg-install-day': isStgInstallDay(day.dayType)}">
-      {{day.dayOfMonth}}<br/>
       <div class="slight-border">
-        <div style="height: 25px">
-            <div *ngIf="isNewSprintDay(day.dayType)" class="new-sprint-day">START SPRINT {{day.developVersion.substr(3)}}</div>
+        {{day.dayOfMonth}}<br/>
+        <div class="box-height">
+          <div *ngIf="isNewSprintDay(day.dayType)" class="new-sprint-day">START SPRINT {{day.developVersion.substr(3)}}</div>
+          <div *ngIf="isStgInstallDay(day.dayType)" class="text-center">STG INSTALL {{day.stgVersion}}</div>
         </div>
-        <div class="d-inline-block">
+        <div class="d-inline-block slight-padding-top-bottom">
           dev: {{day.developVersion}}<br/>
           rc: {{day.rcVersion}}<br/>
         </div>
-        <div class="float-right">
+        <div class="float-right slight-padding-top-bottom slightly-faded-text">
           stg: {{day.stgVersion}}<br/>
           prd: {{day.prdVersion}}<br/>
         </div>
-        <div style="height: 25px">
-            <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD INSTALL</div>
+        <div class="box-height">
+          <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD INSTALL {{day.stgVersion}}</div> <!-- stgVersion.. I know.. ¯\_(ツ)_/¯ -->
         </div>
       </div>
     </div>
@@ -29,24 +30,43 @@ import {Day, DayType} from "../../domain/calendar.model";
       background-color: lightgreen;
       text-align: center;
     }
+
     .stg-install-day {
       background-color: moccasin;
     }
+
     .prd-install-day {
       background-color: pink;
       text-align: center;
     }
+
     .normal-day {
     }
+
     .wut-day {
       background-color: darkred;
     }
+
     .weekend-day {
-      background-color: darkgray;
+      background-color: lightgrey;
       margin: 0;
     }
+
     .slight-border {
       padding: 5px;
+    }
+
+    .box-height {
+      height: 25px
+    }
+
+    .slight-padding-top-bottom {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .slightly-faded-text {
+      color: gray;
     }
   `
   ]
