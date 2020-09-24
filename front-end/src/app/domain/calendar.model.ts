@@ -19,4 +19,9 @@ export interface Day {
   rcVersion: String;
   stgVersion:String;
   prdVersion: String;
+  dayType: DayType;
+}
+
+export enum DayType {
+  NORMAL, NEW_SPRINT, STG_INSTALL, PRD_INSTALL
 }

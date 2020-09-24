@@ -21,3 +21,7 @@ Use this when:
 
 ## stop the app
 `./gradlew removeDocker`
+
+
+# sources
+https://speedandfunction.com/running-spring-boot-angular/

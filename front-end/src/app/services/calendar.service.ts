@@ -1,10 +1,13 @@
 import {Injectable} from "@angular/core";
 import {CalendarTo, DayTo} from "./calendar-to.model";
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
-import {Calendar, Day, Month, Week} from "../domain/calendar.model";
+import {Observable, of} from "rxjs";
+import {Calendar, Day, DayType, Month, Week} from "../domain/calendar.model";
 import {map} from "rxjs/operators";
 import {isNullOrUndefined} from "util";
+import exampleResponse from '../../assets/example-calendars/example.json';
+
+//import {environment} from '../../environments/environment';
 
 @Injectable()
 export class CalendarService {
@@ -13,9 +16,18 @@ export class CalendarService {
   }
 
   getCalendar(): Observable<Calendar> {
-    return this.httpClient.get<CalendarTo>(`api/calendar`).pipe(
-      map((calendarTo: CalendarTo) => this.mapTo(calendarTo))
-    );
+    // TODO change to false to use prd data
+    // unfortunately I don't know how to pass in ---prd or something similar to the static spring boot solution we made, someone fix this for me <3
+    // if (!environment.production) {
+    if (false) {
+      console.log("using test data")
+      return of(exampleResponse).pipe(map((calendarTo: CalendarTo) => this.mapTo(calendarTo)))
+    } else {
+      console.log("using prod backend for data")
+      return this.httpClient.get<CalendarTo>(`api/calendar`).pipe(
+        map((calendarTo: CalendarTo) => this.mapTo(calendarTo))
+      );
+    }
   }
 
   mapTo(calendarTo: CalendarTo): Calendar {
@@ -80,7 +92,8 @@ export class CalendarService {
         developVersion: dayTo.developVersion,
         rcVersion: dayTo.rcVersion,
         stgVersion: dayTo.stgVersion,
-        prdVersion: dayTo.prdVersion
+        prdVersion: dayTo.prdVersion,
+        dayType: DayType[dayTo.dayType]
       }
 
       weeks[weekOfTheMonth] = {

@@ -1,5 +1,5 @@
 import {Component, Input} from "@angular/core";
-import {Month} from "../domain/calendar.model";
+import {Day, Month} from "../domain/calendar.model";
 
 @Component({
   selector: 'rdc-calendar-month',
@@ -19,10 +19,12 @@ import {Month} from "../domain/calendar.model";
       <tbody>
       <tr class="week-row"
           *ngFor="let week of currentMonth.weeks">
-        <td *ngFor="let day of week.days">
-          <rdc-day-cell-component *ngIf="day"
-                                  [day]="day">
-          </rdc-day-cell-component>
+        <td *ngFor="let day of week.days" class="no-padding">
+          <div *ngIf="day" [ngClass]="{'weekend-day': isWeekendDay(day.dayOfWeek)}">
+            <rdc-day-cell-component *ngIf="day"
+                                    [day]="day">
+            </rdc-day-cell-component>
+          </div>
         </td>
       </tr>
       </tbody>
@@ -32,6 +34,16 @@ import {Month} from "../domain/calendar.model";
     .week-row {
       height: 8em;
     }
+    .weekend-day {
+      background-color: aliceblue;
+      margin: 0;
+    }
+    .no-padding {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   `
   ]
 })
@@ -40,4 +52,7 @@ export class CalendarMonthComponent {
   @Input()
   currentMonth: Month;
 
+  isWeekendDay(day: number) {
+    return day === 6 || day === 7
+  }
 }

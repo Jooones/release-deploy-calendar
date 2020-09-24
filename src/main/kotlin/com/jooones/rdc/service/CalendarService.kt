@@ -1,9 +1,6 @@
 package com.jooones.rdc.service
 
-import com.jooones.rdc.model.Calendar
-import com.jooones.rdc.model.CalendarOld
-import com.jooones.rdc.model.Day
-import com.jooones.rdc.model.SprintStart
+import com.jooones.rdc.model.*
 import org.springframework.stereotype.Service
 import java.time.LocalDate
 
@@ -45,9 +42,9 @@ open class CalendarService() {
             "10.$sprintNumber",
             "10.${sprintNumber - 1}",
             "10.${sprintNumber - 2}",
-            "10.${sprintNumber - 3}"
+            "10.${sprintNumber - 3}",
+            DayType.NEW_SPRINT
         )
-        // add prd install evening?
         val day2 = Day(
             firstDayOfSprint.plusDays(1).dayOfWeek.ordinal + 1,
             firstDayOfSprint.plusDays(1).dayOfMonth,
@@ -56,7 +53,8 @@ open class CalendarService() {
             "10.$sprintNumber",
             "10.${sprintNumber - 1}",
             "10.${sprintNumber - 2}",
-            "10.${sprintNumber - 3}"
+            "10.${sprintNumber - 3}",
+            DayType.PRD_INSTALL
         )
         val day3 = Day(
             firstDayOfSprint.plusDays(2).dayOfWeek.ordinal + 1,
@@ -128,7 +126,6 @@ open class CalendarService() {
             "10.${sprintNumber - 2}",
             "10.${sprintNumber - 2}"
         )
-        // add stg install day?
         val day10 = Day(
             firstDayOfSprint.plusDays(9).dayOfWeek.ordinal + 1,
             firstDayOfSprint.plusDays(9).dayOfMonth,
@@ -137,7 +134,8 @@ open class CalendarService() {
             "10.$sprintNumber",
             "10.${sprintNumber - 1}",
             "10.${sprintNumber - 1}",
-            "10.${sprintNumber - 2}"
+            "10.${sprintNumber - 2}",
+            DayType.STG_INSTALL
         )
         val day11 = Day(
             firstDayOfSprint.plusDays(10).dayOfWeek.ordinal + 1,
