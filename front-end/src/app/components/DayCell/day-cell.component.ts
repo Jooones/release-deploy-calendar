@@ -5,40 +5,48 @@ import {Day, DayType} from "../../domain/calendar.model";
   selector: 'rdc-day-cell-component',
   template: `
     <div *ngIf="day" [ngClass]="{'weekend-day': isWeekendDay(day.dayOfWeek), 'stg-install-day': isStgInstallDay(day.dayType)}">
-      <div *ngIf="isNewSprintDay(day.dayType)" class="new-sprint-day">NEW SPRINT</div>
-      <span>
-            {{day.dayOfMonth}}<br/>
-            dev: {{day.developVersion}}<br/>
-            rc: {{day.rcVersion}}<br/>
-            stg: {{day.stgVersion}}<br/>
-            prd: {{day.prdVersion}}<br/>
-      </span>
-      <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD INSTALL</div>
+      {{day.dayOfMonth}}<br/>
+      <div class="slight-border">
+        <div style="height: 25px">
+            <div *ngIf="isNewSprintDay(day.dayType)" class="new-sprint-day">START SPRINT {{day.developVersion.substr(3)}}</div>
+        </div>
+        <div class="d-inline-block">
+          dev: {{day.developVersion}}<br/>
+          rc: {{day.rcVersion}}<br/>
+        </div>
+        <div class="float-right">
+          stg: {{day.stgVersion}}<br/>
+          prd: {{day.prdVersion}}<br/>
+        </div>
+        <div style="height: 25px">
+            <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD INSTALL</div>
+        </div>
+      </div>
     </div>
   `,
   styles: [`
     .new-sprint-day {
-      background-color: darkseagreen;
+      background-color: lightgreen;
+      text-align: center;
     }
-
     .stg-install-day {
       background-color: moccasin;
     }
-
     .prd-install-day {
-      background-color: palevioletred;
+      background-color: pink;
+      text-align: center;
     }
-
     .normal-day {
     }
-
     .wut-day {
       background-color: darkred;
     }
-
     .weekend-day {
       background-color: darkgray;
       margin: 0;
+    }
+    .slight-border {
+      padding: 5px;
     }
   `
   ]
