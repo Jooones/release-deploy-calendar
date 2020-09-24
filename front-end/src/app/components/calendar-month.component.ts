@@ -20,7 +20,8 @@ import {Day, Month} from "../domain/calendar.model";
       <tr class="week-row" *ngFor="let week of currentMonth.weeks">
         <td *ngFor="let day of week.days" class="no-padding">
           <rdc-day-cell-component *ngIf="day"
-                                  [day]="day">
+                                  [day]="day"
+                                  [month]="currentMonth">
           </rdc-day-cell-component>
         </td>
       </tr>

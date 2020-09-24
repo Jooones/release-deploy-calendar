@@ -1,11 +1,11 @@
 import {Component, Input, OnInit} from "@angular/core";
-import {Day, DayType} from "../../domain/calendar.model";
+import {Day, DayType, Month} from "../../domain/calendar.model";
 
 @Component({
   selector: 'rdc-day-cell-component',
   template: `
     <div *ngIf="day" [ngClass]="{'weekend-day': isWeekendDay(day.dayOfWeek), 'stg-install-day': isStgInstallDay(day.dayType)}">
-      <div class="slight-border">
+      <div [ngClass]="{'slight-border': true, 'today': isToday}">
         {{day.dayOfMonth}}<br/>
         <div class="box-height">
           <div *ngIf="isNewSprintDay(day.dayType)" class="new-sprint-day">START SPRINT {{day.developVersion.substr(3)}}</div>
@@ -40,6 +40,15 @@ import {Day, DayType} from "../../domain/calendar.model";
       text-align: center;
     }
 
+    .slight-border {
+      padding: 5px;
+    }
+
+    .today {
+      border: solid 3px lightskyblue;
+      padding: 2px !important;
+    }
+
     .normal-day {
     }
 
@@ -52,12 +61,8 @@ import {Day, DayType} from "../../domain/calendar.model";
       margin: 0;
     }
 
-    .slight-border {
-      padding: 5px;
-    }
-
     .box-height {
-      height: 25px
+      height: 24px
     }
 
     .slight-padding-top-bottom {
@@ -75,10 +80,15 @@ export class DayCellComponent implements OnInit {
 
   @Input()
   day: Day;
+  @Input()
+  month: Month;
   dayTypeClass: string;
+  isToday: boolean;
 
   ngOnInit(): void {
     this.fillInDayType(this.day.dayType);
+    let passedInDate = new Date(Number(this.month.year), this.month.monthOfYear - 1, this.day.dayOfMonth);
+    this.isToday = new Date().toDateString() === passedInDate.toDateString();
   }
 
   private fillInDayType(dayType: DayType) {
@@ -116,4 +126,5 @@ export class DayCellComponent implements OnInit {
   isPrdInstallDay(dayType: DayType): boolean {
     return dayType === DayType.PRD_INSTALL
   }
+
 }
