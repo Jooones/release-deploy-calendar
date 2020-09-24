@@ -21,7 +21,9 @@ export class CalendarService {
     // if (!environment.production) {
     if (false) {
       console.log("using test data")
-      return of(exampleResponse).pipe(map((calendarTo: CalendarTo) => this.mapTo(calendarTo)))
+      return of(exampleResponse).pipe(
+        map((calendarTo: CalendarTo) => this.mapTo(calendarTo))
+      );
     } else {
       console.log("using prod backend for data")
       return this.httpClient.get<CalendarTo>(`api/calendar`).pipe(

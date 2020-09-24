@@ -1,58 +1,73 @@
-import {Component, Input} from "@angular/core";
-import {Day, Month} from "../domain/calendar.model";
+import { Component, Input } from "@angular/core";
+import { Month } from "../domain/calendar.model";
 
 @Component({
   selector: 'rdc-calendar-month',
   template: `
-    <table class="table table-responsive-xl table-bordered">
-      <thead>
-      <tr>
-        <th scope="col" style="width: 14.28%">Monday</th>
-        <th scope="col" style="width: 14.28%">Tuesday</th>
-        <th scope="col" style="width: 14.28%">Wednesday</th>
-        <th scope="col" style="width: 14.28%">Thursday</th>
-        <th scope="col" style="width: 14.28%">Friday</th>
-        <th scope="col" style="width: 14.28%">Saturday</th>
-        <th scope="col" style="width: 14.28%">Sunday</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr class="week-row"
-          *ngFor="let week of currentMonth.weeks">
-        <td *ngFor="let day of week.days" class="no-padding">
-          <div *ngIf="day" [ngClass]="{'weekend-day': isWeekendDay(day.dayOfWeek)}">
-            <rdc-day-cell-component *ngIf="day"
-                                    [day]="day">
-            </rdc-day-cell-component>
+    <div class="calendar-month">
+      <div class="calendar-header">
+        <div class="cell">Monday</div>
+        <div class="cell">Tuesday</div>
+        <div class="cell">Wednesday</div>
+        <div class="cell">Thursday</div>
+        <div class="cell">Friday</div>
+        <div class="cell">Saturday</div>
+        <div class="cell">Sunday</div>
+      </div>
+      <div *ngFor="let week of currentMonth.weeks" class="calendar-week">
+        <div *ngFor="let day of week.days" class="day cell">
+          <div
+            *ngIf="day"
+            [ngClass]="{ 'weekend-day': isWeekendDay(day.dayOfWeek) }"
+          >
+            <rdc-day-cell-component [day]="day"> </rdc-day-cell-component>
           </div>
-        </td>
-      </tr>
-      </tbody>
-    </table>
+        </div>
+      </div>
+    </div>
   `,
-  styles: [`
-    .week-row {
-      height: 8em;
-    }
-    .weekend-day {
-      background-color: aliceblue;
-      margin: 0;
-    }
-    .no-padding {
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  `
-  ]
+  styles: [
+    `
+      .calendar-month {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-width: 1px 1px 0 0;
+      }
+
+      .calendar-header {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+      }
+
+      .calendar-week {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+      }
+
+      .cell {
+        border-style: solid;
+        border-width: 0 0 1px 1px;
+      }
+
+      .day {
+        height: 100%;
+      }
+
+      .weekend-day {
+        background-color: aliceblue;
+        margin: 0;
+      }
+    `,
+  ],
 })
 export class CalendarMonthComponent {
-
   @Input()
   currentMonth: Month;
 
   isWeekendDay(day: number) {
-    return day === 6 || day === 7
+    return day === 6 || day === 7;
   }
 }

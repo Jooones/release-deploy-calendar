@@ -7,7 +7,7 @@ import {tap} from "rxjs/operators";
 @Component({
   selector: 'app-root',
   template: `
-    <div *ngIf="(calendar$|async)">
+    <div *ngIf="(calendar$|async)" class="calendar-container">
       <h1>{{currentMonth.year}} - {{currentMonth.monthOfYear}}</h1>
 
       <div class="btn-group" role="group">
@@ -18,7 +18,18 @@ import {tap} from "rxjs/operators";
 
       <rdc-calendar-month [currentMonth]="currentMonth"></rdc-calendar-month>
     </div>
-  `
+  `,
+  styles: [`
+    .calendar-container{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    rdc-calendar-month{
+      height: 100%;
+    }
+  `]
 })
 export class AppComponent implements OnInit {
   calendar$: Observable<Calendar>;
