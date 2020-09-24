@@ -4,8 +4,7 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
 @Component({
   selector: 'rdc-day-cell-component',
   template: `
-    <div *ngIf="day" [ngClass]="{'weekend-day': isWeekendDay(day.dayOfWeek), 'stg-install-day': isStgInstallDay(day.dayType)}">
-      <div [ngClass]="{'slight-border': true, 'today': isToday}">
+    <div *ngIf="day" class='day-cell' [ngClass]="{'weekend-day': isWeekendDay(day.dayOfWeek), 'stg-install-day': isStgInstallDay(day.dayType), 'slight-border': true, 'today': isToday}">
         {{day.dayOfMonth}}<br/>
         <div class="box-height">
           <div *ngIf="isNewSprintDay(day.dayType)" class="new-sprint-day">START SPRINT {{day.developVersion.substr(3)}}</div>
@@ -22,10 +21,13 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
         <div class="box-height">
           <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD INSTALL {{day.stgVersion}}</div> <!-- stgVersion.. I know.. ¯\_(ツ)_/¯ -->
         </div>
-      </div>
     </div>
   `,
   styles: [`
+    .day-cell {
+      height:100%;
+    }
+
     .new-sprint-day {
       background-color: lightgreen;
       text-align: center;
