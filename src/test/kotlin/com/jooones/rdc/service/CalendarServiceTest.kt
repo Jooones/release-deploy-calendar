@@ -1,7 +1,7 @@
 package com.jooones.rdc.service
 
-import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
+import java.time.LocalDate
 
 internal class CalendarServiceTest {
 
@@ -12,6 +12,6 @@ internal class CalendarServiceTest {
         //Calendar(arrayOf(Day(1, 1, 2, "2019", "10.3", "10.2", "10.2", "10.1")));
 
 //        assertThat(calendarService.getSurroundingMonths()).isNotNull
-        print(calendarService.getSurroundingMonths().toString())
+        print(calendarService.getSurroundingMonths(LocalDate.now()).toString())
     }
 }

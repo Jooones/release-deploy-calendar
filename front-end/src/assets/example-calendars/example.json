@@ -1,50 +1,6 @@
 {
   "days": [
     {
-      "dayOfWeek": 3,
-      "dayOfMonth": 26,
-      "monthOfYear": 2,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.96",
-      "prdVersion": "10.95",
-      "dayType": "NEW_SPRINT"
-    },
-    {
-      "dayOfWeek": 4,
-      "dayOfMonth": 27,
-      "monthOfYear": 2,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.96",
-      "prdVersion": "10.95",
-      "dayType": "PRD_INSTALL"
-    },
-    {
-      "dayOfWeek": 5,
-      "dayOfMonth": 28,
-      "monthOfYear": 2,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.96",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL"
-    },
-    {
-      "dayOfWeek": 6,
-      "dayOfMonth": 29,
-      "monthOfYear": 2,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.96",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL"
-    },
-    {
       "dayOfWeek": 7,
       "dayOfMonth": 1,
       "monthOfYear": 3,
@@ -53,7 +9,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.96",
       "prdVersion": "10.96",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-07"
     },
     {
       "dayOfWeek": 1,
@@ -64,7 +21,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.96",
       "prdVersion": "10.96",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -75,7 +33,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.96",
       "prdVersion": "10.96",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -86,7 +45,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.96",
       "prdVersion": "10.96",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-03"
     },
     {
       "dayOfWeek": 4,
@@ -97,7 +57,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.96",
       "prdVersion": "10.96",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-04"
     },
     {
       "dayOfWeek": 5,
@@ -108,7 +69,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.97",
       "prdVersion": "10.96",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-03-05"
     },
     {
       "dayOfWeek": 6,
@@ -119,7 +81,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.97",
       "prdVersion": "10.96",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-06"
     },
     {
       "dayOfWeek": 7,
@@ -130,7 +93,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.97",
       "prdVersion": "10.96",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-07"
     },
     {
       "dayOfWeek": 1,
@@ -141,7 +105,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.97",
       "prdVersion": "10.96",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -152,7 +117,8 @@
       "rcVersion": "10.97",
       "stgVersion": "10.97",
       "prdVersion": "10.96",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -163,7 +129,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.97",
       "prdVersion": "10.96",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-03-03"
     },
     {
       "dayOfWeek": 4,
@@ -174,7 +141,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.97",
       "prdVersion": "10.96",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-03-04"
     },
     {
       "dayOfWeek": 5,
@@ -185,7 +153,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.97",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-05"
     },
     {
       "dayOfWeek": 6,
@@ -196,7 +165,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.97",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-06"
     },
     {
       "dayOfWeek": 7,
@@ -207,7 +177,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.97",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-07"
     },
     {
       "dayOfWeek": 1,
@@ -218,7 +189,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.97",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -229,7 +201,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.97",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -240,7 +213,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.97",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-03"
     },
     {
       "dayOfWeek": 4,
@@ -251,7 +225,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.97",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-04"
     },
     {
       "dayOfWeek": 5,
@@ -262,7 +237,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.98",
       "prdVersion": "10.97",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-03-05"
     },
     {
       "dayOfWeek": 6,
@@ -273,7 +249,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.98",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-06"
     },
     {
       "dayOfWeek": 7,
@@ -284,7 +261,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.98",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-07"
     },
     {
       "dayOfWeek": 1,
@@ -295,7 +273,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.98",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -306,7 +285,8 @@
       "rcVersion": "10.98",
       "stgVersion": "10.98",
       "prdVersion": "10.97",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -317,7 +297,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.97",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-03-03"
     },
     {
       "dayOfWeek": 4,
@@ -328,7 +309,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.97",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-03-04"
     },
     {
       "dayOfWeek": 5,
@@ -339,7 +321,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-05"
     },
     {
       "dayOfWeek": 6,
@@ -350,7 +333,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-06"
     },
     {
       "dayOfWeek": 7,
@@ -361,7 +345,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-07"
     },
     {
       "dayOfWeek": 1,
@@ -372,7 +357,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -383,7 +369,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -394,7 +381,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-03"
     },
     {
       "dayOfWeek": 4,
@@ -405,7 +393,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-04"
     },
     {
       "dayOfWeek": 5,
@@ -416,7 +405,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.99",
       "prdVersion": "10.98",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-04-05"
     },
     {
       "dayOfWeek": 6,
@@ -427,7 +417,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.99",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-06"
     },
     {
       "dayOfWeek": 7,
@@ -438,7 +429,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.99",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-07"
     },
     {
       "dayOfWeek": 1,
@@ -449,7 +441,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.99",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-01"
     },
     {
       "dayOfWeek": 2,
@@ -460,7 +453,8 @@
       "rcVersion": "10.99",
       "stgVersion": "10.99",
       "prdVersion": "10.98",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-02"
     },
     {
       "dayOfWeek": 3,
@@ -471,7 +465,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.98",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-04-03"
     },
     {
       "dayOfWeek": 4,
@@ -482,7 +477,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.98",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-04-04"
     },
     {
       "dayOfWeek": 5,
@@ -493,7 +489,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-05"
     },
     {
       "dayOfWeek": 6,
@@ -504,7 +501,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-06"
     },
     {
       "dayOfWeek": 7,
@@ -515,7 +513,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-07"
     },
     {
       "dayOfWeek": 1,
@@ -526,7 +525,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-01"
     },
     {
       "dayOfWeek": 2,
@@ -537,7 +537,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-02"
     },
     {
       "dayOfWeek": 3,
@@ -548,7 +549,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-03"
     },
     {
       "dayOfWeek": 4,
@@ -559,7 +561,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-04"
     },
     {
       "dayOfWeek": 5,
@@ -570,7 +573,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.100",
       "prdVersion": "10.99",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-04-05"
     },
     {
       "dayOfWeek": 6,
@@ -581,7 +585,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.100",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-06"
     },
     {
       "dayOfWeek": 7,
@@ -592,7 +597,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.100",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-07"
     },
     {
       "dayOfWeek": 1,
@@ -603,7 +609,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.100",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-01"
     },
     {
       "dayOfWeek": 2,
@@ -614,7 +621,8 @@
       "rcVersion": "10.100",
       "stgVersion": "10.100",
       "prdVersion": "10.99",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-02"
     },
     {
       "dayOfWeek": 3,
@@ -625,7 +633,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.99",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-04-03"
     },
     {
       "dayOfWeek": 4,
@@ -636,7 +645,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.99",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-04-04"
     },
     {
       "dayOfWeek": 5,
@@ -647,7 +657,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-05"
     },
     {
       "dayOfWeek": 6,
@@ -658,7 +669,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-06"
     },
     {
       "dayOfWeek": 7,
@@ -669,7 +681,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-07"
     },
     {
       "dayOfWeek": 1,
@@ -680,7 +693,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-01"
     },
     {
       "dayOfWeek": 2,
@@ -691,7 +705,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-02"
     },
     {
       "dayOfWeek": 3,
@@ -702,7 +717,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-03"
     },
     {
       "dayOfWeek": 4,
@@ -713,7 +729,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-04-04"
     },
     {
       "dayOfWeek": 5,
@@ -724,7 +741,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.101",
       "prdVersion": "10.100",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-05-05"
     },
     {
       "dayOfWeek": 6,
@@ -735,7 +753,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.101",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-06"
     },
     {
       "dayOfWeek": 7,
@@ -746,7 +765,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.101",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-07"
     },
     {
       "dayOfWeek": 1,
@@ -757,7 +777,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.101",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-01"
     },
     {
       "dayOfWeek": 2,
@@ -768,7 +789,8 @@
       "rcVersion": "10.101",
       "stgVersion": "10.101",
       "prdVersion": "10.100",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-02"
     },
     {
       "dayOfWeek": 3,
@@ -779,7 +801,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.100",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-05-03"
     },
     {
       "dayOfWeek": 4,
@@ -790,7 +813,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.100",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-05-04"
     },
     {
       "dayOfWeek": 5,
@@ -801,7 +825,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-05"
     },
     {
       "dayOfWeek": 6,
@@ -812,7 +837,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-06"
     },
     {
       "dayOfWeek": 7,
@@ -823,7 +849,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-07"
     },
     {
       "dayOfWeek": 1,
@@ -834,7 +861,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-01"
     },
     {
       "dayOfWeek": 2,
@@ -845,7 +873,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-02"
     },
     {
       "dayOfWeek": 3,
@@ -856,7 +885,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-03"
     },
     {
       "dayOfWeek": 4,
@@ -867,7 +897,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-04"
     },
     {
       "dayOfWeek": 5,
@@ -878,7 +909,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.102",
       "prdVersion": "10.101",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-05-05"
     },
     {
       "dayOfWeek": 6,
@@ -889,7 +921,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.102",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-06"
     },
     {
       "dayOfWeek": 7,
@@ -900,7 +933,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.102",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-07"
     },
     {
       "dayOfWeek": 1,
@@ -911,7 +945,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.102",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-01"
     },
     {
       "dayOfWeek": 2,
@@ -922,7 +957,8 @@
       "rcVersion": "10.102",
       "stgVersion": "10.102",
       "prdVersion": "10.101",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-02"
     },
     {
       "dayOfWeek": 3,
@@ -933,7 +969,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.101",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-05-03"
     },
     {
       "dayOfWeek": 4,
@@ -944,7 +981,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.101",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-05-04"
     },
     {
       "dayOfWeek": 5,
@@ -955,7 +993,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-05"
     },
     {
       "dayOfWeek": 6,
@@ -966,7 +1005,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-06"
     },
     {
       "dayOfWeek": 7,
@@ -977,7 +1017,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-07"
     },
     {
       "dayOfWeek": 1,
@@ -988,7 +1029,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-01"
     },
     {
       "dayOfWeek": 2,
@@ -999,7 +1041,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-02"
     },
     {
       "dayOfWeek": 3,
@@ -1010,7 +1053,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-03"
     },
     {
       "dayOfWeek": 4,
@@ -1021,7 +1065,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-04"
     },
     {
       "dayOfWeek": 5,
@@ -1032,7 +1077,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.103",
       "prdVersion": "10.102",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-05-05"
     },
     {
       "dayOfWeek": 6,
@@ -1043,7 +1089,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.103",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-06"
     },
     {
       "dayOfWeek": 7,
@@ -1054,7 +1101,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.103",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-05-07"
     },
     {
       "dayOfWeek": 1,
@@ -1065,7 +1113,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.103",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-01"
     },
     {
       "dayOfWeek": 2,
@@ -1076,7 +1125,8 @@
       "rcVersion": "10.103",
       "stgVersion": "10.103",
       "prdVersion": "10.102",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-02"
     },
     {
       "dayOfWeek": 3,
@@ -1087,7 +1137,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.102",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-06-03"
     },
     {
       "dayOfWeek": 4,
@@ -1098,7 +1149,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.102",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-06-04"
     },
     {
       "dayOfWeek": 5,
@@ -1109,7 +1161,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-05"
     },
     {
       "dayOfWeek": 6,
@@ -1120,7 +1173,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-06"
     },
     {
       "dayOfWeek": 7,
@@ -1131,7 +1185,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-07"
     },
     {
       "dayOfWeek": 1,
@@ -1142,7 +1197,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-01"
     },
     {
       "dayOfWeek": 2,
@@ -1153,7 +1209,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-02"
     },
     {
       "dayOfWeek": 3,
@@ -1164,7 +1221,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-03"
     },
     {
       "dayOfWeek": 4,
@@ -1175,7 +1233,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-04"
     },
     {
       "dayOfWeek": 5,
@@ -1186,7 +1245,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.104",
       "prdVersion": "10.103",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-06-05"
     },
     {
       "dayOfWeek": 6,
@@ -1197,7 +1257,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.104",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-06"
     },
     {
       "dayOfWeek": 7,
@@ -1208,7 +1269,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.104",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-07"
     },
     {
       "dayOfWeek": 1,
@@ -1219,7 +1281,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.104",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-01"
     },
     {
       "dayOfWeek": 2,
@@ -1230,7 +1293,8 @@
       "rcVersion": "10.104",
       "stgVersion": "10.104",
       "prdVersion": "10.103",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-02"
     },
     {
       "dayOfWeek": 3,
@@ -1241,7 +1305,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.103",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-06-03"
     },
     {
       "dayOfWeek": 4,
@@ -1252,7 +1317,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.103",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-06-04"
     },
     {
       "dayOfWeek": 5,
@@ -1263,7 +1329,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-05"
     },
     {
       "dayOfWeek": 6,
@@ -1274,7 +1341,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-06"
     },
     {
       "dayOfWeek": 7,
@@ -1285,7 +1353,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-07"
     },
     {
       "dayOfWeek": 1,
@@ -1296,7 +1365,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-01"
     },
     {
       "dayOfWeek": 2,
@@ -1307,7 +1377,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-02"
     },
     {
       "dayOfWeek": 3,
@@ -1318,7 +1389,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-03"
     },
     {
       "dayOfWeek": 4,
@@ -1329,7 +1401,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-04"
     },
     {
       "dayOfWeek": 5,
@@ -1340,7 +1413,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.105",
       "prdVersion": "10.104",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-06-05"
     },
     {
       "dayOfWeek": 6,
@@ -1351,7 +1425,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.105",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-06"
     },
     {
       "dayOfWeek": 7,
@@ -1362,7 +1437,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.105",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-07"
     },
     {
       "dayOfWeek": 1,
@@ -1373,7 +1449,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.105",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-01"
     },
     {
       "dayOfWeek": 2,
@@ -1384,7 +1461,8 @@
       "rcVersion": "10.105",
       "stgVersion": "10.105",
       "prdVersion": "10.104",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-06-02"
     },
     {
       "dayOfWeek": 3,
@@ -1395,7 +1473,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.104",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-07-03"
     },
     {
       "dayOfWeek": 4,
@@ -1406,7 +1485,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.104",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-07-04"
     },
     {
       "dayOfWeek": 5,
@@ -1417,7 +1497,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-05"
     },
     {
       "dayOfWeek": 6,
@@ -1428,7 +1509,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-06"
     },
     {
       "dayOfWeek": 7,
@@ -1439,7 +1521,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-07"
     },
     {
       "dayOfWeek": 1,
@@ -1450,7 +1533,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-01"
     },
     {
       "dayOfWeek": 2,
@@ -1461,7 +1545,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-02"
     },
     {
       "dayOfWeek": 3,
@@ -1472,7 +1557,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-03"
     },
     {
       "dayOfWeek": 4,
@@ -1483,7 +1569,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-04"
     },
     {
       "dayOfWeek": 5,
@@ -1494,7 +1581,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.106",
       "prdVersion": "10.105",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-07-05"
     },
     {
       "dayOfWeek": 6,
@@ -1505,7 +1593,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.106",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-06"
     },
     {
       "dayOfWeek": 7,
@@ -1516,7 +1605,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.106",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-07"
     },
     {
       "dayOfWeek": 1,
@@ -1527,7 +1617,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.106",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-01"
     },
     {
       "dayOfWeek": 2,
@@ -1538,7 +1629,8 @@
       "rcVersion": "10.106",
       "stgVersion": "10.106",
       "prdVersion": "10.105",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-02"
     },
     {
       "dayOfWeek": 3,
@@ -1549,7 +1641,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.105",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-07-03"
     },
     {
       "dayOfWeek": 4,
@@ -1560,7 +1653,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.105",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-07-04"
     },
     {
       "dayOfWeek": 5,
@@ -1571,7 +1665,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-05"
     },
     {
       "dayOfWeek": 6,
@@ -1582,7 +1677,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-06"
     },
     {
       "dayOfWeek": 7,
@@ -1593,7 +1689,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-07"
     },
     {
       "dayOfWeek": 1,
@@ -1604,7 +1701,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-01"
     },
     {
       "dayOfWeek": 2,
@@ -1615,7 +1713,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-02"
     },
     {
       "dayOfWeek": 3,
@@ -1626,7 +1725,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-03"
     },
     {
       "dayOfWeek": 4,
@@ -1637,7 +1737,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-04"
     },
     {
       "dayOfWeek": 5,
@@ -1648,7 +1749,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.107",
       "prdVersion": "10.106",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-07-05"
     },
     {
       "dayOfWeek": 6,
@@ -1659,7 +1761,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.107",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-06"
     },
     {
       "dayOfWeek": 7,
@@ -1670,7 +1773,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.107",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-07"
     },
     {
       "dayOfWeek": 1,
@@ -1681,7 +1785,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.107",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-01"
     },
     {
       "dayOfWeek": 2,
@@ -1692,7 +1797,8 @@
       "rcVersion": "10.107",
       "stgVersion": "10.107",
       "prdVersion": "10.106",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-02"
     },
     {
       "dayOfWeek": 3,
@@ -1703,7 +1809,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.106",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-07-03"
     },
     {
       "dayOfWeek": 4,
@@ -1714,7 +1821,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.106",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-07-04"
     },
     {
       "dayOfWeek": 5,
@@ -1725,7 +1833,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-07-05"
     },
     {
       "dayOfWeek": 6,
@@ -1736,7 +1845,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-06"
     },
     {
       "dayOfWeek": 7,
@@ -1747,7 +1857,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-07"
     },
     {
       "dayOfWeek": 1,
@@ -1758,7 +1869,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-01"
     },
     {
       "dayOfWeek": 2,
@@ -1769,7 +1881,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-02"
     },
     {
       "dayOfWeek": 3,
@@ -1780,7 +1893,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-03"
     },
     {
       "dayOfWeek": 4,
@@ -1791,7 +1905,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-04"
     },
     {
       "dayOfWeek": 5,
@@ -1802,7 +1917,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.108",
       "prdVersion": "10.107",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-08-05"
     },
     {
       "dayOfWeek": 6,
@@ -1813,7 +1929,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.108",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-06"
     },
     {
       "dayOfWeek": 7,
@@ -1824,7 +1941,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.108",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-07"
     },
     {
       "dayOfWeek": 1,
@@ -1835,7 +1953,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.108",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-01"
     },
     {
       "dayOfWeek": 2,
@@ -1846,7 +1965,8 @@
       "rcVersion": "10.108",
       "stgVersion": "10.108",
       "prdVersion": "10.107",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-02"
     },
     {
       "dayOfWeek": 3,
@@ -1857,7 +1977,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.107",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-08-03"
     },
     {
       "dayOfWeek": 4,
@@ -1868,7 +1989,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.107",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-08-04"
     },
     {
       "dayOfWeek": 5,
@@ -1879,7 +2001,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-05"
     },
     {
       "dayOfWeek": 6,
@@ -1890,7 +2013,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-06"
     },
     {
       "dayOfWeek": 7,
@@ -1901,7 +2025,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-07"
     },
     {
       "dayOfWeek": 1,
@@ -1912,7 +2037,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-01"
     },
     {
       "dayOfWeek": 2,
@@ -1923,7 +2049,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-02"
     },
     {
       "dayOfWeek": 3,
@@ -1934,7 +2061,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-03"
     },
     {
       "dayOfWeek": 4,
@@ -1945,7 +2073,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-04"
     },
     {
       "dayOfWeek": 5,
@@ -1956,7 +2085,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.109",
       "prdVersion": "10.108",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-08-05"
     },
     {
       "dayOfWeek": 6,
@@ -1967,7 +2097,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.109",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-06"
     },
     {
       "dayOfWeek": 7,
@@ -1978,7 +2109,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.109",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-07"
     },
     {
       "dayOfWeek": 1,
@@ -1989,7 +2121,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.109",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-01"
     },
     {
       "dayOfWeek": 2,
@@ -2000,7 +2133,8 @@
       "rcVersion": "10.109",
       "stgVersion": "10.109",
       "prdVersion": "10.108",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-02"
     },
     {
       "dayOfWeek": 3,
@@ -2011,7 +2145,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.108",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-08-03"
     },
     {
       "dayOfWeek": 4,
@@ -2022,7 +2157,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.108",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-08-04"
     },
     {
       "dayOfWeek": 5,
@@ -2033,7 +2169,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-05"
     },
     {
       "dayOfWeek": 6,
@@ -2044,7 +2181,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-06"
     },
     {
       "dayOfWeek": 7,
@@ -2055,7 +2193,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-07"
     },
     {
       "dayOfWeek": 1,
@@ -2066,7 +2205,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-08-01"
     },
     {
       "dayOfWeek": 2,
@@ -2077,7 +2217,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-02"
     },
     {
       "dayOfWeek": 3,
@@ -2088,7 +2229,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-03"
     },
     {
       "dayOfWeek": 4,
@@ -2099,7 +2241,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-04"
     },
     {
       "dayOfWeek": 5,
@@ -2110,7 +2253,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.110",
       "prdVersion": "10.109",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-09-05"
     },
     {
       "dayOfWeek": 6,
@@ -2121,7 +2265,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.110",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-06"
     },
     {
       "dayOfWeek": 7,
@@ -2132,7 +2277,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.110",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-07"
     },
     {
       "dayOfWeek": 1,
@@ -2143,7 +2289,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.110",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-01"
     },
     {
       "dayOfWeek": 2,
@@ -2154,7 +2301,8 @@
       "rcVersion": "10.110",
       "stgVersion": "10.110",
       "prdVersion": "10.109",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-02"
     },
     {
       "dayOfWeek": 3,
@@ -2165,7 +2313,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.109",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-09-03"
     },
     {
       "dayOfWeek": 4,
@@ -2176,7 +2325,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.109",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-09-04"
     },
     {
       "dayOfWeek": 5,
@@ -2187,7 +2337,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-05"
     },
     {
       "dayOfWeek": 6,
@@ -2198,7 +2349,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-06"
     },
     {
       "dayOfWeek": 7,
@@ -2209,7 +2361,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-07"
     },
     {
       "dayOfWeek": 1,
@@ -2220,7 +2373,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-01"
     },
     {
       "dayOfWeek": 2,
@@ -2231,7 +2385,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-02"
     },
     {
       "dayOfWeek": 3,
@@ -2242,7 +2397,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-03"
     },
     {
       "dayOfWeek": 4,
@@ -2253,7 +2409,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-04"
     },
     {
       "dayOfWeek": 5,
@@ -2264,7 +2421,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.111",
       "prdVersion": "10.110",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-09-05"
     },
     {
       "dayOfWeek": 6,
@@ -2275,7 +2433,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.111",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-06"
     },
     {
       "dayOfWeek": 7,
@@ -2286,7 +2445,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.111",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-07"
     },
     {
       "dayOfWeek": 1,
@@ -2297,7 +2457,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.111",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-01"
     },
     {
       "dayOfWeek": 2,
@@ -2308,7 +2469,8 @@
       "rcVersion": "10.111",
       "stgVersion": "10.111",
       "prdVersion": "10.110",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-02"
     },
     {
       "dayOfWeek": 3,
@@ -2319,7 +2481,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.110",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-09-03"
     },
     {
       "dayOfWeek": 4,
@@ -2330,7 +2493,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.110",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-09-04"
     },
     {
       "dayOfWeek": 5,
@@ -2341,7 +2505,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-05"
     },
     {
       "dayOfWeek": 6,
@@ -2352,7 +2517,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-06"
     },
     {
       "dayOfWeek": 7,
@@ -2363,7 +2529,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-07"
     },
     {
       "dayOfWeek": 1,
@@ -2374,7 +2541,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-01"
     },
     {
       "dayOfWeek": 2,
@@ -2385,7 +2553,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-02"
     },
     {
       "dayOfWeek": 3,
@@ -2396,7 +2565,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-09-03"
     },
     {
       "dayOfWeek": 4,
@@ -2407,7 +2577,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-04"
     },
     {
       "dayOfWeek": 5,
@@ -2418,7 +2589,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.112",
       "prdVersion": "10.111",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-10-05"
     },
     {
       "dayOfWeek": 6,
@@ -2429,7 +2601,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.112",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-06"
     },
     {
       "dayOfWeek": 7,
@@ -2440,7 +2613,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.112",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-07"
     },
     {
       "dayOfWeek": 1,
@@ -2451,7 +2625,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.112",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-01"
     },
     {
       "dayOfWeek": 2,
@@ -2462,7 +2637,8 @@
       "rcVersion": "10.112",
       "stgVersion": "10.112",
       "prdVersion": "10.111",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-02"
     },
     {
       "dayOfWeek": 3,
@@ -2473,7 +2649,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.111",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-10-03"
     },
     {
       "dayOfWeek": 4,
@@ -2484,7 +2661,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.111",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-10-04"
     },
     {
       "dayOfWeek": 5,
@@ -2495,7 +2673,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-05"
     },
     {
       "dayOfWeek": 6,
@@ -2506,7 +2685,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-06"
     },
     {
       "dayOfWeek": 7,
@@ -2517,7 +2697,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-07"
     },
     {
       "dayOfWeek": 1,
@@ -2528,7 +2709,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-01"
     },
     {
       "dayOfWeek": 2,
@@ -2539,7 +2721,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-02"
     },
     {
       "dayOfWeek": 3,
@@ -2550,7 +2733,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-03"
     },
     {
       "dayOfWeek": 4,
@@ -2561,7 +2745,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-04"
     },
     {
       "dayOfWeek": 5,
@@ -2572,7 +2757,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.113",
       "prdVersion": "10.112",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-10-05"
     },
     {
       "dayOfWeek": 6,
@@ -2583,7 +2769,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.113",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-06"
     },
     {
       "dayOfWeek": 7,
@@ -2594,7 +2781,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.113",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-07"
     },
     {
       "dayOfWeek": 1,
@@ -2605,7 +2793,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.113",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-01"
     },
     {
       "dayOfWeek": 2,
@@ -2616,7 +2805,8 @@
       "rcVersion": "10.113",
       "stgVersion": "10.113",
       "prdVersion": "10.112",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-02"
     },
     {
       "dayOfWeek": 3,
@@ -2627,7 +2817,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.112",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-10-03"
     },
     {
       "dayOfWeek": 4,
@@ -2638,7 +2829,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.112",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-10-04"
     },
     {
       "dayOfWeek": 5,
@@ -2649,7 +2841,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-05"
     },
     {
       "dayOfWeek": 6,
@@ -2660,7 +2853,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-06"
     },
     {
       "dayOfWeek": 7,
@@ -2671,7 +2865,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-07"
     },
     {
       "dayOfWeek": 1,
@@ -2682,7 +2877,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-01"
     },
     {
       "dayOfWeek": 2,
@@ -2693,7 +2889,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-02"
     },
     {
       "dayOfWeek": 3,
@@ -2704,7 +2901,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-03"
     },
     {
       "dayOfWeek": 4,
@@ -2715,7 +2913,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-04"
     },
     {
       "dayOfWeek": 5,
@@ -2726,7 +2925,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.114",
       "prdVersion": "10.113",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-10-05"
     },
     {
       "dayOfWeek": 6,
@@ -2737,7 +2937,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.114",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-10-06"
     },
     {
       "dayOfWeek": 7,
@@ -2748,7 +2949,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.114",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-07"
     },
     {
       "dayOfWeek": 1,
@@ -2759,7 +2961,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.114",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-01"
     },
     {
       "dayOfWeek": 2,
@@ -2770,7 +2973,8 @@
       "rcVersion": "10.114",
       "stgVersion": "10.114",
       "prdVersion": "10.113",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-02"
     },
     {
       "dayOfWeek": 3,
@@ -2781,7 +2985,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.113",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-11-03"
     },
     {
       "dayOfWeek": 4,
@@ -2792,7 +2997,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.113",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-11-04"
     },
     {
       "dayOfWeek": 5,
@@ -2803,7 +3009,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-05"
     },
     {
       "dayOfWeek": 6,
@@ -2814,7 +3021,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-06"
     },
     {
       "dayOfWeek": 7,
@@ -2825,7 +3033,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-07"
     },
     {
       "dayOfWeek": 1,
@@ -2836,7 +3045,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-01"
     },
     {
       "dayOfWeek": 2,
@@ -2847,7 +3057,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-02"
     },
     {
       "dayOfWeek": 3,
@@ -2858,7 +3069,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-03"
     },
     {
       "dayOfWeek": 4,
@@ -2869,7 +3081,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-04"
     },
     {
       "dayOfWeek": 5,
@@ -2880,7 +3093,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.115",
       "prdVersion": "10.114",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-11-05"
     },
     {
       "dayOfWeek": 6,
@@ -2891,7 +3105,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.115",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-06"
     },
     {
       "dayOfWeek": 7,
@@ -2902,7 +3117,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.115",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-07"
     },
     {
       "dayOfWeek": 1,
@@ -2913,7 +3129,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.115",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-01"
     },
     {
       "dayOfWeek": 2,
@@ -2924,7 +3141,8 @@
       "rcVersion": "10.115",
       "stgVersion": "10.115",
       "prdVersion": "10.114",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-02"
     },
     {
       "dayOfWeek": 3,
@@ -2935,7 +3153,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.114",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-11-03"
     },
     {
       "dayOfWeek": 4,
@@ -2946,7 +3165,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.114",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-11-04"
     },
     {
       "dayOfWeek": 5,
@@ -2957,7 +3177,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-05"
     },
     {
       "dayOfWeek": 6,
@@ -2968,7 +3189,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-06"
     },
     {
       "dayOfWeek": 7,
@@ -2979,7 +3201,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-07"
     },
     {
       "dayOfWeek": 1,
@@ -2990,7 +3213,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-01"
     },
     {
       "dayOfWeek": 2,
@@ -3001,7 +3225,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-02"
     },
     {
       "dayOfWeek": 3,
@@ -3012,7 +3237,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-03"
     },
     {
       "dayOfWeek": 4,
@@ -3023,7 +3249,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-04"
     },
     {
       "dayOfWeek": 5,
@@ -3034,7 +3261,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.116",
       "prdVersion": "10.115",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-11-05"
     },
     {
       "dayOfWeek": 6,
@@ -3045,7 +3273,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.116",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-06"
     },
     {
       "dayOfWeek": 7,
@@ -3056,7 +3285,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.116",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-07"
     },
     {
       "dayOfWeek": 1,
@@ -3067,7 +3297,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.116",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-11-01"
     },
     {
       "dayOfWeek": 2,
@@ -3078,7 +3309,8 @@
       "rcVersion": "10.116",
       "stgVersion": "10.116",
       "prdVersion": "10.115",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-02"
     },
     {
       "dayOfWeek": 3,
@@ -3089,7 +3321,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.115",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-12-03"
     },
     {
       "dayOfWeek": 4,
@@ -3100,7 +3333,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.115",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-12-04"
     },
     {
       "dayOfWeek": 5,
@@ -3111,7 +3345,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-05"
     },
     {
       "dayOfWeek": 6,
@@ -3122,7 +3357,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-06"
     },
     {
       "dayOfWeek": 7,
@@ -3133,7 +3369,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-07"
     },
     {
       "dayOfWeek": 1,
@@ -3144,7 +3381,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-01"
     },
     {
       "dayOfWeek": 2,
@@ -3155,7 +3393,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-02"
     },
     {
       "dayOfWeek": 3,
@@ -3166,7 +3405,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-03"
     },
     {
       "dayOfWeek": 4,
@@ -3177,7 +3417,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-04"
     },
     {
       "dayOfWeek": 5,
@@ -3188,7 +3429,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.117",
       "prdVersion": "10.116",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-12-05"
     },
     {
       "dayOfWeek": 6,
@@ -3199,7 +3441,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.117",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-06"
     },
     {
       "dayOfWeek": 7,
@@ -3210,7 +3453,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.117",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-07"
     },
     {
       "dayOfWeek": 1,
@@ -3221,7 +3465,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.117",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-01"
     },
     {
       "dayOfWeek": 2,
@@ -3232,7 +3477,8 @@
       "rcVersion": "10.117",
       "stgVersion": "10.117",
       "prdVersion": "10.116",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-02"
     },
     {
       "dayOfWeek": 3,
@@ -3243,7 +3489,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.116",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-12-03"
     },
     {
       "dayOfWeek": 4,
@@ -3254,7 +3501,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.116",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-12-04"
     },
     {
       "dayOfWeek": 5,
@@ -3265,7 +3513,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-05"
     },
     {
       "dayOfWeek": 6,
@@ -3276,7 +3525,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-06"
     },
     {
       "dayOfWeek": 7,
@@ -3287,7 +3537,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-07"
     },
     {
       "dayOfWeek": 1,
@@ -3298,7 +3549,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-01"
     },
     {
       "dayOfWeek": 2,
@@ -3309,7 +3561,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-02"
     },
     {
       "dayOfWeek": 3,
@@ -3320,7 +3573,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-03"
     },
     {
       "dayOfWeek": 4,
@@ -3331,7 +3585,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-04"
     },
     {
       "dayOfWeek": 5,
@@ -3342,7 +3597,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.118",
       "prdVersion": "10.117",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2020-12-05"
     },
     {
       "dayOfWeek": 6,
@@ -3353,7 +3609,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.118",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-06"
     },
     {
       "dayOfWeek": 7,
@@ -3364,7 +3621,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.118",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-07"
     },
     {
       "dayOfWeek": 1,
@@ -3375,7 +3633,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.118",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-01"
     },
     {
       "dayOfWeek": 2,
@@ -3386,7 +3645,8 @@
       "rcVersion": "10.118",
       "stgVersion": "10.118",
       "prdVersion": "10.117",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2020-12-02"
     },
     {
       "dayOfWeek": 3,
@@ -3397,7 +3657,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.117",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2020-12-03"
     },
     {
       "dayOfWeek": 4,
@@ -3408,7 +3669,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.117",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2020-12-04"
     },
     {
       "dayOfWeek": 5,
@@ -3419,7 +3681,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-05"
     },
     {
       "dayOfWeek": 6,
@@ -3430,7 +3693,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-06"
     },
     {
       "dayOfWeek": 7,
@@ -3441,7 +3705,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-07"
     },
     {
       "dayOfWeek": 1,
@@ -3452,7 +3717,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-01"
     },
     {
       "dayOfWeek": 2,
@@ -3463,7 +3729,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-02"
     },
     {
       "dayOfWeek": 3,
@@ -3474,7 +3741,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-03"
     },
     {
       "dayOfWeek": 4,
@@ -3485,7 +3753,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-04"
     },
     {
       "dayOfWeek": 5,
@@ -3496,7 +3765,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.119",
       "prdVersion": "10.118",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2021-01-05"
     },
     {
       "dayOfWeek": 6,
@@ -3507,7 +3777,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.119",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-06"
     },
     {
       "dayOfWeek": 7,
@@ -3518,7 +3789,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.119",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-07"
     },
     {
       "dayOfWeek": 1,
@@ -3529,7 +3801,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.119",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-01"
     },
     {
       "dayOfWeek": 2,
@@ -3540,7 +3813,8 @@
       "rcVersion": "10.119",
       "stgVersion": "10.119",
       "prdVersion": "10.118",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-02"
     },
     {
       "dayOfWeek": 3,
@@ -3551,7 +3825,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.118",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2021-01-03"
     },
     {
       "dayOfWeek": 4,
@@ -3562,7 +3837,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.118",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2021-01-04"
     },
     {
       "dayOfWeek": 5,
@@ -3573,7 +3849,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-05"
     },
     {
       "dayOfWeek": 6,
@@ -3584,7 +3861,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-06"
     },
     {
       "dayOfWeek": 7,
@@ -3595,7 +3873,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-07"
     },
     {
       "dayOfWeek": 1,
@@ -3606,7 +3885,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-01"
     },
     {
       "dayOfWeek": 2,
@@ -3617,7 +3897,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-02"
     },
     {
       "dayOfWeek": 3,
@@ -3628,7 +3909,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-03"
     },
     {
       "dayOfWeek": 4,
@@ -3639,7 +3921,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-04"
     },
     {
       "dayOfWeek": 5,
@@ -3650,7 +3933,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.120",
       "prdVersion": "10.119",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2021-01-05"
     },
     {
       "dayOfWeek": 6,
@@ -3661,7 +3945,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.120",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-06"
     },
     {
       "dayOfWeek": 7,
@@ -3672,7 +3957,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.120",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-07"
     },
     {
       "dayOfWeek": 1,
@@ -3683,7 +3969,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.120",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-01"
     },
     {
       "dayOfWeek": 2,
@@ -3694,7 +3981,8 @@
       "rcVersion": "10.120",
       "stgVersion": "10.120",
       "prdVersion": "10.119",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-02"
     },
     {
       "dayOfWeek": 3,
@@ -3705,7 +3993,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.119",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2021-01-03"
     },
     {
       "dayOfWeek": 4,
@@ -3716,7 +4005,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.119",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2021-01-04"
     },
     {
       "dayOfWeek": 5,
@@ -3727,7 +4017,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-05"
     },
     {
       "dayOfWeek": 6,
@@ -3738,7 +4029,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-06"
     },
     {
       "dayOfWeek": 7,
@@ -3749,7 +4041,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-01-07"
     },
     {
       "dayOfWeek": 1,
@@ -3760,7 +4053,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-01"
     },
     {
       "dayOfWeek": 2,
@@ -3771,7 +4065,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-02"
     },
     {
       "dayOfWeek": 3,
@@ -3782,7 +4077,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-03"
     },
     {
       "dayOfWeek": 4,
@@ -3793,7 +4089,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-04"
     },
     {
       "dayOfWeek": 5,
@@ -3804,7 +4101,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.121",
       "prdVersion": "10.120",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2021-02-05"
     },
     {
       "dayOfWeek": 6,
@@ -3815,7 +4113,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.121",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-06"
     },
     {
       "dayOfWeek": 7,
@@ -3826,7 +4125,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.121",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-07"
     },
     {
       "dayOfWeek": 1,
@@ -3837,7 +4137,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.121",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-01"
     },
     {
       "dayOfWeek": 2,
@@ -3848,7 +4149,8 @@
       "rcVersion": "10.121",
       "stgVersion": "10.121",
       "prdVersion": "10.120",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-02"
     },
     {
       "dayOfWeek": 3,
@@ -3859,7 +4161,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.120",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2021-02-03"
     },
     {
       "dayOfWeek": 4,
@@ -3870,7 +4173,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.120",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2021-02-04"
     },
     {
       "dayOfWeek": 5,
@@ -3881,7 +4185,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-05"
     },
     {
       "dayOfWeek": 6,
@@ -3892,7 +4197,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-06"
     },
     {
       "dayOfWeek": 7,
@@ -3903,7 +4209,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-07"
     },
     {
       "dayOfWeek": 1,
@@ -3914,7 +4221,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-01"
     },
     {
       "dayOfWeek": 2,
@@ -3925,7 +4233,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-02"
     },
     {
       "dayOfWeek": 3,
@@ -3936,7 +4245,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-03"
     },
     {
       "dayOfWeek": 4,
@@ -3947,7 +4257,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-04"
     },
     {
       "dayOfWeek": 5,
@@ -3958,7 +4269,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.122",
       "prdVersion": "10.121",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2021-02-05"
     },
     {
       "dayOfWeek": 6,
@@ -3969,7 +4281,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.122",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-06"
     },
     {
       "dayOfWeek": 7,
@@ -3980,7 +4293,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.122",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-07"
     },
     {
       "dayOfWeek": 1,
@@ -3991,7 +4305,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.122",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-01"
     },
     {
       "dayOfWeek": 2,
@@ -4002,7 +4317,8 @@
       "rcVersion": "10.122",
       "stgVersion": "10.122",
       "prdVersion": "10.121",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-02"
     },
     {
       "dayOfWeek": 3,
@@ -4013,7 +4329,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.121",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2021-02-03"
     },
     {
       "dayOfWeek": 4,
@@ -4024,7 +4341,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.121",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2021-02-04"
     },
     {
       "dayOfWeek": 5,
@@ -4035,7 +4353,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-05"
     },
     {
       "dayOfWeek": 6,
@@ -4046,7 +4365,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-06"
     },
     {
       "dayOfWeek": 7,
@@ -4057,7 +4377,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-02-07"
     },
     {
       "dayOfWeek": 1,
@@ -4068,7 +4389,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -4079,7 +4401,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -4090,7 +4413,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-03"
     },
     {
       "dayOfWeek": 4,
@@ -4101,7 +4425,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-04"
     },
     {
       "dayOfWeek": 5,
@@ -4112,7 +4437,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.123",
       "prdVersion": "10.122",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2021-03-05"
     },
     {
       "dayOfWeek": 6,
@@ -4123,7 +4449,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.123",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-06"
     },
     {
       "dayOfWeek": 7,
@@ -4134,7 +4461,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.123",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-07"
     },
     {
       "dayOfWeek": 1,
@@ -4145,7 +4473,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.123",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -4156,7 +4485,8 @@
       "rcVersion": "10.123",
       "stgVersion": "10.123",
       "prdVersion": "10.122",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -4167,7 +4497,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.122",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2021-03-03"
     },
     {
       "dayOfWeek": 4,
@@ -4178,7 +4509,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.122",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2021-03-04"
     },
     {
       "dayOfWeek": 5,
@@ -4189,7 +4521,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-05"
     },
     {
       "dayOfWeek": 6,
@@ -4200,7 +4533,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-06"
     },
     {
       "dayOfWeek": 7,
@@ -4211,7 +4545,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-07"
     },
     {
       "dayOfWeek": 1,
@@ -4222,7 +4557,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -4233,7 +4569,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -4244,7 +4581,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-03"
     },
     {
       "dayOfWeek": 4,
@@ -4255,7 +4593,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-04"
     },
     {
       "dayOfWeek": 5,
@@ -4266,7 +4605,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.124",
       "prdVersion": "10.123",
-      "dayType": "STG_INSTALL"
+      "dayType": "STG_INSTALL",
+      "localDate": "2021-03-05"
     },
     {
       "dayOfWeek": 6,
@@ -4277,7 +4617,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.124",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-06"
     },
     {
       "dayOfWeek": 7,
@@ -4288,7 +4629,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.124",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-07"
     },
     {
       "dayOfWeek": 1,
@@ -4299,7 +4641,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.124",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -4310,7 +4653,8 @@
       "rcVersion": "10.124",
       "stgVersion": "10.124",
       "prdVersion": "10.123",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -4321,7 +4665,8 @@
       "rcVersion": "10.125",
       "stgVersion": "10.124",
       "prdVersion": "10.123",
-      "dayType": "NEW_SPRINT"
+      "dayType": "NEW_SPRINT",
+      "localDate": "2021-03-03"
     },
     {
       "dayOfWeek": 4,
@@ -4332,7 +4677,8 @@
       "rcVersion": "10.125",
       "stgVersion": "10.124",
       "prdVersion": "10.123",
-      "dayType": "PRD_INSTALL"
+      "dayType": "PRD_INSTALL",
+      "localDate": "2021-03-04"
     },
     {
       "dayOfWeek": 5,
@@ -4343,7 +4689,8 @@
       "rcVersion": "10.125",
       "stgVersion": "10.124",
       "prdVersion": "10.124",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-05"
     },
     {
       "dayOfWeek": 6,
@@ -4354,7 +4701,8 @@
       "rcVersion": "10.125",
       "stgVersion": "10.124",
       "prdVersion": "10.124",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-06"
     },
     {
       "dayOfWeek": 7,
@@ -4365,7 +4713,8 @@
       "rcVersion": "10.125",
       "stgVersion": "10.124",
       "prdVersion": "10.124",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-07"
     },
     {
       "dayOfWeek": 1,
@@ -4376,7 +4725,8 @@
       "rcVersion": "10.125",
       "stgVersion": "10.124",
       "prdVersion": "10.124",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-01"
     },
     {
       "dayOfWeek": 2,
@@ -4387,7 +4737,8 @@
       "rcVersion": "10.125",
       "stgVersion": "10.124",
       "prdVersion": "10.124",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-02"
     },
     {
       "dayOfWeek": 3,
@@ -4398,73 +4749,8 @@
       "rcVersion": "10.125",
       "stgVersion": "10.124",
       "prdVersion": "10.124",
-      "dayType": "NORMAL"
-    },
-    {
-      "dayOfWeek": 4,
-      "dayOfMonth": 1,
-      "monthOfYear": 4,
-      "year": "2021",
-      "developVersion": "10.126",
-      "rcVersion": "10.125",
-      "stgVersion": "10.124",
-      "prdVersion": "10.124",
-      "dayType": "NORMAL"
-    },
-    {
-      "dayOfWeek": 5,
-      "dayOfMonth": 2,
-      "monthOfYear": 4,
-      "year": "2021",
-      "developVersion": "10.126",
-      "rcVersion": "10.125",
-      "stgVersion": "10.125",
-      "prdVersion": "10.124",
-      "dayType": "STG_INSTALL"
-    },
-    {
-      "dayOfWeek": 6,
-      "dayOfMonth": 3,
-      "monthOfYear": 4,
-      "year": "2021",
-      "developVersion": "10.126",
-      "rcVersion": "10.125",
-      "stgVersion": "10.125",
-      "prdVersion": "10.124",
-      "dayType": "NORMAL"
-    },
-    {
-      "dayOfWeek": 7,
-      "dayOfMonth": 4,
-      "monthOfYear": 4,
-      "year": "2021",
-      "developVersion": "10.126",
-      "rcVersion": "10.125",
-      "stgVersion": "10.125",
-      "prdVersion": "10.124",
-      "dayType": "NORMAL"
-    },
-    {
-      "dayOfWeek": 1,
-      "dayOfMonth": 5,
-      "monthOfYear": 4,
-      "year": "2021",
-      "developVersion": "10.126",
-      "rcVersion": "10.125",
-      "stgVersion": "10.125",
-      "prdVersion": "10.124",
-      "dayType": "NORMAL"
-    },
-    {
-      "dayOfWeek": 2,
-      "dayOfMonth": 6,
-      "monthOfYear": 4,
-      "year": "2021",
-      "developVersion": "10.126",
-      "rcVersion": "10.125",
-      "stgVersion": "10.125",
-      "prdVersion": "10.124",
-      "dayType": "NORMAL"
+      "dayType": "NORMAL",
+      "localDate": "2021-03-03"
     }
   ]
 }

@@ -1,6 +1,9 @@
 package com.jooones.rdc.service
 
-import com.jooones.rdc.model.*
+import com.jooones.rdc.model.Calendar
+import com.jooones.rdc.model.Day
+import com.jooones.rdc.model.DayType
+import com.jooones.rdc.model.SprintStart
 import org.springframework.stereotype.Service
 import java.time.LocalDate
 
@@ -8,27 +11,37 @@ import java.time.LocalDate
 open class CalendarService() {
 
     fun createCalendar(): Calendar {
-        return getSurroundingMonths()
+        return getSurroundingMonths(LocalDate.now())
     }
 
-    // 10.75 woensdag 10/04/2019 start, einde: 23/04/2019
-    open fun getSurroundingMonths(): Calendar {
+    // Sprint 10.75
+    // started on wednesday 10/04/2019
+    // ended on tuesday 23/04/2019
+    open fun getSurroundingMonths(requestDate: LocalDate): Calendar {
         val startOfSprint75 = LocalDate.of(2019, 4, 10)
-        val now = LocalDate.now()
-        val sixMonthsAgo = now.minusMonths(6)
-        val sixMonthsFromNow = now.plusMonths(6)
+        val sixMonthsAgo = requestDate.minusMonths(6)
+        val sixMonthsFromNow = requestDate.plusMonths(6)
         val firstDayOfFirstRequestedMonth = LocalDate.of(sixMonthsAgo.year, sixMonthsAgo.month, 1)
         val lastDayOfLastRequestedMonth = LocalDate.of(sixMonthsFromNow.year, sixMonthsFromNow.month, sixMonthsFromNow.lengthOfMonth())
 
-        val sprintStartBeforeRequestedMonths = getSprintStartBeforeRequestedMonths(startOfSprint75, firstDayOfFirstRequestedMonth)
+        val days = getDaysOfAllSprintsOfRequestedMonths(startOfSprint75, firstDayOfFirstRequestedMonth, lastDayOfLastRequestedMonth)
+        return Calendar(days.toTypedArray())
+    }
 
+    private fun getDaysOfAllSprintsOfRequestedMonths(startOfSprint75: LocalDate, firstDayOfFirstRequestedMonth: LocalDate, lastDayOfLastRequestedMonth: LocalDate): ArrayList<Day> {
         val days = ArrayList<Day>()
+        val sprintStartBeforeRequestedMonths = getSprintStartBeforeRequestedMonths(startOfSprint75, firstDayOfFirstRequestedMonth)
         var sprint = sprintStartBeforeRequestedMonths
         while (sprint.date.isBefore(lastDayOfLastRequestedMonth) || sprint.date.isEqual(lastDayOfLastRequestedMonth)) {
             days.addAll(getDaysOfSprint(sprint))
             sprint = SprintStart(sprint.number.plus(1), sprint.date.plusDays(14))
         }
-        return Calendar(days.toTypedArray())
+        removeDaysOutsideOfRequestedPeriod(days, firstDayOfFirstRequestedMonth, lastDayOfLastRequestedMonth)
+        return days
+    }
+
+    private fun removeDaysOutsideOfRequestedPeriod(days: ArrayList<Day>, firstDayOfFirstRequestedMonth: LocalDate, lastDayOfLastRequestedMonth: LocalDate) {
+        days.removeIf { day -> day.getLocalDate().isBefore(firstDayOfFirstRequestedMonth) || day.getLocalDate().isAfter(lastDayOfLastRequestedMonth) }
     }
 
     private fun getDaysOfSprint(sprintStartBeforeRequestedMonths: SprintStart): Array<Day> {
