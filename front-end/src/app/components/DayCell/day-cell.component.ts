@@ -1,10 +1,34 @@
-import {Component, Input, OnInit} from "@angular/core";
-import {Day, DayType, Month} from "../../domain/calendar.model";
+import { Component, Input, OnInit } from "@angular/core";
+import { Day, DayType, Month } from "../../domain/calendar.model";
 
 @Component({
-  selector: 'rdc-day-cell-component',
+  selector: "rdc-day-cell-component",
   template: `
-    <div *ngIf="day" class='day-cell' [ngClass]="{'weekend-day': isWeekendDay(day.dayOfWeek), 'stg-install-day': isStgInstallDay(day.dayType), 'slight-border': true, 'today': isToday}">
+    <div
+      *ngIf="day"
+      class="day-cell"
+      [ngClass]="{
+        'weekend-day': isWeekendDay(day.dayOfWeek),
+        'stg-install-day': isStgInstallDay(day.dayType),
+        'slight-border': true,
+        today: isToday
+      }"
+    >
+      <div class="day-item">{{ day.dayOfMonth }}</div>
+      <div class="installation-header">
+          <div *ngIf="isNewSprintDay(day.dayType)" class="new-sprint-day">START SPRINT {{day.developVersion.substr(3)}}</div>
+          <div *ngIf="isStgInstallDay(day.dayType)" class="text-center">STG INSTALL {{day.stgVersion}}</div>
+      </div>
+      <div class="dev-version">dev: {{day.developVersion}}<br/></div>
+      <div class="rc-version">rc: {{day.rcVersion}}<br/></div>
+      <div class="stg-version float-right">stg: {{day.stgVersion}}<br/></div>
+      <div class="prd-version float-right">prd: {{day.prdVersion}}<br/></div>
+      <div class="installation-footer">
+        <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD INSTALL {{day.stgVersion}}</div> <!-- stgVersion.. I know.. ¯\_(ツ)_/¯ -->
+      </div>
+    </div>
+
+    <!--<div *ngIf="day" class='day-cell' [ngClass]="{'weekend-day': isWeekendDay(day.dayOfWeek), 'stg-install-day': isStgInstallDay(day.dayType), 'slight-border': true, 'today': isToday}">
         {{day.dayOfMonth}}<br/>
         <div class="box-height">
           <div *ngIf="isNewSprintDay(day.dayType)" class="new-sprint-day">START SPRINT {{day.developVersion.substr(3)}}</div>
@@ -19,67 +43,68 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
           prd: {{day.prdVersion}}<br/>
         </div>
         <div class="box-height">
-          <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD INSTALL {{day.stgVersion}}</div> <!-- stgVersion.. I know.. ¯\_(ツ)_/¯ -->
-        </div>
-    </div>
+          <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD INSTALL {{day.stgVersion}}</div>-->
+    <!-- stgVersion.. I know.. ¯_(ツ)_/¯ -->
+    <!-- </div>
+    </div> -->
   `,
-  styles: [`
-    .day-cell {
-      height:100%;
-    }
+  styleUrls: ["./day-cell.component.css"]
+//   styles: [`
+//   .day-cell {
+//     height:100%;
+//   }
 
-    .new-sprint-day {
-      background-color: lightgreen;
-      text-align: center;
-    }
+//   .new-sprint-day {
+//     background-color: lightgreen;
+//     text-align: center;
+//   }
 
-    .stg-install-day {
-      background-color: moccasin;
-    }
+//   .stg-install-day {
+//     background-color: moccasin;
+//   }
 
-    .prd-install-day {
-      background-color: pink;
-      text-align: center;
-    }
+//   .prd-install-day {
+//     background-color: pink;
+//     text-align: center;
+//   }
 
-    .slight-border {
-      padding: 5px;
-    }
+//   .slight-border {
+//     padding: 5px;
+//   }
 
-    .today {
-      border: solid 3px lightskyblue;
-      padding: 2px !important;
-    }
+//   .today {
+//     border: solid 3px lightskyblue;
+//     padding: 2px !important;
+//   }
 
-    .normal-day {
-    }
+//   .normal-day {
+//   }
 
-    .wut-day {
-      background-color: darkred;
-    }
+//   .wut-day {
+//     background-color: darkred;
+//   }
 
-    .weekend-day {
-      background-color: lightgrey;
-      margin: 0;
-    }
+//   .weekend-day {
+//     background-color: lightgrey;
+//     margin: 0;
+//   }
 
-    .box-height {
-      height: 24px
-    }
+//   .box-height {
+//     height: 24px
+//   }
 
-    .slight-padding-top-bottom {
-      padding-top: 5px;
-      padding-bottom: 5px;
-    }
+//   .slight-padding-top-bottom {
+//     padding-top: 5px;
+//     padding-bottom: 5px;
+//   }
 
-    .slightly-faded-text {
-      color: gray;
-    }
-  `
-  ]
+//   .slightly-faded-text {
+//     color: gray;
+//   }
+// `
+// ]
 })
 export class DayCellComponent implements OnInit {
-
   @Input()
   day: Day;
   @Input()
@@ -89,44 +114,47 @@ export class DayCellComponent implements OnInit {
 
   ngOnInit(): void {
     this.fillInDayType(this.day.dayType);
-    let passedInDate = new Date(Number(this.month.year), this.month.monthOfYear - 1, this.day.dayOfMonth);
+    let passedInDate = new Date(
+      Number(this.month.year),
+      this.month.monthOfYear - 1,
+      this.day.dayOfMonth
+    );
     this.isToday = new Date().toDateString() === passedInDate.toDateString();
   }
 
   private fillInDayType(dayType: DayType) {
     switch (dayType) {
       case DayType.NEW_SPRINT:
-        this.dayTypeClass = 'new-sprint-day'
+        this.dayTypeClass = "new-sprint-day";
         break;
       case DayType.STG_INSTALL:
-        this.dayTypeClass = 'stg-install-day'
+        this.dayTypeClass = "stg-install-day";
         break;
       case DayType.PRD_INSTALL:
-        this.dayTypeClass = 'prd-install-day'
+        this.dayTypeClass = "prd-install-day";
         break;
       case DayType.NORMAL:
-        this.dayTypeClass = 'normal-day'
+        this.dayTypeClass = "normal-day";
         break;
       default:
-        this.dayTypeClass = 'wut-day'
+        this.dayTypeClass = "wut-day";
         break;
     }
   }
 
   isWeekendDay(day: number) {
-    return day === 6 || day === 7
+    return day === 6 || day === 7;
   }
 
   isNewSprintDay(dayType: DayType): boolean {
-    return dayType === DayType.NEW_SPRINT
+    return dayType === DayType.NEW_SPRINT;
   }
 
   isStgInstallDay(dayType: DayType): boolean {
-    return dayType === DayType.STG_INSTALL
+    return dayType === DayType.STG_INSTALL;
   }
 
   isPrdInstallDay(dayType: DayType): boolean {
-    return dayType === DayType.PRD_INSTALL
+    return dayType === DayType.PRD_INSTALL;
   }
-
 }
