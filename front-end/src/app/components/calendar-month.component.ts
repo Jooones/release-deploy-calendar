@@ -21,42 +21,7 @@ import { Month } from "../domain/calendar.model";
       </div>
     </div>
   `,
-  styles: [
-    `
-      .calendar-month {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        border-style: solid;
-        border-width: 1px 1px 0 0;
-      }
-
-      .calendar-header {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-      }
-
-      .calendar-week {
-        flex: 1;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-      }
-
-      .cell {
-        border-style: solid;
-        border-width: 0 0 1px 1px;
-      }
-
-      .day {
-        height: 100%;
-      }
-
-      .weekend-day {
-        background-color: aliceblue;
-        margin: 0;
-      }
-    `,
-  ]
+  styleUrls: ["./calendar-month.component.scss"]
 })
 export class CalendarMonthComponent {
   @Input()
