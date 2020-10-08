@@ -10,7 +10,6 @@ import { Day, DayType, Month } from "../../domain/calendar.model";
       [ngClass]="{
         'weekend-day': isWeekendDay(day.dayOfWeek),
         'stg-install-day': isStgInstallDay(day.dayType),
-        'slight-border': true,
         today: isToday
       }"
     >
