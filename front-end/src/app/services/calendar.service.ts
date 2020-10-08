@@ -16,10 +16,12 @@ export class CalendarService {
   }
 
   getCalendar(): Observable<Calendar> {
-    // TODO change to false to use prd data
+    // TODO ...
     // unfortunately I don't know how to pass in ---prd or something similar to the static spring boot solution we made, someone fix this for me <3
+    // #fml (don't remove this until we solved the issue, it's a search key)
+    const useTestData = false;
     // if (!environment.production) {
-    if (false) {
+    if (useTestData) {
       console.log("using test data")
       return of(exampleResponse).pipe(
         map((calendarTo: CalendarTo) => this.mapTo(calendarTo))
