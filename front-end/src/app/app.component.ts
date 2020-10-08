@@ -9,25 +9,36 @@ import {tap} from "rxjs/operators";
   template: `
     <div *ngIf="(calendar$|async)" class="calendar-container">
       <h1 class="text-center">{{currentMonth.year}} - {{currentMonthName}}</h1>
-
+      <div class="text-center">
+        <label><input id="devRcVersions" type="checkbox" [(ngModel)]="devRcVersions"> dev and rc versions</label>
+        <label><input id="stgPrdVersions" type="checkbox" [(ngModel)]="stgPrdVersions"> stg and prd versions</label>
+      </div>
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-primary" (click)="showPreviousMonth()">Previous month</button>
         <button type="button" class="btn btn-secondary" (click)="showCurrentMonth()">Current month</button>
         <button type="button" class="btn btn-primary" (click)="showNextMonth()">Next month</button>
       </div>
 
-      <rdc-calendar-month [currentMonth]="currentMonth"></rdc-calendar-month>
+      <rdc-calendar-month [currentMonth]="currentMonth"
+                          [devRcVersions]="devRcVersions"
+                          [stgPrdVersions]="stgPrdVersions">
+      </rdc-calendar-month>
     </div>
   `,
   styles: [`
-    .calendar-container{
+    .calendar-container {
       height: 100vh;
       display: flex;
       flex-direction: column;
     }
 
-    rdc-calendar-month{
+    rdc-calendar-month {
       height: 100%;
+    }
+
+    label {
+      padding-left: 5px;
+      padding-right: 5px;
     }
   `]
 })
@@ -36,6 +47,8 @@ export class AppComponent implements OnInit {
 
   currentMonth: Month;
   currentMonthName: string;
+  devRcVersions: boolean = false
+  stgPrdVersions: boolean = false;
 
   private calendar: Calendar;
   private currentMonthIndex: number;

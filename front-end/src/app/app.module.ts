@@ -10,6 +10,7 @@ import {DayCellComponent} from "./components/DayCell/day-cell.component";
 import {CalendarService} from "./services/calendar.service";
 import {CalendarMonthComponent} from "./components/calendar-month.component";
 import {NgbAlertModule, NgbTooltipModule} from '@ng-bootstrap/ng-bootstrap';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {NgbAlertModule, NgbTooltipModule} from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     BrowserAnimationsModule,
     NgbAlertModule,
-    NgbTooltipModule
+    NgbTooltipModule,
+    FormsModule
   ],
   providers: [
     CalendarService
