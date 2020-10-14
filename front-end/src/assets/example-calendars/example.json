@@ -1,378 +1,6 @@
 {
   "days": [
     {
-      "dayOfWeek": 7,
-      "dayOfMonth": 1,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.96",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-07"
-    },
-    {
-      "dayOfWeek": 1,
-      "dayOfMonth": 2,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.96",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-01"
-    },
-    {
-      "dayOfWeek": 2,
-      "dayOfMonth": 3,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.96",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-02"
-    },
-    {
-      "dayOfWeek": 3,
-      "dayOfMonth": 4,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.96",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-03"
-    },
-    {
-      "dayOfWeek": 4,
-      "dayOfMonth": 5,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.96",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-04"
-    },
-    {
-      "dayOfWeek": 5,
-      "dayOfMonth": 6,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.97",
-      "prdVersion": "10.96",
-      "dayType": "STG_INSTALL",
-      "localDate": "2020-03-05"
-    },
-    {
-      "dayOfWeek": 6,
-      "dayOfMonth": 7,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.97",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-06"
-    },
-    {
-      "dayOfWeek": 7,
-      "dayOfMonth": 8,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.97",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-07"
-    },
-    {
-      "dayOfWeek": 1,
-      "dayOfMonth": 9,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.97",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-01"
-    },
-    {
-      "dayOfWeek": 2,
-      "dayOfMonth": 10,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.98",
-      "rcVersion": "10.97",
-      "stgVersion": "10.97",
-      "prdVersion": "10.96",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-02"
-    },
-    {
-      "dayOfWeek": 3,
-      "dayOfMonth": 11,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.97",
-      "prdVersion": "10.96",
-      "dayType": "NEW_SPRINT",
-      "localDate": "2020-03-03"
-    },
-    {
-      "dayOfWeek": 4,
-      "dayOfMonth": 12,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.97",
-      "prdVersion": "10.96",
-      "dayType": "PRD_INSTALL",
-      "localDate": "2020-03-04"
-    },
-    {
-      "dayOfWeek": 5,
-      "dayOfMonth": 13,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.97",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-05"
-    },
-    {
-      "dayOfWeek": 6,
-      "dayOfMonth": 14,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.97",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-06"
-    },
-    {
-      "dayOfWeek": 7,
-      "dayOfMonth": 15,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.97",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-07"
-    },
-    {
-      "dayOfWeek": 1,
-      "dayOfMonth": 16,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.97",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-01"
-    },
-    {
-      "dayOfWeek": 2,
-      "dayOfMonth": 17,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.97",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-02"
-    },
-    {
-      "dayOfWeek": 3,
-      "dayOfMonth": 18,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.97",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-03"
-    },
-    {
-      "dayOfWeek": 4,
-      "dayOfMonth": 19,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.97",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-04"
-    },
-    {
-      "dayOfWeek": 5,
-      "dayOfMonth": 20,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.98",
-      "prdVersion": "10.97",
-      "dayType": "STG_INSTALL",
-      "localDate": "2020-03-05"
-    },
-    {
-      "dayOfWeek": 6,
-      "dayOfMonth": 21,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.98",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-06"
-    },
-    {
-      "dayOfWeek": 7,
-      "dayOfMonth": 22,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.98",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-07"
-    },
-    {
-      "dayOfWeek": 1,
-      "dayOfMonth": 23,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.98",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-01"
-    },
-    {
-      "dayOfWeek": 2,
-      "dayOfMonth": 24,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.99",
-      "rcVersion": "10.98",
-      "stgVersion": "10.98",
-      "prdVersion": "10.97",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-02"
-    },
-    {
-      "dayOfWeek": 3,
-      "dayOfMonth": 25,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.100",
-      "rcVersion": "10.99",
-      "stgVersion": "10.98",
-      "prdVersion": "10.97",
-      "dayType": "NEW_SPRINT",
-      "localDate": "2020-03-03"
-    },
-    {
-      "dayOfWeek": 4,
-      "dayOfMonth": 26,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.100",
-      "rcVersion": "10.99",
-      "stgVersion": "10.98",
-      "prdVersion": "10.97",
-      "dayType": "PRD_INSTALL",
-      "localDate": "2020-03-04"
-    },
-    {
-      "dayOfWeek": 5,
-      "dayOfMonth": 27,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.100",
-      "rcVersion": "10.99",
-      "stgVersion": "10.98",
-      "prdVersion": "10.98",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-05"
-    },
-    {
-      "dayOfWeek": 6,
-      "dayOfMonth": 28,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.100",
-      "rcVersion": "10.99",
-      "stgVersion": "10.98",
-      "prdVersion": "10.98",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-06"
-    },
-    {
-      "dayOfWeek": 7,
-      "dayOfMonth": 29,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.100",
-      "rcVersion": "10.99",
-      "stgVersion": "10.98",
-      "prdVersion": "10.98",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-07"
-    },
-    {
-      "dayOfWeek": 1,
-      "dayOfMonth": 30,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.100",
-      "rcVersion": "10.99",
-      "stgVersion": "10.98",
-      "prdVersion": "10.98",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-01"
-    },
-    {
-      "dayOfWeek": 2,
-      "dayOfMonth": 31,
-      "monthOfYear": 3,
-      "year": "2020",
-      "developVersion": "10.100",
-      "rcVersion": "10.99",
-      "stgVersion": "10.98",
-      "prdVersion": "10.98",
-      "dayType": "NORMAL",
-      "localDate": "2020-03-02"
-    },
-    {
       "dayOfWeek": 3,
       "dayOfMonth": 1,
       "monthOfYear": 4,
@@ -393,7 +21,7 @@
       "rcVersion": "10.99",
       "stgVersion": "10.98",
       "prdVersion": "10.98",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-04-04"
     },
     {
@@ -525,7 +153,7 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.99",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-04-01"
     },
     {
@@ -561,7 +189,7 @@
       "rcVersion": "10.100",
       "stgVersion": "10.99",
       "prdVersion": "10.99",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-04-04"
     },
     {
@@ -693,7 +321,7 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.100",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-04-01"
     },
     {
@@ -729,7 +357,7 @@
       "rcVersion": "10.101",
       "stgVersion": "10.100",
       "prdVersion": "10.100",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-04-04"
     },
     {
@@ -861,7 +489,7 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.101",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-05-01"
     },
     {
@@ -897,7 +525,7 @@
       "rcVersion": "10.102",
       "stgVersion": "10.101",
       "prdVersion": "10.101",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-05-04"
     },
     {
@@ -1029,7 +657,7 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.102",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-05-01"
     },
     {
@@ -1065,7 +693,7 @@
       "rcVersion": "10.103",
       "stgVersion": "10.102",
       "prdVersion": "10.102",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-05-04"
     },
     {
@@ -1197,7 +825,7 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.103",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-06-01"
     },
     {
@@ -1233,7 +861,7 @@
       "rcVersion": "10.104",
       "stgVersion": "10.103",
       "prdVersion": "10.103",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-06-04"
     },
     {
@@ -1365,7 +993,7 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.104",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-06-01"
     },
     {
@@ -1401,7 +1029,7 @@
       "rcVersion": "10.105",
       "stgVersion": "10.104",
       "prdVersion": "10.104",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-06-04"
     },
     {
@@ -1533,7 +1161,7 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.105",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-07-01"
     },
     {
@@ -1569,7 +1197,7 @@
       "rcVersion": "10.106",
       "stgVersion": "10.105",
       "prdVersion": "10.105",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-07-04"
     },
     {
@@ -1701,7 +1329,7 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.106",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-07-01"
     },
     {
@@ -1737,7 +1365,7 @@
       "rcVersion": "10.107",
       "stgVersion": "10.106",
       "prdVersion": "10.106",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-07-04"
     },
     {
@@ -1869,7 +1497,7 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.107",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-08-01"
     },
     {
@@ -1905,7 +1533,7 @@
       "rcVersion": "10.108",
       "stgVersion": "10.107",
       "prdVersion": "10.107",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-08-04"
     },
     {
@@ -2037,7 +1665,7 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.108",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-08-01"
     },
     {
@@ -2073,7 +1701,7 @@
       "rcVersion": "10.109",
       "stgVersion": "10.108",
       "prdVersion": "10.108",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-08-04"
     },
     {
@@ -2205,7 +1833,7 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.109",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-08-01"
     },
     {
@@ -2241,7 +1869,7 @@
       "rcVersion": "10.110",
       "stgVersion": "10.109",
       "prdVersion": "10.109",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-09-04"
     },
     {
@@ -2373,7 +2001,7 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.110",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-09-01"
     },
     {
@@ -2409,7 +2037,7 @@
       "rcVersion": "10.111",
       "stgVersion": "10.110",
       "prdVersion": "10.110",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-09-04"
     },
     {
@@ -2541,7 +2169,7 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.111",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-09-01"
     },
     {
@@ -2577,7 +2205,7 @@
       "rcVersion": "10.112",
       "stgVersion": "10.111",
       "prdVersion": "10.111",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-10-04"
     },
     {
@@ -2709,7 +2337,7 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.112",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-10-01"
     },
     {
@@ -2745,7 +2373,7 @@
       "rcVersion": "10.113",
       "stgVersion": "10.112",
       "prdVersion": "10.112",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-10-04"
     },
     {
@@ -2877,7 +2505,7 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.113",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-10-01"
     },
     {
@@ -2913,7 +2541,7 @@
       "rcVersion": "10.114",
       "stgVersion": "10.113",
       "prdVersion": "10.113",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-10-04"
     },
     {
@@ -3045,7 +2673,7 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.114",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-11-01"
     },
     {
@@ -3081,7 +2709,7 @@
       "rcVersion": "10.115",
       "stgVersion": "10.114",
       "prdVersion": "10.114",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-11-04"
     },
     {
@@ -3213,7 +2841,7 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.115",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-11-01"
     },
     {
@@ -3249,7 +2877,7 @@
       "rcVersion": "10.116",
       "stgVersion": "10.115",
       "prdVersion": "10.115",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-11-04"
     },
     {
@@ -3381,7 +3009,7 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.116",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-12-01"
     },
     {
@@ -3417,7 +3045,7 @@
       "rcVersion": "10.117",
       "stgVersion": "10.116",
       "prdVersion": "10.116",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-12-04"
     },
     {
@@ -3549,7 +3177,7 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.117",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2020-12-01"
     },
     {
@@ -3585,7 +3213,7 @@
       "rcVersion": "10.118",
       "stgVersion": "10.117",
       "prdVersion": "10.117",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2020-12-04"
     },
     {
@@ -3717,7 +3345,7 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.118",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2021-01-01"
     },
     {
@@ -3753,7 +3381,7 @@
       "rcVersion": "10.119",
       "stgVersion": "10.118",
       "prdVersion": "10.118",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2021-01-04"
     },
     {
@@ -3885,7 +3513,7 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.119",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2021-01-01"
     },
     {
@@ -3921,7 +3549,7 @@
       "rcVersion": "10.120",
       "stgVersion": "10.119",
       "prdVersion": "10.119",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2021-01-04"
     },
     {
@@ -4053,7 +3681,7 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.120",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2021-02-01"
     },
     {
@@ -4089,7 +3717,7 @@
       "rcVersion": "10.121",
       "stgVersion": "10.120",
       "prdVersion": "10.120",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2021-02-04"
     },
     {
@@ -4221,7 +3849,7 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.121",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2021-02-01"
     },
     {
@@ -4257,7 +3885,7 @@
       "rcVersion": "10.122",
       "stgVersion": "10.121",
       "prdVersion": "10.121",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2021-02-04"
     },
     {
@@ -4389,7 +4017,7 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.122",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2021-03-01"
     },
     {
@@ -4425,7 +4053,7 @@
       "rcVersion": "10.123",
       "stgVersion": "10.122",
       "prdVersion": "10.122",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2021-03-04"
     },
     {
@@ -4557,7 +4185,7 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.123",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2021-03-01"
     },
     {
@@ -4593,7 +4221,7 @@
       "rcVersion": "10.124",
       "stgVersion": "10.123",
       "prdVersion": "10.123",
-      "dayType": "NORMAL",
+      "dayType": "PRD_HOTFIX_INSTALL",
       "localDate": "2021-03-04"
     },
     {
@@ -4725,7 +4353,7 @@
       "rcVersion": "10.125",
       "stgVersion": "10.124",
       "prdVersion": "10.124",
-      "dayType": "NORMAL",
+      "dayType": "INT_INSTALL",
       "localDate": "2021-03-01"
     },
     {
@@ -4751,6 +4379,366 @@
       "prdVersion": "10.124",
       "dayType": "NORMAL",
       "localDate": "2021-03-03"
+    },
+    {
+      "dayOfWeek": 4,
+      "dayOfMonth": 1,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.126",
+      "rcVersion": "10.125",
+      "stgVersion": "10.124",
+      "prdVersion": "10.124",
+      "dayType": "PRD_HOTFIX_INSTALL",
+      "localDate": "2021-04-04"
+    },
+    {
+      "dayOfWeek": 5,
+      "dayOfMonth": 2,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.126",
+      "rcVersion": "10.125",
+      "stgVersion": "10.125",
+      "prdVersion": "10.124",
+      "dayType": "STG_INSTALL",
+      "localDate": "2021-04-05"
+    },
+    {
+      "dayOfWeek": 6,
+      "dayOfMonth": 3,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.126",
+      "rcVersion": "10.125",
+      "stgVersion": "10.125",
+      "prdVersion": "10.124",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-06"
+    },
+    {
+      "dayOfWeek": 7,
+      "dayOfMonth": 4,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.126",
+      "rcVersion": "10.125",
+      "stgVersion": "10.125",
+      "prdVersion": "10.124",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-07"
+    },
+    {
+      "dayOfWeek": 1,
+      "dayOfMonth": 5,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.126",
+      "rcVersion": "10.125",
+      "stgVersion": "10.125",
+      "prdVersion": "10.124",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-01"
+    },
+    {
+      "dayOfWeek": 2,
+      "dayOfMonth": 6,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.126",
+      "rcVersion": "10.125",
+      "stgVersion": "10.125",
+      "prdVersion": "10.124",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-02"
+    },
+    {
+      "dayOfWeek": 3,
+      "dayOfMonth": 7,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.125",
+      "prdVersion": "10.124",
+      "dayType": "NEW_SPRINT",
+      "localDate": "2021-04-03"
+    },
+    {
+      "dayOfWeek": 4,
+      "dayOfMonth": 8,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.125",
+      "prdVersion": "10.124",
+      "dayType": "PRD_INSTALL",
+      "localDate": "2021-04-04"
+    },
+    {
+      "dayOfWeek": 5,
+      "dayOfMonth": 9,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.125",
+      "prdVersion": "10.125",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-05"
+    },
+    {
+      "dayOfWeek": 6,
+      "dayOfMonth": 10,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.125",
+      "prdVersion": "10.125",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-06"
+    },
+    {
+      "dayOfWeek": 7,
+      "dayOfMonth": 11,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.125",
+      "prdVersion": "10.125",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-07"
+    },
+    {
+      "dayOfWeek": 1,
+      "dayOfMonth": 12,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.125",
+      "prdVersion": "10.125",
+      "dayType": "INT_INSTALL",
+      "localDate": "2021-04-01"
+    },
+    {
+      "dayOfWeek": 2,
+      "dayOfMonth": 13,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.125",
+      "prdVersion": "10.125",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-02"
+    },
+    {
+      "dayOfWeek": 3,
+      "dayOfMonth": 14,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.125",
+      "prdVersion": "10.125",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-03"
+    },
+    {
+      "dayOfWeek": 4,
+      "dayOfMonth": 15,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.125",
+      "prdVersion": "10.125",
+      "dayType": "PRD_HOTFIX_INSTALL",
+      "localDate": "2021-04-04"
+    },
+    {
+      "dayOfWeek": 5,
+      "dayOfMonth": 16,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.126",
+      "prdVersion": "10.125",
+      "dayType": "STG_INSTALL",
+      "localDate": "2021-04-05"
+    },
+    {
+      "dayOfWeek": 6,
+      "dayOfMonth": 17,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.126",
+      "prdVersion": "10.125",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-06"
+    },
+    {
+      "dayOfWeek": 7,
+      "dayOfMonth": 18,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.126",
+      "prdVersion": "10.125",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-07"
+    },
+    {
+      "dayOfWeek": 1,
+      "dayOfMonth": 19,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.126",
+      "prdVersion": "10.125",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-01"
+    },
+    {
+      "dayOfWeek": 2,
+      "dayOfMonth": 20,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.127",
+      "rcVersion": "10.126",
+      "stgVersion": "10.126",
+      "prdVersion": "10.125",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-02"
+    },
+    {
+      "dayOfWeek": 3,
+      "dayOfMonth": 21,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.126",
+      "prdVersion": "10.125",
+      "dayType": "NEW_SPRINT",
+      "localDate": "2021-04-03"
+    },
+    {
+      "dayOfWeek": 4,
+      "dayOfMonth": 22,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.126",
+      "prdVersion": "10.125",
+      "dayType": "PRD_INSTALL",
+      "localDate": "2021-04-04"
+    },
+    {
+      "dayOfWeek": 5,
+      "dayOfMonth": 23,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.126",
+      "prdVersion": "10.126",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-05"
+    },
+    {
+      "dayOfWeek": 6,
+      "dayOfMonth": 24,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.126",
+      "prdVersion": "10.126",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-06"
+    },
+    {
+      "dayOfWeek": 7,
+      "dayOfMonth": 25,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.126",
+      "prdVersion": "10.126",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-07"
+    },
+    {
+      "dayOfWeek": 1,
+      "dayOfMonth": 26,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.126",
+      "prdVersion": "10.126",
+      "dayType": "INT_INSTALL",
+      "localDate": "2021-04-01"
+    },
+    {
+      "dayOfWeek": 2,
+      "dayOfMonth": 27,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.126",
+      "prdVersion": "10.126",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-02"
+    },
+    {
+      "dayOfWeek": 3,
+      "dayOfMonth": 28,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.126",
+      "prdVersion": "10.126",
+      "dayType": "NORMAL",
+      "localDate": "2021-04-03"
+    },
+    {
+      "dayOfWeek": 4,
+      "dayOfMonth": 29,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.126",
+      "prdVersion": "10.126",
+      "dayType": "PRD_HOTFIX_INSTALL",
+      "localDate": "2021-04-04"
+    },
+    {
+      "dayOfWeek": 5,
+      "dayOfMonth": 30,
+      "monthOfYear": 4,
+      "year": "2021",
+      "developVersion": "10.128",
+      "rcVersion": "10.127",
+      "stgVersion": "10.127",
+      "prdVersion": "10.126",
+      "dayType": "STG_INSTALL",
+      "localDate": "2021-04-05"
     }
   ]
 }

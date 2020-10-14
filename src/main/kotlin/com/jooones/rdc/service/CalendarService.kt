@@ -107,7 +107,8 @@ open class CalendarService() {
             "10.$sprintNumber",
             "10.${sprintNumber - 1}",
             "10.${sprintNumber - 2}",
-            "10.${sprintNumber - 2}"
+            "10.${sprintNumber - 2}",
+            DayType.INT_INSTALL
         )
         val day7 = Day(
             firstDayOfSprint.plusDays(6).dayOfWeek.ordinal + 1,
@@ -137,7 +138,8 @@ open class CalendarService() {
             "10.$sprintNumber",
             "10.${sprintNumber - 1}",
             "10.${sprintNumber - 2}",
-            "10.${sprintNumber - 2}"
+            "10.${sprintNumber - 2}",
+            DayType.PRD_HOTFIX_INSTALL
         )
         val day10 = Day(
             firstDayOfSprint.plusDays(9).dayOfWeek.ordinal + 1,

@@ -21,14 +21,18 @@ import { Day, DayType, Month } from "../../domain/calendar.model";
       <div class="day-item">{{ day.dayOfMonth }}</div>
       <div class="installation-header">
           <div *ngIf="isNewSprintDay(day.dayType)" class="new-sprint-day">START SPRINT {{day.developVersion.substr(3)}}</div>
-          <div *ngIf="isStgInstallDay(day.dayType)" class="text-center">STG INSTALL {{day.stgVersion}}</div>
+          <div *ngIf="isIntInstallDay(day.dayType)" class="text-center">Freeze rc {{day.rcVersion}} + demo</div>
+          <div *ngIf="isStgInstallDay(day.dayType)" class="text-center">STG {{day.stgVersion}}</div>
       </div>
       <div *ngIf="devRcVersions" class="dev-version">dev: {{day.developVersion}}</div>
       <div *ngIf="devRcVersions" class="rc-version">rc: {{day.rcVersion}}</div>
       <div *ngIf="stgPrdVersions" class="stg-version float-right">stg: {{day.stgVersion}}</div>
       <div *ngIf="stgPrdVersions" class="prd-version float-right">prd: {{day.prdVersion}}</div>
       <div class="installation-footer">
-        <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD INSTALL {{day.stgVersion}}</div> <!-- stgVersion.. I know.. ¯\_(ツ)_/¯ -->
+        <div *ngIf="isNewSprintDay(day.dayType)" class="kng-int-install-day">KNG INT {{day.rcVersion}}</div>
+        <div *ngIf="isIntInstallDay(day.dayType)" class="int-install-day">INT {{day.rcVersion}}</div>
+        <div *ngIf="isPrdInstallDay(day.dayType)" class="prd-install-day">PRD {{day.stgVersion}}</div> <!-- stgVersion.. I know.. ¯\_(ツ)_/¯ -->
+        <div *ngIf="isHotfixInstallDay(day.dayType)" class="hotfix-install-day">HOTFIX PRD {{day.prdVersion}}.X ?</div> <!-- stgVersion.. I know.. ¯\_(ツ)_/¯ -->
       </div>
     </div>
   `,
@@ -48,33 +52,12 @@ export class DayCellComponent implements OnInit {
   isToday: boolean;
 
   ngOnInit(): void {
-    this.fillInDayType(this.day.dayType);
     let passedInDate = new Date(
       Number(this.month.year),
       this.month.monthOfYear - 1,
       this.day.dayOfMonth
     );
     this.isToday = new Date().toDateString() === passedInDate.toDateString();
-  }
-
-  private fillInDayType(dayType: DayType) {
-    switch (dayType) {
-      case DayType.NEW_SPRINT:
-        this.dayTypeClass = "new-sprint-day";
-        break;
-      case DayType.STG_INSTALL:
-        this.dayTypeClass = "stg-install-day";
-        break;
-      case DayType.PRD_INSTALL:
-        this.dayTypeClass = "prd-install-day";
-        break;
-      case DayType.NORMAL:
-        this.dayTypeClass = "normal-day";
-        break;
-      default:
-        this.dayTypeClass = "wut-day";
-        break;
-    }
   }
 
   isWeekendDay(day: number) {
@@ -85,11 +68,19 @@ export class DayCellComponent implements OnInit {
     return dayType === DayType.NEW_SPRINT;
   }
 
+  isIntInstallDay(dayType: DayType): boolean {
+    return dayType === DayType.INT_INSTALL;
+  }
+
   isStgInstallDay(dayType: DayType): boolean {
     return dayType === DayType.STG_INSTALL;
   }
 
   isPrdInstallDay(dayType: DayType): boolean {
     return dayType === DayType.PRD_INSTALL;
+  }
+
+  isHotfixInstallDay(dayType: DayType): boolean {
+    return dayType === DayType.PRD_HOTFIX_INSTALL;
   }
 }

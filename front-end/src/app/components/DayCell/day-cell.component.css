@@ -43,16 +43,31 @@
 }
 
 .new-sprint-day {
-  background-color: lightgreen;
+  background-color: #bbdebb;
+  text-align: center;
+}
+
+.kng-int-install-day {
+  background-color: #d3e9ef;
+  text-align: center;
+}
+
+.int-install-day {
+  background-color: #a4d2e0;
   text-align: center;
 }
 
 .stg-install-day {
-  background-color: moccasin;
+  background-color: #ffe6bd;
 }
 
 .prd-install-day {
   background-color: pink;
+  text-align: center;
+}
+
+.hotfix-install-day {
+  background-color: #ffe1e9;
   text-align: center;
 }
 
