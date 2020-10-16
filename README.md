@@ -33,6 +33,16 @@ To be able to quickly test changes to the UI code without the bother of restarti
 
 **note:** please don't commit with `useTestData = true` 
 
+# Heroku
+## Actual app
+https://release-deploy-calendar.herokuapp.com/
+
+## Useful commands
+`heroku container:login`  
+`heroku container:push web -a release-deploy-calendar`  
+`heroku container:release web -a release-deploy-calendar`  
+`heroku logs --tail -a release-deploy-calendar`  
+`heroku apps`  
 
 # sources
 https://speedandfunction.com/running-spring-boot-angular/
