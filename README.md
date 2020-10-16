@@ -37,12 +37,17 @@ To be able to quickly test changes to the UI code without the bother of restarti
 ## Actual app
 https://release-deploy-calendar.herokuapp.com/
 
-## Useful commands
-`heroku container:login`  
-`heroku container:push web -a release-deploy-calendar`  
-`heroku container:release web -a release-deploy-calendar`  
-`heroku logs --tail -a release-deploy-calendar`  
-`heroku apps`  
+## Deploying a new version of the app
+- Navigate to release-deploy-calendar/build/docker
+- Execute: 
+    - `heroku login`
+    - `heroku container:login`
+    - `heroku container:push web -a release-deploy-calendar`
+    - `heroku container:release web -a release-deploy-calendar`
+
+## Other commands  
+- `heroku logs --tail -a release-deploy-calendar`  
+- `heroku apps`  
 
 # sources
 https://speedandfunction.com/running-spring-boot-angular/
