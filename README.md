@@ -49,6 +49,6 @@ https://release-deploy-calendar.herokuapp.com/
 - `heroku logs --tail -a release-deploy-calendar`  
 - `heroku apps`  
 
-## "Your tool has potential but the final result sucks balls"
+## "Your app has potential but the final result sucks balls"
 Feel free to fork, update and sell for a high price.  
 We don't mind!  
