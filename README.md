@@ -49,5 +49,6 @@ https://release-deploy-calendar.herokuapp.com/
 - `heroku logs --tail -a release-deploy-calendar`  
 - `heroku apps`  
 
-# sources
-https://speedandfunction.com/running-spring-boot-angular/
+## "Your tool has potential but the final result sucks balls"
+Feel free to fork, update and sell for a high price.  
+We don't mind!  
