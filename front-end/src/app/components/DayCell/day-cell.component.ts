@@ -16,7 +16,6 @@ import { Day, DayType, Month } from "../../domain/calendar.model";
         'stg-install-day': isStgInstallDay(day.dayType),
         today: isToday
       }"
-      [ngbTooltip]="tipContent"
     >
       <div class="day-item">{{ day.dayOfMonth }}</div>
       <div class="installation-header">
