@@ -18,7 +18,7 @@ export class CalendarService {
     // TODO ...
     // unfortunately I don't know how to pass in ---prd or something similar to the static spring boot solution we made, someone fix this for me <3
     // #fml (don't remove this until we solved the issue, it's a search key)
-    const useTestData = true;
+    const useTestData = false;
     // if (!environment.production) {
     if (useTestData) {
       console.log("using test data")
