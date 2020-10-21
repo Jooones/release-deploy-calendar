@@ -6,32 +6,32 @@ import {Calendar, Month} from "./domain/calendar.model";
   selector: 'app-root',
   template: `
     <section *ngIf="calendar" class="flex flex-col h-screen">
-      <section class="flex items-center xs:justify-start sm:justify-center p-2 text-xl text-gray-700 space-x-2">
-        <button class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full focus:outline-none"
+      <section class="flex items-center xs:justify-start sm:justify-center p-2 text-gray-700 space-x-2">
+        <button class="bg-white shadow-xs hover:bg-gray-100 p-2 border border-gray-100 rounded-full focus:outline-none"
                 (click)="showPreviousMonth()">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
           </svg>
         </button>
-        <section class="font-semibold rounded select-none">
-          {{selectedMonthName}} {{selectedMonth.year}}
+        <section class="text-xl font-semibold text-center rounded select-none w-40">
+          <span>{{selectedMonthName}} {{selectedMonth.year}}</span>
         </section>
-        <button class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full focus:outline-none"
+        <button class="bg-white shadow-xs hover:bg-gray-100 p-2 border border-gray-100 rounded-full focus:outline-none"
                 (click)="showNextMonth()">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
         </button>
 
-        <section class="absolute right-0 flex space-x-1 p-1 mr-1 select-none text-sm">
-          <button class="bg-white hover:bg-gray-100 border border-gray-200 p-2 rounded shadow-xs focus:outline-none"
+        <section class="absolute right-0 flex space-x-2 p-2 text-sm">
+          <button class="font-semibold bg-white hover:bg-gray-100 border border-gray-200 p-2 rounded shadow-xs focus:outline-none"
                   (click)="showCurrentMonth()">
             <span>{{ currentMonthName }} {{ currentMonth.year }}</span>
           </button>
           <section class="relative">
-            <button class="bg-gray-100 hover:bg-gray-200 p-2 rounded-full focus:outline-none"
+            <button class="bg-white shadow-xs hover:bg-gray-100 p-2 border border-gray-100 rounded-full focus:outline-none"
                     (click)="toggleSettings()">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                    xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
@@ -40,9 +40,9 @@ import {Calendar, Month} from "./domain/calendar.model";
               </svg>
             </button>
             <section *ngIf="settingsShown"
-                     class="origin-top-right absolute right-0 mt-1">
-              <section class="flex flex-col bg-white shadow-xs rounded divide-y divide-gray-200">
-                <label class="inline-flex items-center p-2 space-x-1 w-40">
+                     class="origin-top-right absolute right-0 mt-3">
+              <section class="flex flex-col bg-white shadow-md rounded divide-y divide-gray-200 w-40 select-none">
+                <label class="inline-flex items-center p-2 space-x-1">
                   <input type="checkbox" [(ngModel)]="devRcVersions">
                   <span>dev and rc versions</span>
                 </label>
