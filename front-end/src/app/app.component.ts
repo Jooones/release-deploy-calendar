@@ -131,7 +131,7 @@ export class AppComponent implements OnInit {
 
   private findCurrentMonth() {
     return this.calendar.months
-      .find(month => month.year === new Date().getFullYear().toString()
+      .find(month => month.year === new Date().getFullYear()
         && month.monthOfYear === new Date().getMonth() + 1);
   }
 

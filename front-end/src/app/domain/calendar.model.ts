@@ -3,7 +3,7 @@ export interface Calendar {
 }
 
 export interface Month {
-  year: String;
+  year: number;
   monthOfYear: number;
   weeks: Array<Week>;
 }

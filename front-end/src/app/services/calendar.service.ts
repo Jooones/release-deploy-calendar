@@ -36,53 +36,58 @@ export class CalendarService {
   mapTo(calendarTo: CalendarTo): Calendar {
     const months: Array<Month> = []
 
-    this.extractDaysForMonths(this.sortDays(calendarTo.days)).forEach((daysOfMonth, monthValue) => {
+    this.extractDaysForMonths(this.sortDays(calendarTo.days)).forEach((daysOfYearMonth: DayTo[], yearMonthAsString: string) => {
+      const yearMonth = YearMonth.parse(yearMonthAsString);
       const month: Month = {
-        year: daysOfMonth[6].year,
-        monthOfYear: monthValue,
-        weeks: this.mapDaysToWeeks(daysOfMonth)
+        year: yearMonth.year,
+        monthOfYear: yearMonth.month,
+        weeks: this.mapDaysToWeeks(daysOfYearMonth)
       };
       months.push(month);
     });
-
     return {months: months};
   }
 
-  extractDaysForMonths(days: Array<DayTo>): Map<number, Array<DayTo>> {
-    const daysByMonth: Map<number, Array<DayTo>> = new Map<number, Array<DayTo>>();
+  extractDaysForMonths(days: Array<DayTo>): Map<string, Array<DayTo>> {
+    const daysByYearMonth: Map<string, Array<DayTo>> = new Map<string, Array<DayTo>>();
 
     days.forEach((day: DayTo) => {
-      const currentMonth = day.monthOfYear;
-      const previousMonth = currentMonth == 1 ? 12 : currentMonth - 1;
-      const nextMonth = (currentMonth % 12) + 1;
+      const currentYearMonth = new YearMonth(parseInt(day.year), day.monthOfYear);
+      const currentYearMonthAsString = currentYearMonth.toString();
 
-      if (!daysByMonth.has(currentMonth)) {
-        daysByMonth.set(currentMonth, []);
+      const previousYearMonth = currentYearMonth.previous();
+      const previousYearMonthAsString = previousYearMonth.toString();
+
+      const nextYearMonth = currentYearMonth.next();
+      const nextYearMonthAsString = nextYearMonth.toString();
+
+      if (!daysByYearMonth.has(currentYearMonthAsString)) {
+        daysByYearMonth.set(currentYearMonthAsString, []);
       }
 
-      const lastDayOfMonth = new Date(parseInt(day.year), currentMonth + 1, 0).getDate();
-      const daysUntilLastDayOfMonth = lastDayOfMonth - day.dayOfMonth;
+      const lastDayOfYearMonth = currentYearMonth.lastDay();
+      const daysUntilLastDayOfMonth = lastDayOfYearMonth - day.dayOfMonth;
 
       const pushToNextMonth = (day.dayOfWeek + daysUntilLastDayOfMonth) < 7
-      const pushToPrevMonth = daysByMonth.get(previousMonth)?.length < 42
+      const pushToPreviousMonth = daysByYearMonth.get(previousYearMonthAsString)?.length < 42
 
-      daysByMonth.get(currentMonth).push(day);
+      daysByYearMonth.get(currentYearMonthAsString).push(day);
 
-      if (pushToPrevMonth) {
-        if (!daysByMonth.has(previousMonth)) {
-          daysByMonth.set(previousMonth, []);
+      if (pushToPreviousMonth) {
+        if (!daysByYearMonth.has(previousYearMonthAsString)) {
+          daysByYearMonth.set(previousYearMonthAsString, []);
         }
-        daysByMonth.get(previousMonth).push(day);
+        daysByYearMonth.get(previousYearMonthAsString).push(day);
       }
       if (pushToNextMonth) {
-        if (!daysByMonth.has(nextMonth)) {
-          daysByMonth.set(nextMonth, []);
+        if (!daysByYearMonth.has(nextYearMonthAsString)) {
+          daysByYearMonth.set(nextYearMonthAsString, []);
         }
-        daysByMonth.get(nextMonth).push(day);
+        daysByYearMonth.get(nextYearMonthAsString).push(day);
       }
     });
 
-    return daysByMonth;
+    return daysByYearMonth;
   }
 
   mapDaysToWeeks(days: Array<DayTo>): Array<Week> {
@@ -136,4 +141,36 @@ export class CalendarService {
     })
   }
 
+}
+
+class YearMonth {
+
+  static parse(yearMonthAsString) {
+    const split = yearMonthAsString.split('-');
+    return new YearMonth(parseInt(split[0]), parseInt(split[1]));
+  }
+
+  constructor(public year: number,
+              public month: number) {
+  }
+
+  previous(): YearMonth {
+    return this.month === 1
+      ? new YearMonth(this.year - 1, 12)
+      : new YearMonth(this.year, this.month - 1)
+  }
+
+  next(): YearMonth {
+    return this.month === 12
+      ? new YearMonth(this.year + 1, 1)
+      : new YearMonth(this.year, this.month + 1)
+  }
+
+  lastDay(): number {
+    return new Date(this.year, this.month + 1, 0).getDate();
+  }
+
+  toString(): string {
+    return `${this.year}-${this.month}`;
+  }
 }
