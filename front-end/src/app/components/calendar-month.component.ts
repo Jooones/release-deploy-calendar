@@ -4,29 +4,31 @@ import { Month } from "../domain/calendar.model";
 @Component({
   selector: 'rdc-calendar-month',
   template: `
-    <div class="calendar-month">
-      <div class="calendar-header">
-        <div class="cell">Monday</div>
-        <div class="cell">Tuesday</div>
-        <div class="cell">Wednesday</div>
-        <div class="cell">Thursday</div>
-        <div class="cell">Friday</div>
-        <div class="cell">Saturday</div>
-        <div class="cell">Sunday</div>
-      </div>
-      <div *ngFor="let week of currentMonth.weeks" class="calendar-week">
-        <div *ngFor="let day of week.days" class="day cell">
+    <section class="flex flex-col h-full text-sm">
+      <section class="grid grid-cols-7 border-gray-400 border-t divide-x divide-gray-400 bg-gray-200 select-none">
+        <span class="p-1">Monday</span>
+        <span class="p-1">Tuesday</span>
+        <span class="p-1">Wednesday</span>
+        <span class="p-1">Thursday</span>
+        <span class="p-1">Friday</span>
+        <span class="p-1">Saturday</span>
+        <span class="p-1">Sunday</span>
+      </section>
+      <section class="flex-1 grid grid-rows-6">
+        <section *ngFor="let week of currentMonth.weeks"
+                 class="grid grid-cols-7 border-gray-400 border-t divide-x divide-gray-400">
+          <section *ngFor="let day of week.days">
             <rdc-day-cell-component *ngIf="day"
                                     [day]="day"
                                     [month]="currentMonth"
                                     [devRcVersions]="devRcVersions"
                                     [stgPrdVersions]="stgPrdVersions">
             </rdc-day-cell-component>
-        </div>
-      </div>
-    </div>
-  `,
-  styleUrls: ["./calendar-month.component.scss"]
+          </section>
+        </section>
+      </section>
+    </section>
+  `
 })
 export class CalendarMonthComponent {
   @Input()

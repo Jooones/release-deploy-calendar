@@ -15,6 +15,7 @@ export interface Week {
 export interface Day {
   dayOfMonth: number;
   dayOfWeek: number;
+  monthOfYear: number;
   developVersion: String;
   rcVersion: String;
   stgVersion:String;
