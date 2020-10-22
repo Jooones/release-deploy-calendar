@@ -6,7 +6,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 import {CommonModule} from "@angular/common";
-import {DayCellComponent} from "./components/DayCell/day-cell.component";
+import {DayCellComponent} from "./components/day-cell/day-cell.component";
 import {CalendarService} from "./services/calendar.service";
 import {CalendarMonthComponent} from "./components/calendar-month.component";
 import {FormsModule} from "@angular/forms";
