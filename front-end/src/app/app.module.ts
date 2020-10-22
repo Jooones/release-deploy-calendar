@@ -10,12 +10,14 @@ import {DayCellComponent} from "./components/DayCell/day-cell.component";
 import {CalendarService} from "./services/calendar.service";
 import {CalendarMonthComponent} from "./components/calendar-month.component";
 import {FormsModule} from "@angular/forms";
+import {SettingsComponent} from "./components/settings/settings.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     CalendarMonthComponent,
-    DayCellComponent
+    DayCellComponent,
+    SettingsComponent
   ],
   imports: [
     CommonModule,
