@@ -40,6 +40,7 @@ export class CalendarService {
       const yearMonth = YearMonth.parse(yearMonthAsString);
       const month: Month = {
         year: yearMonth.year,
+        name: this.findMonthNameByIndex(yearMonth.month),
         monthOfYear: yearMonth.month,
         weeks: this.mapDaysToWeeks(daysOfYearMonth)
       };
@@ -69,7 +70,9 @@ export class CalendarService {
       const daysUntilLastDayOfMonth = lastDayOfYearMonth - day.dayOfMonth;
 
       const pushToNextMonth = (day.dayOfWeek + daysUntilLastDayOfMonth) < 7
-      const pushToPreviousMonth = daysByYearMonth.get(previousYearMonthAsString)?.length < 42
+      const pushToPreviousMonth = daysByYearMonth.get(previousYearMonthAsString)
+        ?.filter((day: DayTo) => day.dayOfWeek === 7)
+        .length < 6;
 
       daysByYearMonth.get(currentYearMonthAsString).push(day);
 
@@ -141,6 +144,13 @@ export class CalendarService {
     })
   }
 
+  findMonthNameByIndex(monthIndex: number): string {
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    return monthNames[monthIndex - 1];
+  }
 }
 
 class YearMonth {

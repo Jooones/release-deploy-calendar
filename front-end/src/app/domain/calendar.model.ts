@@ -4,6 +4,7 @@ export interface Calendar {
 
 export interface Month {
   year: number;
+  name: string;
   monthOfYear: number;
   weeks: Array<Week>;
 }
@@ -18,7 +19,7 @@ export interface Day {
   monthOfYear: number;
   developVersion: String;
   rcVersion: String;
-  stgVersion:String;
+  stgVersion: String;
   prdVersion: String;
   dayType: DayType;
 }

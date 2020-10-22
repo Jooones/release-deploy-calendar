@@ -14,7 +14,7 @@ import {Calendar, Month} from "./domain/calendar.model";
           </svg>
         </button>
         <section class="text-xl font-semibold text-center rounded select-none w-40">
-          <span>{{selectedMonthName}} {{selectedMonth.year}}</span>
+          <span>{{selectedMonth.name}} {{selectedMonth.year}}</span>
         </section>
         <button class="bg-white shadow-xs hover:bg-gray-100 p-2 border border-gray-100 rounded-full focus:outline-none"
                 (click)="showNextMonth()">
@@ -27,7 +27,7 @@ import {Calendar, Month} from "./domain/calendar.model";
           <button
             class="font-semibold bg-white hover:bg-gray-100 border border-gray-200 p-2 rounded shadow-xs focus:outline-none"
             (click)="showCurrentMonth()">
-            <span>{{ currentMonthName }} {{ currentMonth.year }}</span>
+            <span>{{currentMonth.name}} {{currentMonth.year}}</span>
           </button>
           <rdc-settings [(devRcVersions)]="devRcVersions"
                         [(stgPrdVersions)]="stgPrdVersions">
@@ -46,11 +46,9 @@ import {Calendar, Month} from "./domain/calendar.model";
 export class AppComponent implements OnInit {
 
   selectedMonth: Month;
-  selectedMonthName: string;
   selectedMonthIndex: number;
 
   currentMonth: Month;
-  currentMonthName: string;
   currentMonthIndex: number;
 
   devRcVersions: boolean = false
@@ -69,53 +67,38 @@ export class AppComponent implements OnInit {
     });
   }
 
-  private setCurrentMonthIndex(monthIndex: number) {
-    if (monthIndex > 0 && monthIndex < this.calendar?.months.length - 1) {
-      this.selectedMonthIndex = monthIndex;
-    }
+  showCurrentMonth() {
+    this.showMonth(this.currentMonthIndex);
   }
 
   showPreviousMonth() {
-    this.setCurrentMonthIndex(this.selectedMonthIndex - 1);
-    this.showMonthWithIndex(this.selectedMonthIndex);
-  }
-
-  showCurrentMonth() {
-    this.setCurrentMonthIndex(this.calculateCurrentMonthIndex());
-    this.showMonthWithIndex(this.selectedMonthIndex);
+    const previousMonthIndex = this.selectedMonthIndex - 1;
+    this.showMonth(previousMonthIndex);
   }
 
   showNextMonth() {
-    this.setCurrentMonthIndex(this.selectedMonthIndex + 1);
-    this.showMonthWithIndex(this.selectedMonthIndex);
+    const nextMonthIndex = this.selectedMonthIndex + 1;
+    this.showMonth(nextMonthIndex);
   }
 
-  showMonthWithIndex(monthIndex: number) {
-    this.selectedMonth = this.calendar.months[monthIndex];
-    this.selectedMonthName = AppComponent.findMonthNameByIndex(this.selectedMonth.monthOfYear - 1);
+  private showMonth(monthIndex: number) {
+    this.selectedMonthIndex = this.clampMonthIndex(monthIndex);
+    this.selectedMonth = this.calendar.months[this.selectedMonthIndex];
   }
 
   private initializeCurrentMonth() {
     this.currentMonthIndex = this.calculateCurrentMonthIndex();
     this.currentMonth = this.calendar.months[this.currentMonthIndex];
-    this.currentMonthName = AppComponent.findMonthNameByIndex(this.currentMonth.monthOfYear - 1);
   }
 
   private calculateCurrentMonthIndex(): number {
     return this.calendar.months
-      .indexOf(this.findCurrentMonth());
-  }
-
-  private findCurrentMonth() {
-    return this.calendar.months
-      .find(month => month.year === new Date().getFullYear()
+      .findIndex(month => month.year === new Date().getFullYear()
         && month.monthOfYear === new Date().getMonth() + 1);
   }
 
-  private static findMonthNameByIndex(monthIndex: number) {
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
-    ];
-    return monthNames[monthIndex];
+  private clampMonthIndex(monthIndex: number) {
+    const monthsCount = this.calendar.months.length - 1;
+    return monthIndex > monthsCount ? monthsCount : monthIndex < 0 ? 0 : monthIndex;
   }
 }
