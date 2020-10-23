@@ -4,9 +4,9 @@ import {Component, EventEmitter, Input, Output} from "@angular/core";
   selector: 'rdc-settings',
   template: `
     <section class="relative">
-      <button class="p-2 bg-white hover:bg-gray-100 border border-gray-100 rounded-full shadow-xs focus:outline-none"
+      <button class="p-2 bg-white hover:bg-gray-100 border border-gray-100 rounded-full shadow-xs"
               (click)="toggleSettings()">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
              xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37
@@ -19,7 +19,7 @@ import {Component, EventEmitter, Input, Output} from "@angular/core";
         </svg>
       </button>
       <section *ngIf="settingsShown"
-               class="origin-top-right absolute right-0 mt-3">
+               class="origin-top-right absolute right-0 mt-3 text-sm">
         <section class="flex flex-col w-40 bg-white divide-y divide-gray-200 rounded shadow-md select-none">
           <label class="inline-flex items-center p-2 space-x-1">
             <input type="checkbox" [ngModel]="devRcVersions" (ngModelChange)="devRcVersionsChange.emit($event)">

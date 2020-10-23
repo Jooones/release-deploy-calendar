@@ -6,21 +6,18 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
   template: `
     <section
       *ngIf="day"
-      class="p-1 flex flex-col h-full text-sm"
+      class="p-1 flex flex-col h-full border-2 border-transparent text-sm {{ sprintColor() }}"
       (mouseleave)="showAllVersions = false"
       (mouseenter)="showAllVersions = true"
       [ngClass]="{
         'bg-gray-300': isDayOfOtherMonth(day),
         'bg-gray-100': isWeekendDay(day.dayOfWeek),
-        'bg-orange-200': isStgInstallDay(day.dayType),
-        'border-2 border-blue-400': isToday
+        'border-blue-500': isToday
       }">
       <span class="block">{{ day.dayOfMonth }}</span>
       <section class="flex-1 grid grid-rows-4 gap-y-1 text-center">
         <section class="flex flex-col justify-center items-center border border-transparent rounded"
                  [ngClass]="{
-          'bg-green-400 border-green-700': isNewSprintDay(day.dayType),
-          'bg-gray-200 border-gray-300': isIntInstallDay(day.dayType),
           'bg-orange-400 border-orange-500': isStgInstallDay(day.dayType)
         }">
           <span *ngIf="isNewSprintDay(day.dayType)">START SPRINT {{day.developVersion.substr(3)}}</span>
@@ -49,7 +46,7 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
                  [ngClass]="{
           'bg-teal-300 border-teal-500': isNewSprintDay(day.dayType) || isIntInstallDay(day.dayType),
           'bg-red-400 border-red-700': isPrdInstallDay(day.dayType),
-          'bg-pink-500 border-pink-700': isHotfixInstallDay(day.dayType)
+          'bg-pink-400 border-pink-700': isHotfixInstallDay(day.dayType)
         }">
           <span *ngIf="isNewSprintDay(day.dayType)">KNG INT {{day.rcVersion}}</span>
           <span *ngIf="isIntInstallDay(day.dayType)">INT {{day.rcVersion}}</span>
@@ -109,5 +106,18 @@ export class DayCellComponent implements OnInit {
 
   isHotfixInstallDay(dayType: DayType): boolean {
     return dayType === DayType.PRD_HOTFIX_INSTALL;
+  }
+
+  isSprintNumberEven(): boolean {
+    const developVersion = this.day.developVersion;
+    const lastSprintNumber = developVersion.substr(developVersion.length - 1, 1);
+    return parseInt(lastSprintNumber) % 2 === 0;
+  }
+
+  sprintColor() {
+    if (this.isWeekendDay(this.day.dayOfWeek) || this.isDayOfOtherMonth(this.day)) {
+      return '';
+    }
+    return this.isSprintNumberEven() ? 'bg-green-200' : 'bg-green-300';
   }
 }
