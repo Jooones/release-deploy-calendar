@@ -6,7 +6,7 @@ import {Calendar, Day, DayType, Month, Week} from "../domain/calendar.model";
 import {map} from "rxjs/operators";
 import exampleResponse from '../../assets/example-calendars/example.json';
 
-//import {environment} from '../../environments/environment';
+import {environment} from '../../environments/environment';
 
 @Injectable()
 export class CalendarService {
@@ -15,19 +15,14 @@ export class CalendarService {
   }
 
   getCalendar(): Observable<Calendar> {
-    // TODO ...
-    // unfortunately I don't know how to pass in ---prd or something similar to the static spring boot solution we made, someone fix this for me <3
-    // #fml (don't remove this until we solved the issue, it's a search key)
-    const useTestData = false;
-    // if (!environment.production) {
-    if (useTestData) {
-      console.log("using test data")
-      return of(exampleResponse).pipe(
+    if (environment.production) {
+      console.log("using prod backend for data")
+      return this.httpClient.get<CalendarTo>(`api/calendar`).pipe(
         map((calendarTo: CalendarTo) => this.mapTo(calendarTo))
       );
     } else {
-      console.log("using prod backend for data")
-      return this.httpClient.get<CalendarTo>(`api/calendar`).pipe(
+      console.log("using test data")
+      return of(exampleResponse).pipe(
         map((calendarTo: CalendarTo) => this.mapTo(calendarTo))
       );
     }

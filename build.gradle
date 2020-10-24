@@ -41,7 +41,7 @@ node {
 task buildAngular(type: NpmTask, dependsOn: 'npmInstall') {
     group = 'build'
     description = 'Compile angular'
-    args = ['run', 'build']
+    args = ['run', 'build:prod']
 }
 processResources.dependsOn(buildAngular)
 
