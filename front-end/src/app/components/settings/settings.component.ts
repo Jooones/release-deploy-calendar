@@ -6,7 +6,7 @@ import {Component, EventEmitter, Input, Output} from "@angular/core";
     <section class="relative">
       <button class="p-2 bg-white hover:bg-gray-100 border border-gray-100 rounded-full shadow-xs"
               (click)="toggleSettings()">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
              xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37

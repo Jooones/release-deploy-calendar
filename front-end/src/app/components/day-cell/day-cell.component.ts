@@ -6,16 +6,12 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
   template: `
     <section
       *ngIf="day"
-      class="p-1 flex flex-col h-full border-2 border-transparent text-sm {{ sprintColor() }}"
+      class="p-1 flex flex-col h-full border-2 border-transparent text-xs sm:text-sm {{ sprintColor() }}"
       (mouseleave)="showAllVersions = false"
       (mouseenter)="showAllVersions = true"
-      [ngClass]="{
-        'bg-gray-300': isDayOfOtherMonth(day),
-        'bg-gray-100': isWeekendDay(day.dayOfWeek),
-        'border-blue-500': isToday
-      }">
+      [ngClass]="{ 'border-blue-500': isToday }">
       <span class="block">{{ day.dayOfMonth }}</span>
-      <section class="flex-1 grid grid-rows-4 gap-y-1 text-center">
+      <section class="flex-1 grid grid-rows-6 sm:grid-rows-4 gap-y-1 text-center">
         <section class="flex flex-col justify-center items-center border border-transparent rounded"
                  [ngClass]="{
           'bg-orange-400 border-orange-500': isStgInstallDay(day.dayType)
@@ -24,21 +20,21 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
           <span *ngIf="isIntInstallDay(day.dayType)">Freeze rc {{day.rcVersion}} + demo</span>
           <span *ngIf="isStgInstallDay(day.dayType)">STG {{day.stgVersion}}</span>
         </section>
-        <section class="row-span-2 grid grid-rows-2 grid-cols-2 grid-flow-col uppercase italic">
+        <section class="row-span-4 sm:row-span-2 grid grid-rows-4 grid-cols-1 sm:grid-rows-2 sm:grid-cols-2 grid-flow-col text-xs xl:text-sm uppercase italic">
           <section *ngIf="devRcVersions || showAllVersions"
-                   class="flex items-center justify-center">
+                   class="flex flex-col lg:flex-row items-center justify-center">
               <span class="font-semibold mr-1">dev</span> {{day.developVersion}}
           </section>
           <section *ngIf="devRcVersions || showAllVersions"
-                   class="flex items-center justify-center">
+                   class="flex flex-col lg:flex-row items-center justify-center">
             <span class="font-semibold mr-1">rc</span> {{day.rcVersion}}
           </section>
           <section *ngIf="stgPrdVersions || showAllVersions"
-                   class="flex items-center justify-center">
+                   class="flex flex-col lg:flex-row items-center justify-center">
             <span class="font-semibold mr-1">stg</span> {{day.stgVersion}}
           </section>
           <section *ngIf="stgPrdVersions || showAllVersions"
-                   class="flex items-center justify-center">
+                   class="flex flex-col lg:flex-row items-center justify-center">
             <span class="font-semibold mr-1">prd</span> {{day.prdVersion}}
           </section>
         </section>
@@ -80,8 +76,8 @@ export class DayCellComponent implements OnInit {
     this.isToday = new Date().toDateString() === passedInDate.toDateString();
   }
 
-  isWeekendDay(day: number) {
-    return day === 6 || day === 7;
+  isWeekendDay(day: Day) {
+    return day.dayOfWeek === 6 || day.dayOfWeek === 7;
   }
 
   isDayOfOtherMonth(day: Day) {
@@ -115,8 +111,11 @@ export class DayCellComponent implements OnInit {
   }
 
   sprintColor() {
-    if (this.isWeekendDay(this.day.dayOfWeek) || this.isDayOfOtherMonth(this.day)) {
-      return '';
+    if (this.isWeekendDay(this.day)) {
+      return 'bg-gray-100';
+    }
+    if (this.isDayOfOtherMonth(this.day)) {
+      return 'bg-gray-300';
     }
     return this.isSprintNumberEven() ? 'bg-green-200' : 'bg-green-300';
   }
