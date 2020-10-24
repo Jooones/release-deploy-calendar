@@ -24,22 +24,20 @@ Use this when:
 
 ## Quick UI development
 To be able to quickly test changes to the UI code without the bother of restarting the whole thing:
-- search for `#fml` in the code
-- change `useTestData` to `true`
-    - the test data can be found here: `front-end/src/assets/example-calendars/example.json` 
 - open a terminal and navigate to `front-end/`
 - execute `npm run start`
 - navigate to http://localhost:4200/
 
-**note:** please don't commit with `useTestData = true` 
+**Note:** the frontend build uses test data from the following file: `front-end/src/assets/example-calendars/example.json` 
 
 # Heroku
 ## Actual app
 https://release-deploy-calendar.herokuapp.com/
 
 ## Deploying a new version of the app
-- Navigate to release-deploy-calendar/build/docker
-- Execute: 
+- Execute
+    - `./gradlew buildAndRunDocker`
+    - `cd build/docker/`
     - `heroku login`
     - `heroku container:login`
     - `heroku container:push web -a release-deploy-calendar`
