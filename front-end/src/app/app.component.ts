@@ -6,7 +6,7 @@ import {Calendar, Month} from "./domain/calendar.model";
   selector: 'app-root',
   template: `
     <section *ngIf="calendar" class="flex flex-col h-screen">
-      <section class="flex items-center justify-start lg:justify-center p-2 text-gray-700 space-x-2">
+      <section class="relative flex items-center justify-start lg:justify-center p-2 text-gray-700 space-x-2">
         <button class="bg-white shadow-xs hover:bg-gray-100 p-2 border border-gray-100 rounded-full"
                 (click)="showPreviousMonth()">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
