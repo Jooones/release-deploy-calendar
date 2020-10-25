@@ -6,24 +6,26 @@ import {Calendar, Month} from "./domain/calendar.model";
   selector: 'app-root',
   template: `
     <section *ngIf="calendar" class="flex flex-col h-screen">
-      <section class="relative flex items-center justify-start lg:justify-center p-2 text-gray-700 space-x-2">
-        <button class="bg-white shadow-xs hover:bg-gray-100 p-2 border border-gray-100 rounded-full"
-                (click)="showPreviousMonth()">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-          </svg>
-        </button>
-        <section class="text-base sm:text-xl font-semibold text-center rounded select-none w-32 sm:w-40">
-          <span>{{selectedMonth.name}} {{selectedMonth.year}}</span>
+      <section class="flex justify-between p-2 text-gray-700 space-x-2">
+        <section class="flex-1 hidden lg:block"></section>
+        <section class="flex-1 flex items-center justify-start lg:justify-center">
+          <button class="bg-white shadow-xs hover:bg-gray-100 p-2 border border-gray-100 rounded-full"
+                  (click)="showPreviousMonth()">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </button>
+          <section class="text-base sm:text-xl font-semibold text-center rounded select-none w-32 sm:w-40">
+            <span>{{selectedMonth.name}} {{selectedMonth.year}}</span>
+          </section>
+          <button class="bg-white shadow-xs hover:bg-gray-100 p-2 border border-gray-100 rounded-full"
+                  (click)="showNextMonth()">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
         </section>
-        <button class="bg-white shadow-xs hover:bg-gray-100 p-2 border border-gray-100 rounded-full"
-                (click)="showNextMonth()">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </button>
-
-        <section class="absolute right-0 flex space-x-2 p-2">
+        <section class="flex-1 flex justify-end space-x-2">
           <button
             class="font-semibold text-sm sm:text-base text-white bg-gray-600 hover:bg-gray-700 border border-gray-700 p-2 rounded shadow-xs"
             (click)="showCurrentMonth()">
