@@ -13,9 +13,7 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
       <span class="block">{{ day.dayOfMonth }}</span>
       <section class="flex-1 grid grid-rows-6 sm:grid-rows-4 gap-y-1 text-center">
         <section class="flex flex-col justify-center items-center border border-transparent rounded"
-                 [ngClass]="{
-          'bg-orange-400 border-orange-500': isStgInstallDay(day.dayType)
-        }">
+                 [ngClass]="{ 'bg-orange-400 border-orange-500': isStgInstallDay(day.dayType) }">
           <span *ngIf="isNewSprintDay(day.dayType)">START SPRINT {{day.developVersion.substr(3)}}</span>
           <span *ngIf="isIntInstallDay(day.dayType)">Freeze rc {{day.rcVersion}} + demo</span>
           <span *ngIf="isStgInstallDay(day.dayType)">STG {{day.stgVersion}}</span>
@@ -111,11 +109,11 @@ export class DayCellComponent implements OnInit {
   }
 
   sprintColor() {
-    if (this.isWeekendDay(this.day)) {
-      return 'bg-gray-100';
-    }
     if (this.isDayOfOtherMonth(this.day)) {
       return 'bg-gray-300';
+    }
+    if (this.isWeekendDay(this.day)) {
+      return 'bg-gray-100';
     }
     return this.isSprintNumberEven() ? 'bg-green-200' : 'bg-green-300';
   }
