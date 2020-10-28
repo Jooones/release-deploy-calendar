@@ -17,6 +17,7 @@ export interface Day {
   dayOfMonth: number;
   dayOfWeek: number;
   monthOfYear: number;
+  year: number;
   developVersion: String;
   rcVersion: String;
   stgVersion: String;

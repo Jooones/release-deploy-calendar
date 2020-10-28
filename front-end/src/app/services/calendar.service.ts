@@ -7,6 +7,8 @@ import {map} from "rxjs/operators";
 import exampleResponse from '../../assets/example-calendars/example.json';
 
 import {environment} from '../../environments/environment';
+import {MultiMap} from "../utils/multi-map";
+import {YearMonth} from "../utils/year-month";
 
 @Injectable()
 export class CalendarService {
@@ -31,57 +33,39 @@ export class CalendarService {
   mapTo(calendarTo: CalendarTo): Calendar {
     const months: Array<Month> = []
 
-    this.extractDaysForMonths(this.sortDays(calendarTo.days)).forEach((daysOfYearMonth: DayTo[], yearMonthAsString: string) => {
-      const yearMonth = YearMonth.parse(yearMonthAsString);
-      const month: Month = {
-        year: yearMonth.year,
-        name: this.findMonthNameByIndex(yearMonth.month),
-        monthOfYear: yearMonth.month,
-        weeks: this.mapDaysToWeeks(daysOfYearMonth)
-      };
-      months.push(month);
-    });
+    this.extractDaysForMonths(this.sortDays(calendarTo.days))
+      .forEach((yearMonth: YearMonth, daysOfYearMonth: DayTo[]) => {
+        const month: Month = {
+          name: this.findMonthNameByIndex(yearMonth.month),
+          year: yearMonth.year,
+          monthOfYear: yearMonth.month,
+          weeks: this.mapDaysToWeeks(daysOfYearMonth)
+        };
+        months.push(month);
+      });
     return {months: months};
   }
 
-  extractDaysForMonths(days: Array<DayTo>): Map<string, Array<DayTo>> {
-    const daysByYearMonth: Map<string, Array<DayTo>> = new Map<string, Array<DayTo>>();
+  extractDaysForMonths(days: Array<DayTo>): MultiMap<YearMonth, DayTo> {
+    const daysByYearMonth: MultiMap<YearMonth, DayTo> = new MultiMap<YearMonth, DayTo>(YearMonth.parse);
+    const firstMonth = YearMonth.fromDayTo(days[0]);
+    const lastMonth = YearMonth.fromDayTo(days[days.length - 1]);
 
     days.forEach((day: DayTo) => {
-      const currentYearMonth = new YearMonth(parseInt(day.year), day.monthOfYear);
-      const currentYearMonthAsString = currentYearMonth.toString();
+      const currentMonth = YearMonth.fromDayTo(day);
+      const previousMonth = currentMonth.previous();
+      const nextMonth = currentMonth.next();
 
-      const previousYearMonth = currentYearMonth.previous();
-      const previousYearMonthAsString = previousYearMonth.toString();
+      daysByYearMonth.add(currentMonth, day);
 
-      const nextYearMonth = currentYearMonth.next();
-      const nextYearMonthAsString = nextYearMonth.toString();
-
-      if (!daysByYearMonth.has(currentYearMonthAsString)) {
-        daysByYearMonth.set(currentYearMonthAsString, []);
+      if (!currentMonth.equals(firstMonth)
+        && this.countSundays(daysByYearMonth.get(previousMonth)) < 6) {
+        daysByYearMonth.add(previousMonth, day);
       }
 
-      const lastDayOfYearMonth = currentYearMonth.lastDay();
-      const daysUntilLastDayOfMonth = lastDayOfYearMonth - day.dayOfMonth;
-
-      const pushToNextMonth = (day.dayOfWeek + daysUntilLastDayOfMonth) < 7
-      const pushToPreviousMonth = daysByYearMonth.get(previousYearMonthAsString)
-        ?.filter((day: DayTo) => day.dayOfWeek === 7)
-        .length < 6;
-
-      daysByYearMonth.get(currentYearMonthAsString).push(day);
-
-      if (pushToPreviousMonth) {
-        if (!daysByYearMonth.has(previousYearMonthAsString)) {
-          daysByYearMonth.set(previousYearMonthAsString, []);
-        }
-        daysByYearMonth.get(previousYearMonthAsString).push(day);
-      }
-      if (pushToNextMonth) {
-        if (!daysByYearMonth.has(nextYearMonthAsString)) {
-          daysByYearMonth.set(nextYearMonthAsString, []);
-        }
-        daysByYearMonth.get(nextYearMonthAsString).push(day);
+      if (!currentMonth.equals(lastMonth)
+        && this.isDayOfLastWeek(day, currentMonth)) {
+        daysByYearMonth.add(nextMonth, day);
       }
     });
 
@@ -105,6 +89,7 @@ export class CalendarService {
         dayOfMonth: dayTo.dayOfMonth,
         dayOfWeek: dayTo.dayOfWeek,
         monthOfYear: dayTo.monthOfYear,
+        year: parseInt(dayTo.year),
         developVersion: dayTo.developVersion,
         rcVersion: dayTo.rcVersion,
         stgVersion: dayTo.stgVersion,
@@ -146,36 +131,17 @@ export class CalendarService {
 
     return monthNames[monthIndex - 1];
   }
-}
 
-class YearMonth {
-
-  static parse(yearMonthAsString) {
-    const split = yearMonthAsString.split('-');
-    return new YearMonth(parseInt(split[0]), parseInt(split[1]));
+  isDayOfLastWeek(day: DayTo, month: YearMonth): boolean {
+    const lastDayOfCurrentMonth = month.lastDay();
+    const daysUntilLastDayOfCurrentMonth = lastDayOfCurrentMonth - day.dayOfMonth;
+    return (day.dayOfWeek + daysUntilLastDayOfCurrentMonth) < 7
   }
 
-  constructor(public year: number,
-              public month: number) {
-  }
-
-  previous(): YearMonth {
-    return this.month === 1
-      ? new YearMonth(this.year - 1, 12)
-      : new YearMonth(this.year, this.month - 1)
-  }
-
-  next(): YearMonth {
-    return this.month === 12
-      ? new YearMonth(this.year + 1, 1)
-      : new YearMonth(this.year, this.month + 1)
-  }
-
-  lastDay(): number {
-    return new Date(this.year, this.month + 1, 0).getDate();
-  }
-
-  toString(): string {
-    return `${this.year}-${this.month}`;
+  countSundays(days: DayTo[]): number {
+    return days
+      .filter((day: DayTo) => day.dayOfWeek === 7)
+      .length;
   }
 }
+

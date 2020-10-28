@@ -21,7 +21,7 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
         <section class="row-span-4 sm:row-span-2 grid grid-rows-4 grid-cols-1 sm:grid-rows-2 sm:grid-cols-2 grid-flow-col text-xs xl:text-sm uppercase italic">
           <section *ngIf="devRcVersions || showAllVersions"
                    class="flex flex-col lg:flex-row items-center justify-center">
-              <span class="font-semibold mr-1">dev</span> {{day.developVersion}}
+            <span class="font-semibold mr-1">dev</span> {{day.developVersion}}
           </section>
           <section *ngIf="devRcVersions || showAllVersions"
                    class="flex flex-col lg:flex-row items-center justify-center">
@@ -52,6 +52,7 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
   `
 })
 export class DayCellComponent implements OnInit {
+
   @Input()
   day: Day;
   @Input()
@@ -62,13 +63,12 @@ export class DayCellComponent implements OnInit {
   stgPrdVersions: boolean;
 
   showAllVersions: boolean = false;
-  dayTypeClass: string;
   isToday: boolean;
 
   ngOnInit(): void {
-    let passedInDate = new Date(
-      Number(this.month.year),
-      this.month.monthOfYear - 1,
+    const passedInDate = new Date(
+      this.day.year,
+      this.day.monthOfYear - 1,
       this.day.dayOfMonth
     );
     this.isToday = new Date().toDateString() === passedInDate.toDateString();
