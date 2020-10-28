@@ -3,26 +3,26 @@ A visual calendar that shows the important release and deploy moments along with
 
 [![GitHub license](https://img.shields.io/github/license/Jooones/release-deploy-calendar.svg)](https://github.com/Jooones/release-deploy-calendar/blob/master/LICENSE)
 
-# setup and build
-## prerequisites
+## setup and build
+### prerequisites
 - install java
 - install node
 - install docker
 
-## build and run the app
+### build and run the app
 Use this when:
 - you want to run the app for the first time
 - you want to run the app with changed code
 
 `./gradlew buildAndRunDocker`
 
-## run the app
+### run the app
 `./gradlew runDocker`
 
-## stop the app
+### stop the app
 `./gradlew removeDocker`
 
-## Quick UI development
+### Quick UI development
 To be able to quickly test changes to the UI code without the bother of restarting the whole thing:
 - open a terminal and navigate to `front-end/`
 - execute `npm run start`
@@ -30,11 +30,11 @@ To be able to quickly test changes to the UI code without the bother of restarti
 
 **Note:** the frontend build uses test data from the following file: `front-end/src/assets/example-calendars/example.json` 
 
-# Heroku
-## Actual app
+## Heroku
+### Actual app
 https://release-deploy-calendar.herokuapp.com/
 
-## Deploying a new version of the app
+### Deploying a new version of the app
 - Execute
     - `./gradlew buildAndRunDocker`
     - `cd build/docker/`
@@ -43,9 +43,16 @@ https://release-deploy-calendar.herokuapp.com/
     - `heroku container:push web -a release-deploy-calendar`
     - `heroku container:release web -a release-deploy-calendar`
 
-## Other commands  
+### Other commands  
 - `heroku logs --tail -a release-deploy-calendar`  
 - `heroku apps`  
+
+## Why is there a backend?
+Q: But Jooones, why does this app have a backend? Can't you just write all of it in the frontend so the app is less heavy-weight?  
+J: Because we wanted to write some kotlin for the very first time in our lives.  
+_..starts sweating.._  
+Q: But there's barely any kotlin in there, you didn't even write a real test?  
+J: RUN PIETER, EVERY MAN FOR HIMSELF
 
 ## "Your app has potential but the final result sucks balls"
 Feel free to fork, update and sell for a high price.  
