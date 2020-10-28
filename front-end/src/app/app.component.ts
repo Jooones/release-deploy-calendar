@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {CalendarService} from "./services/calendar.service";
 import {Calendar, Month} from "./domain/calendar.model";
 
@@ -77,15 +77,18 @@ export class AppComponent implements OnInit {
     });
   }
 
+  @HostListener('document:keydown.BackSpace')
   showCurrentMonth() {
     this.showMonth(this.currentMonthIndex);
   }
 
+  @HostListener('document:keydown.ArrowLeft')
   showPreviousMonth() {
     const previousMonthIndex = this.selectedMonthIndex - 1;
     this.showMonth(previousMonthIndex);
   }
 
+  @HostListener('document:keydown.ArrowRight')
   showNextMonth() {
     const nextMonthIndex = this.selectedMonthIndex + 1;
     this.showMonth(nextMonthIndex);
