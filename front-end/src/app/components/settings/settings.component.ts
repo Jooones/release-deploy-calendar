@@ -20,14 +20,14 @@ import {Component, EventEmitter, Input, Output} from "@angular/core";
       </button>
       <section *ngIf="settingsShown"
                class="origin-top-right absolute right-0 mt-3 text-sm">
-        <section class="flex flex-col w-40 bg-white divide-y divide-gray-200 rounded shadow-md select-none">
-          <label class="flex items-center p-2 space-x-1">
-            <input type="checkbox" [ngModel]="devRcVersions" (ngModelChange)="devRcVersionsChange.emit($event)">
-            <span class="block">dev and rc versions</span>
+        <section class="flex flex-col w-48 bg-white divide-y divide-gray-200 rounded shadow-md select-none">
+          <label class="flex items-center p-2">
+            <input type="checkbox" class="mx-2" [ngModel]="devRcVersions" (ngModelChange)="devRcVersionsChange.emit($event)">
+            <span>dev and rc versions</span>
           </label>
-          <label class="flex items-center p-2 space-x-1">
-            <input type="checkbox" [ngModel]="stgPrdVersions" (ngModelChange)="stgPrdVersionsChange.emit($event)">
-            <span class="block">stg and prd versions</span>
+          <label class="flex items-center p-2">
+            <input type="checkbox" class="mx-2" [ngModel]="stgPrdVersions" (ngModelChange)="stgPrdVersionsChange.emit($event)">
+            <span>stg and prd versions</span>
           </label>
         </section>
       </section>
