@@ -1,11 +1,12 @@
 package com.jooones.rdc.service
 
+import com.jooones.rdc.model.*
 import com.jooones.rdc.model.Calendar
-import com.jooones.rdc.model.Day
-import com.jooones.rdc.model.DayType
-import com.jooones.rdc.model.SprintStart
 import org.springframework.stereotype.Service
 import java.time.LocalDate
+import java.time.ZoneId
+import java.util.*
+import kotlin.collections.ArrayList
 
 @Service
 open class CalendarService() {
@@ -25,8 +26,25 @@ open class CalendarService() {
         val lastDayOfLastRequestedMonth = LocalDate.of(sixMonthsFromNow.year, sixMonthsFromNow.month, sixMonthsFromNow.lengthOfMonth())
 
         val days = getDaysOfAllSprintsOfRequestedMonths(startOfSprint75, firstDayOfFirstRequestedMonth, lastDayOfLastRequestedMonth)
+        overwriteCustomDays(days)
         return Calendar(days.toTypedArray())
     }
+
+    private fun overwriteCustomDays(days: ArrayList<Day>) {
+        CustomDaysReader().read().forEach { customDay ->
+            val matchedDay = getMatchingDay(days, customDay)
+            matchedDay.top = customDay.top
+            matchedDay.bottom = customDay.bottom
+            if (customDay.prd.isNotEmpty()) {
+                matchedDay.prdVersion = customDay.prd
+            }
+        }
+    }
+
+    private fun getMatchingDay(days: ArrayList<Day>, customDay: CustomDay) =
+        days.first { day -> day.getLocalDate().equals(toLocalDate(customDay.date!!)) }
+
+    private fun toLocalDate(date: Date) = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate()
 
     private fun getDaysOfAllSprintsOfRequestedMonths(startOfSprint75: LocalDate, firstDayOfFirstRequestedMonth: LocalDate, lastDayOfLastRequestedMonth: LocalDate): ArrayList<Day> {
         val days = ArrayList<Day>()

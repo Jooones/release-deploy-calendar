@@ -1,7 +1,6 @@
 package com.jooones.rdc.controller
 
 import com.jooones.rdc.model.Calendar
-import com.jooones.rdc.model.CalendarOld
 import com.jooones.rdc.service.CalendarService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.HttpStatus

@@ -14,9 +14,10 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
       <section class="flex-1 grid grid-rows-6 sm:grid-rows-4 gap-y-1 text-center">
         <section class="flex flex-col justify-center items-center border border-transparent rounded"
                  [ngClass]="{ 'bg-orange-400 border-orange-500': isStgInstallDay(day.dayType) }">
-          <span *ngIf="isNewSprintDay(day.dayType)">START SPRINT {{day.developVersion.substr(3)}}</span>
-          <span *ngIf="isIntInstallDay(day.dayType)">Freeze rc {{day.rcVersion}} + demo</span>
-          <span *ngIf="isStgInstallDay(day.dayType)">STG {{day.stgVersion}}</span>
+          <span *ngIf="!empty(day.top)">{{day.top}}</span>
+          <span *ngIf="isNewSprintDay(day.dayType) && empty(day.top)">START SPRINT {{day.developVersion.substr(3)}}</span>
+          <span *ngIf="isIntInstallDay(day.dayType) && empty(day.top)">Freeze rc {{day.rcVersion}} + demo</span>
+          <span *ngIf="isStgInstallDay(day.dayType) && empty(day.top)">STG {{day.stgVersion}}</span>
         </section>
         <section class="row-span-4 sm:row-span-2 grid grid-rows-4 grid-cols-1 sm:grid-rows-2 sm:grid-cols-2 grid-flow-col text-xs xl:text-sm uppercase italic">
           <section *ngIf="devRcVersions || showAllVersions"
@@ -42,10 +43,11 @@ import {Day, DayType, Month} from "../../domain/calendar.model";
           'bg-red-400 border-red-700': isPrdInstallDay(day.dayType),
           'bg-pink-400 border-pink-700': isHotfixInstallDay(day.dayType)
         }">
-          <span *ngIf="isNewSprintDay(day.dayType)">KNG INT {{day.rcVersion}}</span>
-          <span *ngIf="isIntInstallDay(day.dayType)">INT {{day.rcVersion}}</span>
-          <span *ngIf="isPrdInstallDay(day.dayType)">PRD {{day.stgVersion}}</span>
-          <span *ngIf="isHotfixInstallDay(day.dayType)">HOTFIX PRD {{day.prdVersion}}.X ?</span>
+          <span *ngIf="!empty(day.bottom)">{{day.bottom}}</span>
+          <span *ngIf="isNewSprintDay(day.dayType) && empty(day.bottom)">KNG INT {{day.rcVersion}}</span>
+          <span *ngIf="isIntInstallDay(day.dayType) && empty(day.bottom)">INT {{day.rcVersion}}</span>
+          <span *ngIf="isPrdInstallDay(day.dayType) && empty(day.bottom)">PRD {{day.stgVersion}}</span>
+          <span *ngIf="isHotfixInstallDay(day.dayType) && empty(day.bottom)">HOTFIX PRD {{day.prdVersion}}.X ?</span>
         </section>
       </section>
     </section>
@@ -116,5 +118,9 @@ export class DayCellComponent implements OnInit {
       return 'bg-gray-100';
     }
     return this.isSprintNumberEven() ? 'bg-green-200' : 'bg-green-300';
+  }
+
+  empty(s: String) {
+    return !s;
   }
 }

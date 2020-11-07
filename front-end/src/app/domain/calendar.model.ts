@@ -23,6 +23,8 @@ export interface Day {
   stgVersion: String;
   prdVersion: String;
   dayType: DayType;
+  top: String;
+  bottom: String;
 }
 
 export enum DayType {

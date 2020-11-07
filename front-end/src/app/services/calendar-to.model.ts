@@ -12,4 +12,6 @@ export interface DayTo {
   stgVersion: string;
   prdVersion: string;
   dayType: string;
+  top: string;
+  bottom: string;
 }

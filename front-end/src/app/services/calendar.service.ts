@@ -94,7 +94,9 @@ export class CalendarService {
         rcVersion: dayTo.rcVersion,
         stgVersion: dayTo.stgVersion,
         prdVersion: dayTo.prdVersion,
-        dayType: DayType[dayTo.dayType]
+        dayType: DayType[dayTo.dayType],
+        top: dayTo.top,
+        bottom: dayTo.bottom
       }
 
       weeks[weekOfTheMonth] = {
