@@ -181,16 +181,16 @@
   },
   {
     "date": "2020/12/24",
-    "top": "",
+    "top": "STG install 10.118",
     "bottom": "PRD hotfix moved to day before",
     "prd": ""
   },
   {
     "date": "2020/12/25",
-    "top": "Staging refresh moved to day before",
+    "top": "STG refresh moved to day before",
     "bottom": "",
     "prd": ""
-  },  
+  },
   {
     "date": "2020/12/30",
     "top": "Tonight: prd install 10.118!",
