@@ -92,18 +92,18 @@
   {
     "date": "2020/12/04",
     "top": "",
-    "bottom": "",
+    "bottom": "PRD migration",
     "prd": "10.114"
   },
   {
     "date": "2020/12/05",
-    "top": "",
+    "top": "PRD migration",
     "bottom": "",
     "prd": "10.114"
   },
   {
     "date": "2020/12/06",
-    "top": "",
+    "top": "PRD migration",
     "bottom": "",
     "prd": "10.114"
   },
@@ -128,50 +128,62 @@
   {
     "date": "2020/12/10",
     "top": "",
-    "bottom": "No hotfix install",
+    "bottom": "(for covid-19 bis) PRD 10.116",
     "prd": "10.114"
   },
   {
     "date": "2020/12/11",
     "top": "",
     "bottom": "",
-    "prd": "10.114"
+    "prd": "10.116"
   },
   {
     "date": "2020/12/12",
     "top": "",
     "bottom": "",
-    "prd": "10.114"
+    "prd": "10.116"
   },
   {
     "date": "2020/12/13",
     "top": "",
     "bottom": "",
-    "prd": "10.114"
+    "prd": "10.116"
   },
   {
     "date": "2020/12/14",
     "top": "",
     "bottom": "",
-    "prd": "10.114"
+    "prd": "10.116"
   },
   {
     "date": "2020/12/15",
     "top": "",
     "bottom": "",
-    "prd": "10.114"
+    "prd": "10.116"
   },
   {
     "date": "2020/12/16",
     "top": "",
     "bottom": "",
-    "prd": "10.114"
+    "prd": "10.116"
   },
   {
     "date": "2020/12/17",
     "top": "",
     "bottom": "",
-    "prd": "10.114"
+    "prd": "10.116"
+  },
+  {
+    "date": "2020/12/23",
+    "top": "",
+    "bottom": "HOTFIX PRD 10.117.X ?",
+    "prd": ""
+  },
+  {
+    "date": "2020/12/24",
+    "top": "",
+    "bottom": "PRD hotfix moved to day before",
+    "prd": ""
   },
   {
     "date": "2020/12/30",
@@ -182,7 +194,7 @@
   {
     "date": "2020/12/31",
     "top": "",
-    "bottom": "Prd install moved to day before",
+    "bottom": "PRD install moved to day before",
     "prd": "10.118"
   }
 ]
