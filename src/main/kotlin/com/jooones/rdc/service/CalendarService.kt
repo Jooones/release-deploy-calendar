@@ -20,10 +20,10 @@ open class CalendarService() {
     // ended on tuesday 23/04/2019
     open fun getSurroundingMonths(requestDate: LocalDate): Calendar {
         val startOfSprint75 = LocalDate.of(2019, 4, 10)
-        val sixMonthsAgo = requestDate.minusMonths(6)
-        val sixMonthsFromNow = requestDate.plusMonths(6)
-        val firstDayOfFirstRequestedMonth = LocalDate.of(sixMonthsAgo.year, sixMonthsAgo.month, 1)
-        val lastDayOfLastRequestedMonth = LocalDate.of(sixMonthsFromNow.year, sixMonthsFromNow.month, sixMonthsFromNow.lengthOfMonth())
+        val tenMonthsAgo = requestDate.minusMonths(10)
+        val tenMonthsFromNow = requestDate.plusMonths(10)
+        val firstDayOfFirstRequestedMonth = LocalDate.of(tenMonthsAgo.year, tenMonthsAgo.month, 1)
+        val lastDayOfLastRequestedMonth = LocalDate.of(tenMonthsFromNow.year, tenMonthsFromNow.month, tenMonthsFromNow.lengthOfMonth())
 
         val days = getDaysOfAllSprintsOfRequestedMonths(startOfSprint75, firstDayOfFirstRequestedMonth, lastDayOfLastRequestedMonth)
         overwriteCustomDays(days)
